@@ -1,0 +1,3061 @@
+{
+  "metadata": {
+    "title": "Uniform Curriculum for MDCAT 2025",
+    "issuing_body": "Pakistan Medical & Dental Council (PM&DC)",
+    "source_document": "Uniform Curriculum MDCAT-2025 Final (26-05-2025)",
+    "copyright_notice": "Copyright © June 2025, Pakistan Medical & Dental Council",
+    "source_pages": {
+      "biology": "5-8 (printed pages 3-6)",
+      "chemistry": "9-15 (printed pages 7-13)",
+      "physics": "16-21 (printed pages 14-19)",
+      "english": "22 (printed page 20)",
+      "logical_reasoning": "23 (printed page 21)"
+    },
+    "extraction_policy": "Official unit, topic and learning-outcome wording is transcribed from the uploaded PDF. SLO identifiers are retained as printed; where the PDF itself contains apparent typographical or grammatical errors, wording is not silently corrected.",
+    "important_note": "The PDF labels the Biology outcomes as Learning outcomes, Chemistry as Learning Objectives, Physics as Learning Outcomes, English as Learning outcomes, and Logical Reasoning as Learning Outcomes. The common key 'slos' is a data-model normalization only."
+  },
+  "subjects": [
+    {
+      "id": "biology",
+      "name": "Biology",
+      "official_units": [
+        {
+          "unit_number": 1,
+          "title": "ACELLULAR LIFE",
+          "topics": [
+            {
+              "name": "Viruses",
+              "slos": [
+                {
+                  "id": "1.1",
+                  "text": "Classify viruses on basis of their structure/ number of strands/ diseases/ hosts etc."
+                }
+              ]
+            },
+            {
+              "name": "AIDS and HIV Infection",
+              "slos": [
+                {
+                  "id": "1.2",
+                  "text": "Identify symptoms, mode of transmission and cause of viral disease (AIDS)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 2,
+          "title": "BIOENERGETICS",
+          "topics": [
+            {
+              "name": "Respiration",
+              "slos": [
+                {
+                  "id": "2.1",
+                  "text": "Outline the cellular respiration of proteins and fats and correlate these with that of glucose."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 3,
+          "title": "BIOLOGICAL MOLECULES",
+          "topics": [
+            {
+              "name": "Biological molecules",
+              "slos": [
+                {
+                  "id": "3.1",
+                  "text": "Define and classify biological molecules."
+                },
+                {
+                  "id": "3.2",
+                  "text": "Discuss the importance of biological molecules"
+                }
+              ]
+            },
+            {
+              "name": "Biological Importance of Water",
+              "slos": [
+                {
+                  "id": "3.3",
+                  "text": "Describe biologically important properties of water (polarity, hydrolysis, specific heat, water as solvent and reagent, density, cohesion/ionization)"
+                }
+              ]
+            },
+            {
+              "name": "Carbohydrates",
+              "slos": [
+                {
+                  "id": "3.4",
+                  "text": "Discuss carbohydrates: monosaccharaides (glucose), oligosaccharides (cane sugar, sucrose, lactose), polysaccharides (starches, cellulose, glycogen)"
+                }
+              ]
+            },
+            {
+              "name": "Proteins",
+              "slos": [
+                {
+                  "id": "3.5",
+                  "text": "Describe proteins: amino acids, structure of proteins"
+                }
+              ]
+            },
+            {
+              "name": "Lipids",
+              "slos": [
+                {
+                  "id": "3.6",
+                  "text": "Describe lipids: phospholipids, triglycerides, alcohol and esters (acylglycerol)"
+                }
+              ]
+            },
+            {
+              "name": "Ribonucleic acid (RNA)",
+              "slos": [
+                {
+                  "id": "3.7",
+                  "text": "Give an account of structure and function RNA"
+                }
+              ]
+            },
+            {
+              "name": "Conjugated molecules",
+              "slos": [
+                {
+                  "id": "3.8",
+                  "text": "Discuss conjugated molecules (glycol lipids, glycol proteins)"
+                }
+              ]
+            },
+            {
+              "name": "Structure of DNA",
+              "slos": [
+                {
+                  "id": "3.9",
+                  "text": "Explain the double helical structure of DNA as proposed by Watson and Crick."
+                },
+                {
+                  "id": "3.10",
+                  "text": "Define gene is a sequence of nucleotides as part of DNA, which codes for the formation of a polypeptide."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 4,
+          "title": "CELL STRUCTURE & FUNCTION",
+          "topics": [
+            {
+              "name": "Cell structure",
+              "slos": [
+                {
+                  "id": "4.1",
+                  "text": "Compare the structure of typical animal and plant cell"
+                }
+              ]
+            },
+            {
+              "name": "Prokaryotic and Eukaryotic cell",
+              "slos": [
+                {
+                  "id": "4.2",
+                  "text": "Compare and contrast the structure of prokaryotic cells with eukaryotic cells"
+                }
+              ]
+            },
+            {
+              "name": "Cytoplasmic Organelles",
+              "slos": [
+                {
+                  "id": "4.3",
+                  "text": "Outline the structure and function of the following organelles: nucleus, Endoplasmic reticulum, Golgi apparatus a Mitochondria"
+                }
+              ]
+            },
+            {
+              "name": "Chromosomes",
+              "slos": [
+                {
+                  "id": "4.4",
+                  "text": "Describe the structure, chemical composition and function of chromosomes."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 5,
+          "title": "COORDINATION & CONTROL/ NERVOUS & CHEMICAL COORDINATION",
+          "topics": [
+            {
+              "name": "Receptors",
+              "slos": [
+                {
+                  "id": "5.1",
+                  "text": "Recognize receptors as transducers sensitive to various stimuli."
+                }
+              ]
+            },
+            {
+              "name": "Neurons",
+              "slos": [
+                {
+                  "id": "5.2",
+                  "text": "Explain the structure of a typical neuron (cell body, dendrites, axon and myelin sheath"
+                },
+                {
+                  "id": "5.3",
+                  "text": "Define nerve impulse"
+                },
+                {
+                  "id": "5.4",
+                  "text": "Classify reflexes"
+                },
+                {
+                  "id": "5.5",
+                  "text": "Briefly explain the functions of components of a reflex arc"
+                }
+              ]
+            },
+            {
+              "name": "Brain",
+              "slos": [
+                {
+                  "id": "5.6",
+                  "text": "Discuss the main parts of the brain (e.g., components of brain stem, mid brain, cerebellum, cerebrum)"
+                },
+                {
+                  "id": "5.7",
+                  "text": "Describe the functions of each part."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 6,
+          "title": "ENZYMES",
+          "topics": [
+            {
+              "name": "Enzymes",
+              "slos": [
+                {
+                  "id": "6.1",
+                  "text": "Describe the distinguishing characteristics of enzymes"
+                }
+              ]
+            },
+            {
+              "name": "Mode of Enzyme Action",
+              "slos": [
+                {
+                  "id": "6.2",
+                  "text": "Explain mechanism of action of enzymes"
+                }
+              ]
+            },
+            {
+              "name": "Factors that Affect the Rate of Enzyme Reactions",
+              "slos": [
+                {
+                  "id": "6.3",
+                  "text": "Describe effects of factor on enzyme action (temperature, pH and concentration)"
+                }
+              ]
+            },
+            {
+              "name": "Inhibitors",
+              "slos": [
+                {
+                  "id": "6.4",
+                  "text": "Describe enzyme inhibitors"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 7,
+          "title": "EVOLUTION",
+          "topics": [
+            {
+              "name": "Concept of Evolution",
+              "slos": [
+                {
+                  "id": "7.1",
+                  "text": "Explain origin of life according to concept of evolution"
+                }
+              ]
+            },
+            {
+              "name": "Lamarckism",
+              "slos": [
+                {
+                  "id": "7.2",
+                  "text": "Describe the theory of inheritance of acquired characters, as proposed by Lamarck."
+                }
+              ]
+            },
+            {
+              "name": "Darwinism",
+              "slos": [
+                {
+                  "id": "7.3",
+                  "text": "Explain the theory of natural selection as proposed by Darwin"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 8,
+          "title": "REPRODUCTION",
+          "topics": [
+            {
+              "name": "Human Reproductive system",
+              "slos": [
+                {
+                  "id": "8.1",
+                  "text": "Describe the functions of various parts of the male & female reproductive systems and the hormones that regulate those functions"
+                }
+              ]
+            },
+            {
+              "name": "Menstrual cycle",
+              "slos": [
+                {
+                  "id": "8.2",
+                  "text": "Describe the menstrual cycle (female reproductive cycle) emphasizing the role of hormones"
+                }
+              ]
+            },
+            {
+              "name": "Sexually transmitted diseases",
+              "slos": [
+                {
+                  "id": "8.3",
+                  "text": "List the common sexually transmitted diseases along with their causative agents and main symptoms"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 9,
+          "title": "SUPPORT & MOVEMENT",
+          "topics": [
+            {
+              "name": "Human skeleton",
+              "slos": [
+                {
+                  "id": "9.1",
+                  "text": "Describe cartilage, muscle and bone"
+                },
+                {
+                  "id": "9.2",
+                  "text": "Explain the main characteristics of cartilage and bone along with functions."
+                }
+              ]
+            },
+            {
+              "name": "Muscles",
+              "slos": [
+                {
+                  "id": "9.3",
+                  "text": "Compare characteristics of smooth muscles, cardiac muscles and skeletal muscles"
+                }
+              ]
+            },
+            {
+              "name": "Skeletal muscles",
+              "slos": [
+                {
+                  "id": "9.4",
+                  "text": "Explain the ultra-structure of skeletal muscles"
+                }
+              ]
+            },
+            {
+              "name": "Muscle contraction",
+              "slos": [
+                {
+                  "id": "9.5",
+                  "text": "Describe in brief the process of skeletal muscle contraction"
+                }
+              ]
+            },
+            {
+              "name": "Joints",
+              "slos": [
+                {
+                  "id": "9.6",
+                  "text": "Classify joints"
+                }
+              ]
+            },
+            {
+              "name": "Arthritis",
+              "slos": [
+                {
+                  "id": "9.7",
+                  "text": "Define arthritis"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 10,
+          "title": "INHERITANCE",
+          "topics": [
+            {
+              "name": "Mendel’s laws of Inheritance",
+              "slos": [
+                {
+                  "id": "10.1",
+                  "text": "Associate inheritance with the laws of Mendel."
+                },
+                {
+                  "id": "10.2",
+                  "text": "Explain the law of independent assortment, using a suitable example."
+                }
+              ]
+            },
+            {
+              "name": "Gene linkage and crossing over",
+              "slos": [
+                {
+                  "id": "10.3",
+                  "text": "Describe the terms gene linkage and crossing over"
+                },
+                {
+                  "id": "10.4",
+                  "text": "Explain how gene linkage counters independent assortment and crossing-over modifies the progeny"
+                }
+              ]
+            },
+            {
+              "name": "X-linked Recessive inheritance",
+              "slos": [
+                {
+                  "id": "10.5",
+                  "text": "Describe the concept of sex-linkage."
+                },
+                {
+                  "id": "10.6",
+                  "text": "Briefly describe Inheritance of sex –linked traits"
+                },
+                {
+                  "id": "10.7",
+                  "text": "Analyze the inheritance of hemophilia."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 11,
+          "title": "CIRCULATION",
+          "topics": [
+            {
+              "name": "Human Heart",
+              "slos": [
+                {
+                  "id": "11.1",
+                  "text": "Discuss general structure of human heart"
+                }
+              ]
+            },
+            {
+              "name": "Cardiac cycle and phases of Heartbeat",
+              "slos": [
+                {
+                  "id": "11.2",
+                  "text": "Describe the phases of heartbeat."
+                }
+              ]
+            },
+            {
+              "name": "Blood Vessels",
+              "slos": [
+                {
+                  "id": "11.3",
+                  "text": "List the differences and functions of arteries, veins and capillaries."
+                }
+              ]
+            },
+            {
+              "name": "Lymphatic system",
+              "slos": [
+                {
+                  "id": "11.4",
+                  "text": "Describe lymphatic system (nodes, vessels and organs)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 12,
+          "title": "IMMUNITY",
+          "topics": [
+            {
+              "name": "Specific Defense Mechanism",
+              "slos": [
+                {
+                  "id": "12.1",
+                  "text": "Define and discuss the functions and importance of specific defense mechanisms."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 13,
+          "title": "RESPIRATION",
+          "topics": [
+            {
+              "name": "Human Respiratory System",
+              "slos": [
+                {
+                  "id": "13.1",
+                  "text": "Discuss the functions of main part of respiratory system."
+                },
+                {
+                  "id": "13.2",
+                  "text": "Discuss the process of gas exchange in human lungs."
+                },
+                {
+                  "id": "13.3",
+                  "text": "Discuss the effect of smoking on respiratory system."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 14,
+          "title": "DIGESTION",
+          "topics": [
+            {
+              "name": "Human digestive system",
+              "slos": [
+                {
+                  "id": "14.1",
+                  "text": "Describe the parts of human digestive system"
+                },
+                {
+                  "id": "14.2",
+                  "text": "Explain the functions of the main parts of the digestive system including associated structures and glands"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 15,
+          "title": "HOMEOSTASIS",
+          "topics": [
+            {
+              "name": "Homeostasis (kidney specifically)",
+              "slos": [
+                {
+                  "id": "15.1",
+                  "text": "Explain different organs of urinary system. Describe the structure of kidney and relate it with its function."
+                },
+                {
+                  "id": "15.2",
+                  "text": "Explain the processes of glomerular filtration, selective re-absorption and tubular secretion as the events in kidney functioning."
+                },
+                {
+                  "id": "15.3",
+                  "text": "Justify the functioning of kidneys as both excretion and osmoregulation."
+                },
+                {
+                  "id": "15.4",
+                  "text": "Compare the function of two major capillary beds in kidney i.e. glomerular capillaries and peritubular capillaries."
+                },
+                {
+                  "id": "15.5",
+                  "text": "Explain the causes and treatments of kidney stones."
+                },
+                {
+                  "id": "15.6",
+                  "text": "Outline the causes of kidney failure."
+                }
+              ]
+            },
+            {
+              "name": "Thermoregulation",
+              "slos": [
+                {
+                  "id": "15.7",
+                  "text": "Describe thermoregulation and explain its needs."
+                }
+              ]
+            },
+            {
+              "name": "Excretion",
+              "slos": [
+                {
+                  "id": "15.8",
+                  "text": "List various nitrogenous compounds excreted during the process of excretion."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 16,
+          "title": "BIOTECHNOLOGY",
+          "topics": [
+            {
+              "name": "Biotechnology and Health Care",
+              "slos": [
+                {
+                  "id": "16.1",
+                  "text": "Describe how biotechnologists can combat health problems by producing vaccines."
+                },
+                {
+                  "id": "16.2",
+                  "text": "State the role played by biotechnology in disease diagnosis (DNA/RNA probes, monoclonal antibodies)."
+                },
+                {
+                  "id": "16.3",
+                  "text": "Describe what products biotechnologists obtain for use in disease treatment."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chemistry",
+      "name": "Chemistry",
+      "official_units": [
+        {
+          "unit_number": 1,
+          "title": "INTRODUCTION OF FUNDAMENTALS CONCEPT OF CHEMISTRY",
+          "topics": [
+            {
+              "name": "Moles and Avogadro’s Numbers",
+              "slos": [
+                {
+                  "id": "1.1",
+                  "text": "Construct mole ratios from balanced equations for use as conversion factors in stoichiometric problems."
+                },
+                {
+                  "id": "1.2",
+                  "text": "Perform stoichiometric calculations with balanced equations using moles, representative particles, masses and volumes of the gases (at ST)."
+                }
+              ]
+            },
+            {
+              "name": "Limiting and Excess Reactants",
+              "slos": [
+                {
+                  "id": "1.3",
+                  "text": "Explain the limiting reagent in reaction"
+                },
+                {
+                  "id": "1.4",
+                  "text": "Calculate the maximum number of products produced and the amount of any un-reacted excess reagent"
+                }
+              ]
+            },
+            {
+              "name": "Yield",
+              "slos": [
+                {
+                  "id": "1.5",
+                  "text": "Given information from which any two the following may be determine, calculate the third: theoretical yield, actual yield, percentage yield."
+                },
+                {
+                  "id": "1.6",
+                  "text": "Calculate the theoretical yield and the percent yield when given the balanced equation, the amount of reactants and the actual yield."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 2,
+          "title": "ATOMIC STRUCTURE",
+          "topics": [
+            {
+              "name": "Discovery of Proton",
+              "slos": [
+                {
+                  "id": "2.1",
+                  "text": "Describe discovery and properties of proton (Positive rays)"
+                }
+              ]
+            },
+            {
+              "name": "Planck’s Quantum Theory",
+              "slos": [
+                {
+                  "id": "2.2",
+                  "text": "Define Photon as a unit of radiation energy"
+                }
+              ]
+            },
+            {
+              "name": "Quantum Number",
+              "slos": [
+                {
+                  "id": "2.3",
+                  "text": "Describe the concept of orbitals."
+                },
+                {
+                  "id": "2.4",
+                  "text": "Distinguish among Principal energy level, energy sub-level and atomic orbitals"
+                }
+              ]
+            },
+            {
+              "name": "Shapes of orbitals",
+              "slos": [
+                {
+                  "id": "2.5",
+                  "text": "Describe the general shapes of S, P and orbitals."
+                }
+              ]
+            },
+            {
+              "name": "Spectrum of Hydrogen",
+              "slos": [
+                {
+                  "id": "2.6",
+                  "text": "Describe Hydrogen Atom using the quantum theory"
+                }
+              ]
+            },
+            {
+              "name": "Electronic Configuration",
+              "slos": [
+                {
+                  "id": "2.7",
+                  "text": "Use the Aufbau principle, the Pauli Exclusion Principle and Hund’s Rule to write the Electronic Configuration of atoms."
+                },
+                {
+                  "id": "2.8",
+                  "text": "Write electronic configuration of atom"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 3,
+          "title": "GASES",
+          "topics": [
+            {
+              "name": "Kinetic Molecular Theory",
+              "slos": [
+                {
+                  "id": "3.1",
+                  "text": "List the postulates of Kinetic Molecular Theory"
+                },
+                {
+                  "id": "3.2",
+                  "text": "Describe the motion of particles of the gas according to kinetic theory."
+                }
+              ]
+            },
+            {
+              "name": "Standard Temperature and Pressure (STP)",
+              "slos": [
+                {
+                  "id": "3.3",
+                  "text": "State the values of standard temperature and pressure (STP)"
+                }
+              ]
+            },
+            {
+              "name": "Boyle’s Law",
+              "slos": [
+                {
+                  "id": "3.4",
+                  "text": "Describe the effect of change in pressure on the volume of gas."
+                }
+              ]
+            },
+            {
+              "name": "Charles’s Law",
+              "slos": [
+                {
+                  "id": "3.5",
+                  "text": "Describe the effect of change in temperature on the volume of gas."
+                }
+              ]
+            },
+            {
+              "name": "Absolute Zero",
+              "slos": [
+                {
+                  "id": "3.6",
+                  "text": "Explain the significance of the absolute zero, giving its value in degree."
+                }
+              ]
+            },
+            {
+              "name": "Ideal Gas Equation",
+              "slos": [
+                {
+                  "id": "3.7",
+                  "text": "Derive Ideal Gas equation using Boyle’s Law, Charle’s Law and Avogadro’s Law."
+                }
+              ]
+            },
+            {
+              "name": "Unit of “R”",
+              "slos": [
+                {
+                  "id": "3.8",
+                  "text": "Explain the significance and different units of ideal gas constant."
+                }
+              ]
+            },
+            {
+              "name": "Real and Ideal Gas",
+              "slos": [
+                {
+                  "id": "3.9",
+                  "text": "Distinguish between Real and Ideal Gases."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 4,
+          "title": "LIQUIDS",
+          "topics": [
+            {
+              "name": "Properties Of Liquids based on Kinetic Molecular Theory",
+              "slos": [
+                {
+                  "id": "4.1",
+                  "text": "Describe simple properties of liquids e.g diffusion, compression, expansion, motion of molecules, spaces between them, inter molecular forces and kinetic energy based on kinetic molecular theory."
+                }
+              ]
+            },
+            {
+              "name": "Evaporation, Boiling point and Vapor Pressure",
+              "slos": [
+                {
+                  "id": "4.2",
+                  "text": "Explain physical properties of liquid such as evaporation, vapor pressure, boiling point"
+                }
+              ]
+            },
+            {
+              "name": "Hydrogen Bonding",
+              "slos": [
+                {
+                  "id": "4.3",
+                  "text": "Describe the hydrogen bonding in H2O, NH3 and HF molecules."
+                }
+              ]
+            },
+            {
+              "name": "Anomalous behavior of Water",
+              "slos": [
+                {
+                  "id": "4.4",
+                  "text": "Anomalous behavior of water when its density shows maximum at 4 degrees centigrade."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 5,
+          "title": "SOLID",
+          "topics": [
+            {
+              "name": "Crystalline Solids",
+              "slos": [
+                {
+                  "id": "5.1",
+                  "text": "Describe crystalline solid"
+                }
+              ]
+            },
+            {
+              "name": "Factors Affecting the Shape of Ionic Crystals",
+              "slos": [
+                {
+                  "id": "5.2",
+                  "text": "Name three factors that affect the shape of the ionic crystals."
+                }
+              ]
+            },
+            {
+              "name": "Difference between Ionic and Molecular Crystals",
+              "slos": [
+                {
+                  "id": "5.3",
+                  "text": "Give brief description of ionic and molecular crystals."
+                }
+              ]
+            },
+            {
+              "name": "Crystal lattice",
+              "slos": [
+                {
+                  "id": "5.4",
+                  "text": "Explain the structure of a crystal lattice"
+                }
+              ]
+            },
+            {
+              "name": "Lattice Energy",
+              "slos": [
+                {
+                  "id": "5.5",
+                  "text": "Define Lattice Energy,"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 6,
+          "title": "CHEMICAL EQUILIBRUM",
+          "topics": [
+            {
+              "name": "Chemical Equilibrium",
+              "slos": [
+                {
+                  "id": "6.1",
+                  "text": "Define chemical equilibrium in terms of reversible reaction."
+                },
+                {
+                  "id": "6.2",
+                  "text": "Write both forward and reverse. Describe them macroscopic characteristics of each"
+                }
+              ]
+            },
+            {
+              "name": "Le Chatelier’s principle",
+              "slos": [
+                {
+                  "id": "6.3",
+                  "text": "State Le Chatelier’s principle and be able to apply it to systems in equilibrium with changes in concentration, pressure, temperature or addition of catalyst."
+                }
+              ]
+            },
+            {
+              "name": "Solubility Products",
+              "slos": [
+                {
+                  "id": "6.4",
+                  "text": "Define and explain solubility products."
+                }
+              ]
+            },
+            {
+              "name": "Common Ion Effect",
+              "slos": [
+                {
+                  "id": "6.5",
+                  "text": "Define and explain the common ion effect by giving suitable examples."
+                }
+              ]
+            },
+            {
+              "name": "Buffer Solution",
+              "slos": [
+                {
+                  "id": "6.6",
+                  "text": "Define buffer solution and explain types of buffers."
+                }
+              ]
+            },
+            {
+              "name": "Haber’s Process",
+              "slos": [
+                {
+                  "id": "6.7",
+                  "text": "Explain synthesis of Ammonia by Haber’s process."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 7,
+          "title": "REACTION KINETICS",
+          "topics": [
+            {
+              "name": "Chemical Kinetics",
+              "slos": [
+                {
+                  "id": "7.1",
+                  "text": "Define chemical kinetics."
+                },
+                {
+                  "id": "7.2",
+                  "text": "Explain the terms: rate of reaction, rate equation."
+                }
+              ]
+            },
+            {
+              "name": "Factors affecting rate of reaction",
+              "slos": [
+                {
+                  "id": "7.3",
+                  "text": "Explain qualitatively factors affecting rate of reaction."
+                }
+              ]
+            },
+            {
+              "name": "Order of Reaction",
+              "slos": [
+                {
+                  "id": "7.4",
+                  "text": "Give the order with respect to the reactant, write the rate of law for reaction."
+                },
+                {
+                  "id": "7.5",
+                  "text": "Explain the meaning of the term “activation energy” and “activated complex”."
+                },
+                {
+                  "id": "7.6",
+                  "text": "Relate the ideas of activation energy and the activated complex to the rate of reaction."
+                }
+              ]
+            },
+            {
+              "name": "Rate Constant",
+              "slos": [
+                {
+                  "id": "7.7",
+                  "text": "Describe the role of the rate constant in the theoretical determination of reaction rate."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 8,
+          "title": "THERMO CHEMISTRY AND ENERGETICS OF CHEMICAL REACTION",
+          "topics": [
+            {
+              "name": "Thermodynamics",
+              "slos": [
+                {
+                  "id": "8.1",
+                  "text": "Define Thermodynamics"
+                }
+              ]
+            },
+            {
+              "name": "Exothermic and Endothermic Reaction",
+              "slos": [
+                {
+                  "id": "8.2",
+                  "text": "Classify reactions as exothermic and endothermic"
+                }
+              ]
+            },
+            {
+              "name": "Different Terms Used",
+              "slos": [
+                {
+                  "id": "8.3",
+                  "text": "Define the terms system, surrounding boundary, state function, heat, heat capacity, internal energy, work done and enthalpy of a substance."
+                }
+              ]
+            },
+            {
+              "name": "Internal Energies",
+              "slos": [
+                {
+                  "id": "8.4",
+                  "text": "Name and define the units of the Internal energy."
+                }
+              ]
+            },
+            {
+              "name": "Law of Thermodynamics",
+              "slos": [
+                {
+                  "id": "8.5",
+                  "text": "Explain the first law of thermodynamics of energy conservation."
+                }
+              ]
+            },
+            {
+              "name": "Hess’s Law",
+              "slos": [
+                {
+                  "id": "8.6",
+                  "text": "Apply Hess’s Law to construct simple energy cycles."
+                }
+              ]
+            },
+            {
+              "name": "Enthalpy",
+              "slos": [
+                {
+                  "id": "8.7",
+                  "text": "Describe enthalpy of the reaction"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 9,
+          "title": "ELECTROCHEMISTRY",
+          "topics": [
+            {
+              "name": "Redox Reaction",
+              "slos": [
+                {
+                  "id": "9.1",
+                  "text": "Give the characteristics of a redox reaction."
+                }
+              ]
+            },
+            {
+              "name": "Oxidation and Reduction",
+              "slos": [
+                {
+                  "id": "9.2",
+                  "text": "Define oxidation and reduction in terms of a change in oxidation number."
+                }
+              ]
+            },
+            {
+              "name": "Balancing Chemical Reaction",
+              "slos": [
+                {
+                  "id": "9.3",
+                  "text": "Use the oxidation number change method to identify atoms being oxidized or reduced in redox reactions."
+                }
+              ]
+            },
+            {
+              "name": "Standard Hydrogen Electrode (SHE)",
+              "slos": [
+                {
+                  "id": "9.4",
+                  "text": "Define Cathode, anode, electrode potential and S.H.E"
+                },
+                {
+                  "id": "9.5",
+                  "text": "Define the standard electrode potential of an electrode."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 10,
+          "title": "CHEMICAL BONDING",
+          "topics": [
+            {
+              "name": "VSEPR Theory",
+              "slos": [
+                {
+                  "id": "10.1",
+                  "text": "Use VSEPR Theory to describe the shapes of the molecules."
+                }
+              ]
+            },
+            {
+              "name": "Sigma and Pi Bond",
+              "slos": [
+                {
+                  "id": "10.2",
+                  "text": "Describe the features of sigma and pi-bonds."
+                }
+              ]
+            },
+            {
+              "name": "Hybridization",
+              "slos": [
+                {
+                  "id": "10.3",
+                  "text": "Describe the shapes of simple molecules using orbital hybridization."
+                }
+              ]
+            },
+            {
+              "name": "Application of VSEPR Theory",
+              "slos": [
+                {
+                  "id": "10.4",
+                  "text": "Determine the shapes of some molecules from the number of the bonded pairs."
+                }
+              ]
+            },
+            {
+              "name": "Dipole Movement",
+              "slos": [
+                {
+                  "id": "10.5",
+                  "text": "Predict the molecular polarity from the shapes of molecules."
+                },
+                {
+                  "id": "10.6",
+                  "text": "Explain what is meant by the term ionic character of the covalent bond."
+                }
+              ]
+            },
+            {
+              "name": "Application of Dipole Movement",
+              "slos": [
+                {
+                  "id": "10.7",
+                  "text": "Describe how knowledge of molecular polarity can be used to explain some physical and chemical properties of the molecules."
+                }
+              ]
+            },
+            {
+              "name": "Bond Energy",
+              "slos": [
+                {
+                  "id": "10.8",
+                  "text": "Define bond energies and explain how they can be used to compare bonds strength of different chemical bonds."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 11,
+          "title": "S- AND P- BLOCK ELEMENTS",
+          "topics": [
+            {
+              "name": "Properties and their Trends",
+              "slos": [
+                {
+                  "id": "11.1",
+                  "text": "Define and explain the terms atomic radii, ionic radii, covalent radii, ionization energy, electron affinity, electro negativity, bond energy and bond length."
+                }
+              ]
+            },
+            {
+              "name": "S-, P-, D- & F-Block Elements",
+              "slos": [
+                {
+                  "id": "11.2",
+                  "text": "Recognize the demarcation of the periodic table into S-block, P-block, D-block and F-block."
+                }
+              ]
+            },
+            {
+              "name": "Reaction of Group I elements",
+              "slos": [
+                {
+                  "id": "11.3",
+                  "text": "Describe reactions of Group I elements with water, oxygen and chlorine."
+                }
+              ]
+            },
+            {
+              "name": "Reaction of Group II elements",
+              "slos": [
+                {
+                  "id": "11.4",
+                  "text": "Describe reactions of Group II elements with water, oxygen and chlorine."
+                }
+              ]
+            },
+            {
+              "name": "Reaction of Group IV elements",
+              "slos": [
+                {
+                  "id": "11.5",
+                  "text": "Describe reactions of Group IV Elements."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 12,
+          "title": "TRANSITION ELEMENTS",
+          "topics": [
+            {
+              "name": "Electronic Structure",
+              "slos": [
+                {
+                  "id": "12.1",
+                  "text": "Describe the electronic structures of the elements and ions of d-block Elements."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 13,
+          "title": "FUNDAMENTAL PRINCIPLES OF ORGANIC CHEMISTRY",
+          "topics": [
+            {
+              "name": "Definition and Classification of Organic Compound",
+              "slos": [
+                {
+                  "id": "13.1",
+                  "text": "Define organic chemistry and organic compound."
+                },
+                {
+                  "id": "13.2",
+                  "text": "Classify organic compounds on structural basis."
+                }
+              ]
+            },
+            {
+              "name": "Functional Group",
+              "slos": [
+                {
+                  "id": "13.3",
+                  "text": "Define functional group."
+                }
+              ]
+            },
+            {
+              "name": "Isomerism",
+              "slos": [
+                {
+                  "id": "13.4",
+                  "text": "Explain stereoisomerism and its types."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 14,
+          "title": "CHEMISTRY OF HYDROCARBONS",
+          "topics": [
+            {
+              "name": "Nomenclature of Alkanes",
+              "slos": [
+                {
+                  "id": "14.1",
+                  "text": "Describe the nomenclature of Alkanes."
+                }
+              ]
+            },
+            {
+              "name": "Free Radical Mechanism",
+              "slos": [
+                {
+                  "id": "14.2",
+                  "text": "Define Free Radical Initiation, propagation and termination."
+                },
+                {
+                  "id": "14.3",
+                  "text": "Describe the mechanism of the free radical substitution in alkanes exemplified by Methane and Ethane."
+                }
+              ]
+            },
+            {
+              "name": "Nomenclature of Alkenes",
+              "slos": [
+                {
+                  "id": "14.4",
+                  "text": "Explain the IUPAC nomenclature of alkenes."
+                }
+              ]
+            },
+            {
+              "name": "Shapes of Alkenes",
+              "slos": [
+                {
+                  "id": "14.5",
+                  "text": "Explain the shapes of the Ethene molecules in terms of Sigma and Pi C-C Bonds."
+                }
+              ]
+            },
+            {
+              "name": "Structure and Reactivity of Alkenes",
+              "slos": [
+                {
+                  "id": "14.6",
+                  "text": "Describe the structure and reactivity of Alkenes as exemplified by Ethene."
+                }
+              ]
+            },
+            {
+              "name": "Preparation of Alkanes",
+              "slos": [
+                {
+                  "id": "14.7",
+                  "text": "Explain Dehydration of Alcohols and Dehydrohalogenation of RX for the preparation of Ethane"
+                }
+              ]
+            },
+            {
+              "name": "MOT of Benzene",
+              "slos": [
+                {
+                  "id": "14.8",
+                  "text": "Explain the shape of Benzene Molecules (Molecular orbital treatment)."
+                }
+              ]
+            },
+            {
+              "name": "Resonance and Resonance Energy",
+              "slos": [
+                {
+                  "id": "14.9",
+                  "text": "Define resonance, resonance energy and relative stability."
+                }
+              ]
+            },
+            {
+              "name": "Reactivity of Benzene",
+              "slos": [
+                {
+                  "id": "14.10",
+                  "text": "Compare the reactivity of benzene with alkanes and alkenes."
+                },
+                {
+                  "id": "14.11",
+                  "text": "Define addition reactions of benzene and methylbenzene."
+                }
+              ]
+            },
+            {
+              "name": "Chemical Reactions of Benzenes",
+              "slos": [
+                {
+                  "id": "14.12",
+                  "text": "Describe the mechanism of electrophilic substitution in Benzene."
+                },
+                {
+                  "id": "14.13",
+                  "text": "Discuss chemistry of benzene and methylbenzene by nitration, sulphonation, halogenation, Friedal Craft’s Alkylation and acylation."
+                }
+              ]
+            },
+            {
+              "name": "Effect of Substituents",
+              "slos": [
+                {
+                  "id": "14.14",
+                  "text": "Apply the knowledge of positions of substituents in the electrophilic substitution of benzene."
+                }
+              ]
+            },
+            {
+              "name": "IUPAC System of Alkynes",
+              "slos": [
+                {
+                  "id": "14.15",
+                  "text": "Use the IUPAC naming System of Alkynes."
+                }
+              ]
+            },
+            {
+              "name": "Preparation of Alkynes",
+              "slos": [
+                {
+                  "id": "14.16",
+                  "text": "Describe the preparation of Alkynes using elimination reactions."
+                }
+              ]
+            },
+            {
+              "name": "Acidity of Alkynes",
+              "slos": [
+                {
+                  "id": "14.17",
+                  "text": "Describe the acidity of alkynes"
+                }
+              ]
+            },
+            {
+              "name": "Reactions of Alkynes",
+              "slos": [
+                {
+                  "id": "14.18",
+                  "text": "Discuss chemistry of alkynes by hydrogenation, hydro halogenation and hydration."
+                }
+              ]
+            },
+            {
+              "name": "Substitution vs Addition",
+              "slos": [
+                {
+                  "id": "14.19",
+                  "text": "Describe and differentiate between substitution and Addition reactions."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 15,
+          "title": "ALKYL HALIDES",
+          "topics": [
+            {
+              "name": "Nomenclature",
+              "slos": [
+                {
+                  "id": "15.1",
+                  "text": "Name Alkyl Halides using IUPAC system."
+                }
+              ]
+            },
+            {
+              "name": "Structure and Reactivity",
+              "slos": [
+                {
+                  "id": "15.2",
+                  "text": "Discuss the structure and reactivity of RX."
+                }
+              ]
+            },
+            {
+              "name": "Substitution vs Elimination",
+              "slos": [
+                {
+                  "id": "15.3",
+                  "text": "Describe the mechanism and types of nucleophilic substitution reactions."
+                },
+                {
+                  "id": "15.4",
+                  "text": "Describe the mechanism and types of elimination reactions."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 16,
+          "title": "ALCOHOLS AND PHENOLS",
+          "topics": [
+            {
+              "name": "Nomenclature, structure and reactivity of Alcohol",
+              "slos": [
+                {
+                  "id": "16.1",
+                  "text": "Explain nomenclature and structure of Alcohols."
+                },
+                {
+                  "id": "16.2",
+                  "text": "Explain the reactivity of Alcohols."
+                },
+                {
+                  "id": "16.3",
+                  "text": "Describe the chemistry of alcohols by preparation of ethers and esters."
+                }
+              ]
+            },
+            {
+              "name": "Nomenclature, structure and reactivity of Phenols",
+              "slos": [
+                {
+                  "id": "16.4",
+                  "text": "Explain the nomenclature, structure and reactivity of Alcohol"
+                },
+                {
+                  "id": "16.5",
+                  "text": "Discuss the reactivity of phenol and their chemistry by electrophilic aromatic substitution."
+                }
+              ]
+            },
+            {
+              "name": "Alcohols and Phenols",
+              "slos": [
+                {
+                  "id": "16.6",
+                  "text": "Differentiate between an alcohol and phenol."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 17,
+          "title": "ALDEHYDES AND KETONES",
+          "topics": [
+            {
+              "name": "Nomenclature and structure of Aldehydes and Ketones",
+              "slos": [
+                {
+                  "id": "17.1",
+                  "text": "Explain nomenclature and structure of Aldehydes and Ketones."
+                }
+              ]
+            },
+            {
+              "name": "Preparation",
+              "slos": [
+                {
+                  "id": "17.2",
+                  "text": "Discuss the preparation of aldehydes and ketones."
+                }
+              ]
+            },
+            {
+              "name": "Reactivity of Aldehydes and Ketones",
+              "slos": [
+                {
+                  "id": "17.3",
+                  "text": "Describe Reactivity of Aldehydes and Ketones and their comparison."
+                }
+              ]
+            },
+            {
+              "name": "Reaction of Aldehydes and Ketones",
+              "slos": [
+                {
+                  "id": "17.4",
+                  "text": "Describe Acid and Base catalyzed Nucleophilic addition reactions of aldehydes and ketones."
+                },
+                {
+                  "id": "17.5",
+                  "text": "Discuss the chemistry of Aldehydes and Ketones by their reduction to alcohols"
+                },
+                {
+                  "id": "17.6",
+                  "text": "Describe oxidation reactions of aldehydes and ketones."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 18,
+          "title": "CARBOXYLIC ACIDS",
+          "topics": [
+            {
+              "name": "Nomenclature, Structure and Preparation of Carboxylic Acid",
+              "slos": [
+                {
+                  "id": "18.1",
+                  "text": "Describe nomenclature, Structure and Preparation of Carboxylic Acid."
+                }
+              ]
+            },
+            {
+              "name": "Chemical Reactions/Reactivity",
+              "slos": [
+                {
+                  "id": "18.2",
+                  "text": "Discuss reactivity of carboxylic acid."
+                }
+              ]
+            },
+            {
+              "name": "Conversion of Carboxylic Acid",
+              "slos": [
+                {
+                  "id": "18.3",
+                  "text": "Describe the Chemistry of carboxylic acid by conversion to carboxylic acid derivative: acyl halides, an acid hydrides, esters and reaction involving into conversion of these."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 19,
+          "title": "MACRO MOLECULES",
+          "topics": [
+            {
+              "name": "Classification of Proteins",
+              "slos": [
+                {
+                  "id": "19.1",
+                  "text": "Explain the basis of classification and structure function relationship of proteins."
+                }
+              ]
+            },
+            {
+              "name": "Importance of Proteins",
+              "slos": [
+                {
+                  "id": "19.2",
+                  "text": "Describe the role of various proteins in maintaining body functions and their Nutritional importance."
+                }
+              ]
+            },
+            {
+              "name": "Enzymes as Biocatalyst",
+              "slos": [
+                {
+                  "id": "19.3",
+                  "text": "Describe the role of enzymes as Biocatalyst."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 20,
+          "title": "INDUSTRIAL CHEMISTRY",
+          "topics": [
+            {
+              "name": "Adhesive",
+              "slos": [
+                {
+                  "id": "20.1",
+                  "text": "Know about types and application of Adhesive."
+                }
+              ]
+            },
+            {
+              "name": "Dyes",
+              "slos": [
+                {
+                  "id": "20.2",
+                  "text": "Know about types of dies and their uses."
+                }
+              ]
+            },
+            {
+              "name": "Polymers",
+              "slos": [
+                {
+                  "id": "20.3",
+                  "text": "Know about condensation and addition polymers and their sub-types."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physics",
+      "name": "Physics",
+      "official_units": [
+        {
+          "unit_number": 1,
+          "title": "VECTORS AND EQUILIBRIUM",
+          "topics": [
+            {
+              "name": "Addition of Vectors (Rectangular Components)",
+              "slos": [
+                {
+                  "id": "1.1",
+                  "text": "Determine the sum of vectors using perpendicular Components"
+                }
+              ]
+            },
+            {
+              "name": "Product of Vectors (Scalar Product)",
+              "slos": [
+                {
+                  "id": "1.2",
+                  "text": "Describe Scalar Product of two vectors in term of angle between them"
+                }
+              ]
+            },
+            {
+              "name": "Product of Vectors (Vector Product)",
+              "slos": [
+                {
+                  "id": "1.3",
+                  "text": "Describe Vector product of two vectors in terms of angle between them."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 2,
+          "title": "FORCE AND MOTION",
+          "topics": [
+            {
+              "name": "Displacement",
+              "slos": [
+                {
+                  "id": "2.1",
+                  "text": "Describe displacement."
+                }
+              ]
+            },
+            {
+              "name": "Velocity",
+              "slos": [
+                {
+                  "id": "2.2",
+                  "text": "Describe average velocity of objects."
+                }
+              ]
+            },
+            {
+              "name": "Displacement-time Graph",
+              "slos": [
+                {
+                  "id": "2.3",
+                  "text": "Interpret displacement-time graph of objects moving along the same straight line."
+                }
+              ]
+            },
+            {
+              "name": "Acceleration",
+              "slos": [
+                {
+                  "id": "2.4",
+                  "text": "Describe acceleration"
+                }
+              ]
+            },
+            {
+              "name": "Uniform and variable acceleration",
+              "slos": [
+                {
+                  "id": "2.5",
+                  "text": "Distinguish between uniform and variable acceleration."
+                }
+              ]
+            },
+            {
+              "name": "Projectile motion",
+              "slos": [
+                {
+                  "id": "2.6",
+                  "text": "Explain that projectile motion is two-dimensional motion in a vertical plane."
+                }
+              ]
+            },
+            {
+              "name": "Ideal Projectile",
+              "slos": [
+                {
+                  "id": "2.7",
+                  "text": "Communicate the ideas of a projectile in the absence of air resistance."
+                }
+              ]
+            },
+            {
+              "name": "Projectile motion (Velocity)",
+              "slos": [
+                {
+                  "id": "2.8",
+                  "text": "Explain Horizontal component (VH) of velocity is constant."
+                },
+                {
+                  "id": "2.9",
+                  "text": "Acceleration is in the vertical direction and is the same as that of a vertically free- falling object."
+                },
+                {
+                  "id": "2.10",
+                  "text": "Differentiate between the characteristics of horizontal motion and vertical motion"
+                }
+              ]
+            },
+            {
+              "name": "Projectile motion: Maximum Height, Range, Time of flight, Maximum angle",
+              "slos": [
+                {
+                  "id": "2.11",
+                  "text": "Evaluate, using equations of uniformly accelerated motion for a given initial velocity of frictionless projectile, the following issues: a. How much higher does it go? b. How far would it go along the level land? c. Where would it be after a given time? d. How long will it remain in air? e. Determine the parameters for a projectile launched from ground height f. Launch angle that results in the maximum range g. Relation between the launch angles that result in the same range."
+                }
+              ]
+            },
+            {
+              "name": "Newton’s Laws of motion",
+              "slos": [
+                {
+                  "id": "2.12",
+                  "text": "Apply Newton’s laws to explain the motion of objects in a variety of context."
+                }
+              ]
+            },
+            {
+              "name": "Newton’s Second Law and Linear momentum",
+              "slos": [
+                {
+                  "id": "2.13",
+                  "text": "Describe the Newton’s second law of motion as rate of change of momentum."
+                }
+              ]
+            },
+            {
+              "name": "Newton’s third law of motion",
+              "slos": [
+                {
+                  "id": "2.14",
+                  "text": "Correlate Newton’s third law of motion and conservation of momentum."
+                }
+              ]
+            },
+            {
+              "name": "Collision",
+              "slos": [
+                {
+                  "id": "2.15",
+                  "text": "Solve different problems of elastic and inelastic collisions between two bodies in one dimension by using law of conservation of momentum."
+                }
+              ]
+            },
+            {
+              "name": "Momentum and Explosive forces",
+              "slos": [
+                {
+                  "id": "2.16",
+                  "text": "Describe that momentum is conservational situations."
+                }
+              ]
+            },
+            {
+              "name": "Perfectly elastic collision in one dimension",
+              "slos": [
+                {
+                  "id": "2.17",
+                  "text": "Identify that for a perfectly elastic collision, the relative speed of approach is equal to the relative speed of separation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 3,
+          "title": "WORK AND ENERGY",
+          "topics": [
+            {
+              "name": "Work",
+              "slos": [
+                {
+                  "id": "3.1",
+                  "text": "Describe the concept of work in terms of the product of force F and displacement d in the direction of force"
+                }
+              ]
+            },
+            {
+              "name": "Energy",
+              "slos": [
+                {
+                  "id": "3.2",
+                  "text": "Describe energy"
+                }
+              ]
+            },
+            {
+              "name": "Kinetic Energy",
+              "slos": [
+                {
+                  "id": "3.3",
+                  "text": "Explain kinetic energy"
+                }
+              ]
+            },
+            {
+              "name": "Potential energy",
+              "slos": [
+                {
+                  "id": "3.4",
+                  "text": "Explain the difference between potential energy and gravitational potential energy."
+                }
+              ]
+            },
+            {
+              "name": "Absolute potential energy",
+              "slos": [
+                {
+                  "id": "3.5",
+                  "text": "Describe that the gravitational potential energy is measured from a reference level and can be positive or negative, to denote the orientation from the reference levels."
+                }
+              ]
+            },
+            {
+              "name": "Power",
+              "slos": [
+                {
+                  "id": "3.6",
+                  "text": "Express power as scalar product of force and velocity."
+                }
+              ]
+            },
+            {
+              "name": "Work energy theorem in resistive medium",
+              "slos": [
+                {
+                  "id": "3.7",
+                  "text": "Explain that work done against friction is dissipated as heat in the environment."
+                }
+              ]
+            },
+            {
+              "name": "Implications of energy losses in practical devices and Efficiency",
+              "slos": [
+                {
+                  "id": "3.8",
+                  "text": "State the implications of energy losses in practical devices"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 4,
+          "title": "ROTATIONAL AND CIRCULAR MOTION",
+          "topics": [
+            {
+              "name": "Angular displacement",
+              "slos": [
+                {
+                  "id": "4.1",
+                  "text": "Define angular displacement, express angular displacement in radians."
+                },
+                {
+                  "id": "4.2",
+                  "text": "Define revolution, degree and radian"
+                }
+              ]
+            },
+            {
+              "name": "Angular Velocity",
+              "slos": [
+                {
+                  "id": "4.3",
+                  "text": "Describe the term angular velocity"
+                }
+              ]
+            },
+            {
+              "name": "Relation between angular and linear quantities",
+              "slos": [
+                {
+                  "id": "4.4",
+                  "text": "Find out the relationship between the following: a. Relation between linear and angular variables b. Relation between linear and angular displacements c. Relation between linear and angular velocities d. Relation between linear and angular accelerations"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 5,
+          "title": "FLUID DYNAMICS",
+          "topics": [
+            {
+              "name": "Terminal Velocity",
+              "slos": [
+                {
+                  "id": "5.1",
+                  "text": "Describe the terminal velocity of an object."
+                }
+              ]
+            },
+            {
+              "name": "Fluid Drag",
+              "slos": [
+                {
+                  "id": "5.2",
+                  "text": "Define and explain the term fluid drag."
+                }
+              ]
+            },
+            {
+              "name": "Fluid Flow",
+              "slos": [
+                {
+                  "id": "5.3",
+                  "text": "Define the terms: Steady (Streamline or laminar) flow, Incompressible flow and non-viscous flow as applied to the motion of an ideal fluid."
+                },
+                {
+                  "id": "5.4",
+                  "text": "Explain that at the sufficiently high velocity, the flow of viscous fluid undergoes a transition from laminar to turbulence conditions."
+                },
+                {
+                  "id": "5.5",
+                  "text": "Describe that majority of practical examples of fluid flow and resistance to motion in fluid involve turbulent rather than laminar conditions"
+                }
+              ]
+            },
+            {
+              "name": "Equation of Continuity",
+              "slos": [
+                {
+                  "id": "5.6",
+                  "text": "Describe equation of continuity Av= constant for the flow of an ideal and incompressible fluid and solve problems using it."
+                },
+                {
+                  "id": "5.7",
+                  "text": "Identify that the equation of continuity is the form of principle of conservation of mass."
+                }
+              ]
+            },
+            {
+              "name": "Bernoulli’s Equation",
+              "slos": [
+                {
+                  "id": "5.8",
+                  "text": "Interpret and apply Bernoulli’s effect in Blood physics."
+                },
+                {
+                  "id": "5.9",
+                  "text": "Derive Bernoulli’s equation for the case of horizontal tube of flow"
+                },
+                {
+                  "id": "5.10",
+                  "text": "Describe the pressure difference can arise from different rates of flow of fluid (Bernoulli’s effect)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 6,
+          "title": "WAVES",
+          "topics": [
+            {
+              "name": "Motion of wave",
+              "slos": [
+                {
+                  "id": "6.1",
+                  "text": "Describe the meaning of wave motion as illustrated by vibrations in ropes and springs."
+                }
+              ]
+            },
+            {
+              "name": "Progressive waves",
+              "slos": [
+                {
+                  "id": "6.2",
+                  "text": "Demonstrate that mechanical waves require a medium for their propagation while electromagnetic waves do not."
+                },
+                {
+                  "id": "6.5",
+                  "text": "Describe that energy is transferred due to a progressive wave."
+                }
+              ]
+            },
+            {
+              "name": "Characteristics of wave",
+              "slos": [
+                {
+                  "id": "6.3",
+                  "text": "Define and apply the following terms to the wave model; medium, displacement, amplitude, period, compression, rarefaction, crest, trough, wavelength, velocity."
+                }
+              ]
+            },
+            {
+              "name": "Wave Speed",
+              "slos": [
+                {
+                  "id": "6.4",
+                  "text": "Solve problems using the equation: v = fλ."
+                }
+              ]
+            },
+            {
+              "name": "Classification of progressive waves",
+              "slos": [
+                {
+                  "id": "6.6",
+                  "text": "Compare transverse and longitudinal waves."
+                }
+              ]
+            },
+            {
+              "name": "Speed of sound / Newton’s Formula for speed of sound in air",
+              "slos": [
+                {
+                  "id": "6.7",
+                  "text": "Explain that speed of sound depends on the properties of medium in which it propagates and describe Newton’s formula of speed of waves."
+                }
+              ]
+            },
+            {
+              "name": "Laplace’s Correction",
+              "slos": [
+                {
+                  "id": "6.8",
+                  "text": "Describe the Laplace correction in Newton’s formula for speed of sound in air."
+                }
+              ]
+            },
+            {
+              "name": "Effect of various factors on speed of sound",
+              "slos": [
+                {
+                  "id": "6.9",
+                  "text": "Identify the factors on which speed of sound in air depends."
+                }
+              ]
+            },
+            {
+              "name": "Superposition of waves",
+              "slos": [
+                {
+                  "id": "6.10",
+                  "text": "Describe the principle of super position of two waves from coherent sources."
+                },
+                {
+                  "id": "6.16",
+                  "text": "Explain the principle of Superposition"
+                }
+              ]
+            },
+            {
+              "name": "Interference of sound waves",
+              "slos": [
+                {
+                  "id": "6.11",
+                  "text": "Describe the phenomenon of interference of sound waves."
+                }
+              ]
+            },
+            {
+              "name": "Stationary waves",
+              "slos": [
+                {
+                  "id": "6.12",
+                  "text": "Explain the formation of stationary waves using graphical method"
+                },
+                {
+                  "id": "6.13",
+                  "text": "Define the terms, node and antinodes."
+                }
+              ]
+            },
+            {
+              "name": "Stationary waves in a stretched string",
+              "slos": [
+                {
+                  "id": "6.14",
+                  "text": "Describe modes of vibration of strings."
+                }
+              ]
+            },
+            {
+              "name": "Organ pipes",
+              "slos": [
+                {
+                  "id": "6.15",
+                  "text": "Describe formation of stationary waves in vibrating air columns."
+                }
+              ]
+            },
+            {
+              "name": "Simple Harmonic Motion, Terminologies of SHM, Circular motion and SHM, Energy",
+              "slos": [
+                {
+                  "id": "6.17",
+                  "text": "Explain Simple Harmonic Motion (S.H.M) and explain the characteristics of S.H.M. (Chapter: Oscillation)"
+                }
+              ]
+            },
+            {
+              "name": "Circular Motion and SHM (Acceleration and Velocity of Projection)",
+              "slos": [
+                {
+                  "id": "6.18",
+                  "text": "Describe that when an object moves in a circle, the motion of its projection on the diameter of a circle is SHM."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 7,
+          "title": "THERMODYNAMICS",
+          "topics": [
+            {
+              "name": "Thermal equilibrium, Heat",
+              "slos": [
+                {
+                  "id": "7.1",
+                  "text": "Describe that thermal energies transferred from a region of higher temperature to a region of lower temperature."
+                }
+              ]
+            },
+            {
+              "name": "Molar specific heat of gas",
+              "slos": [
+                {
+                  "id": "7.2",
+                  "text": "Differentiate between specific heat and molar specific heat."
+                },
+                {
+                  "id": "7.6",
+                  "text": "Define the terms, specific heat and molar specific heats of a gas."
+                }
+              ]
+            },
+            {
+              "name": "Work",
+              "slos": [
+                {
+                  "id": "7.3",
+                  "text": "Calculate work done by a thermodynamic system during a volume change."
+                }
+              ]
+            },
+            {
+              "name": "First law of thermodynamics",
+              "slos": [
+                {
+                  "id": "7.4",
+                  "text": "Describe the first law of thermodynamics expressed in terms of the change in internal energy, the heating of the system and work done on the system."
+                },
+                {
+                  "id": "7.5",
+                  "text": "Explain that first law of thermodynamics expresses the conservation of energy."
+                }
+              ]
+            },
+            {
+              "name": "Relation between molar specific heat at constant volume and constant pressure",
+              "slos": [
+                {
+                  "id": "7.7",
+                  "text": "Apply the first law of thermodynamics to derive the relation Cp−Cv=RC for an ideal gas"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 8,
+          "title": "ELECTROSTATICS",
+          "topics": [
+            {
+              "name": "Columb’s Law",
+              "slos": [
+                {
+                  "id": "8.1",
+                  "text": "State Coulomb’s law and explain that force between two-point charges is reduced in a medium other than free space using Coulomb’s law"
+                }
+              ]
+            },
+            {
+              "name": "Electric Field",
+              "slos": [
+                {
+                  "id": "8.2",
+                  "text": "Describe the concept of an electric field as an example of a field of force"
+                }
+              ]
+            },
+            {
+              "name": "Electric field intensity due to a point charge",
+              "slos": [
+                {
+                  "id": "8.3",
+                  "text": "Calculate the magnitude and direction of the electric field at a point due to two charges with the same or opposite signs"
+                }
+              ]
+            },
+            {
+              "name": "Representation of electric field by lines",
+              "slos": [
+                {
+                  "id": "8.4",
+                  "text": "Sketch the electric field lines for two-point charges of equal magnitude with same or opposite signs"
+                }
+              ]
+            },
+            {
+              "name": "Electric field intensity due to an infinite sheet of charges",
+              "slos": [
+                {
+                  "id": "8.5",
+                  "text": "Describe and draw the electric field due to an infinite size conducting plate of positive or negative charge"
+                }
+              ]
+            },
+            {
+              "name": "Electric potential",
+              "slos": [
+                {
+                  "id": "8.6",
+                  "text": "Define electric potential at a point in terms of the work done in bringing unit positive charge from infinity to that point"
+                },
+                {
+                  "id": "8.7",
+                  "text": "Define the unit of potential"
+                }
+              ]
+            },
+            {
+              "name": "Electric potential energy and potential due to a point charge",
+              "slos": [
+                {
+                  "id": "8.8",
+                  "text": "Derive an expression for electric potential at a point due to a point charge"
+                }
+              ]
+            },
+            {
+              "name": "Charging and discharging of a capacitor through a resistance",
+              "slos": [
+                {
+                  "id": "8.9",
+                  "text": "Demonstrate charging and discharging of a capacitor through a resistance"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 9,
+          "title": "CURRENT ELECTRICITY",
+          "topics": [
+            {
+              "name": "Steady current",
+              "slos": [
+                {
+                  "id": "9.1",
+                  "text": "Describe the concept of steady current."
+                }
+              ]
+            },
+            {
+              "name": "Ohm’s Law",
+              "slos": [
+                {
+                  "id": "9.2",
+                  "text": "State Ohm’s law."
+                }
+              ]
+            },
+            {
+              "name": "Factors on which resistance depends / Temperature coefficient of resistivity",
+              "slos": [
+                {
+                  "id": "9.3",
+                  "text": "Define resistivity and explain its dependence upon temperature."
+                }
+              ]
+            },
+            {
+              "name": "Internal resistance of sources",
+              "slos": [
+                {
+                  "id": "9.4",
+                  "text": "Explain the internal resistance of sources and its consequences for external circuits."
+                }
+              ]
+            },
+            {
+              "name": "Maximum power Output",
+              "slos": [
+                {
+                  "id": "9.5",
+                  "text": "Describe the conditions for maximum power transfer."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 10,
+          "title": "ELECTROMAGNETISM",
+          "topics": [
+            {
+              "name": "Magnetic flux density/Magnetic field",
+              "slos": [
+                {
+                  "id": "10.1",
+                  "text": "Define magnetic flux density and its units."
+                }
+              ]
+            },
+            {
+              "name": "Magnetic flux",
+              "slos": [
+                {
+                  "id": "10.2",
+                  "text": "Describe the concept of magnetic flux Φ (Phi) as scalar product of magnetic field (B) and area (A) using the relation ØB=B┴A=B.A."
+                }
+              ]
+            },
+            {
+              "name": "Motion of charged particle in magnetic field",
+              "slos": [
+                {
+                  "id": "10.3",
+                  "text": "Describe quantitatively the path followed by a charged particle shot into a magnetic field in a direction perpendicular to the field."
+                },
+                {
+                  "id": "10.4",
+                  "text": "Explain that a force may act on a charged particle in a uniform magnetic field."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 11,
+          "title": "ELECTROMAGNETIC INDUCTION",
+          "topics": [
+            {
+              "name": "Faraday’s Law of electromagnetic induction",
+              "slos": [
+                {
+                  "id": "11.1",
+                  "text": "State Faraday’s law of electromagnetic induction."
+                }
+              ]
+            },
+            {
+              "name": "Lenz’s Law",
+              "slos": [
+                {
+                  "id": "11.2",
+                  "text": "Account for Lenz’s law to predict the direction of an induced current and relate to the principle of conservation of energy."
+                }
+              ]
+            },
+            {
+              "name": "Transformer",
+              "slos": [
+                {
+                  "id": "11.3",
+                  "text": "Describe the construction of a transformer and explain how it works."
+                },
+                {
+                  "id": "11.4",
+                  "text": "Describe how set-up and step-down transformers can be used to ensure efficient transfer of electricity along cables."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 12,
+          "title": "ALTERNATING CURRENT",
+          "topics": [
+            {
+              "name": "Phase of Alternating Current",
+              "slos": [
+                {
+                  "id": "12.1",
+                  "text": "Describe the phase of Alternating Current and explain how phase lag and phase lead occur in AC circuits"
+                }
+              ]
+            },
+            {
+              "name": "AC through Resistor, Capacitor and Inductor",
+              "slos": [
+                {
+                  "id": "12.2",
+                  "text": "Explain the flow of AC through resistors, Capacitors and Inductor"
+                }
+              ]
+            },
+            {
+              "name": "Electromagnetic waves",
+              "slos": [
+                {
+                  "id": "12.3",
+                  "text": "Become familiar with EM spectrum (ranging from radio waves to Gamma rays)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 13,
+          "title": "ELECTRONICS",
+          "topics": [
+            {
+              "name": "Rectification",
+              "slos": [
+                {
+                  "id": "13.1",
+                  "text": "Define rectification and describe the use of diodes for half and full wave rectifications."
+                }
+              ]
+            },
+            {
+              "name": "PN Junction",
+              "slos": [
+                {
+                  "id": "13.2",
+                  "text": "Describe the PN Junction and discuss its forward and reverse biasing"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 14,
+          "title": "DAWN OF MODERN PHYSICS",
+          "topics": [
+            {
+              "name": "Quantum Theory and Radiation",
+              "slos": [
+                {
+                  "id": "14.1",
+                  "text": "Explain the particle model of light in terms of photons with energy"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 15,
+          "title": "ATOMIC SPECTRA",
+          "topics": [
+            {
+              "name": "Atomic Spectra",
+              "slos": [
+                {
+                  "id": "15.1",
+                  "text": "Describe and explain atomic spectra/ line spectrum"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 16,
+          "title": "NUCLEAR PHYSICS",
+          "topics": [
+            {
+              "name": "Composition of atomic nuclei",
+              "slos": [
+                {
+                  "id": "16.1",
+                  "text": "Describe a simple model for the atom to include protons, neutrons and electrons"
+                }
+              ]
+            },
+            {
+              "name": "Spontaneous and random nuclear decay",
+              "slos": [
+                {
+                  "id": "16.2",
+                  "text": "Identify the spontaneous and random nature of nuclear decay."
+                }
+              ]
+            },
+            {
+              "name": "Half-life and rate of decay",
+              "slos": [
+                {
+                  "id": "16.3",
+                  "text": "Describe the term half-life and solve problems using the equation λ = 0.693/T½."
+                }
+              ]
+            },
+            {
+              "name": "Biological and Medical uses of radiation",
+              "slos": [
+                {
+                  "id": "16.4",
+                  "text": "Describe biological effects of radiation state and explain the different medical uses of radiation."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "english",
+      "name": "English",
+      "official_units": [
+        {
+          "unit_number": 1,
+          "title": "READING AND THINKING SKILLS",
+          "topics": [
+            {
+              "name": "Reading and Thinking Skills",
+              "slos": [
+                {
+                  "id": "1.1",
+                  "text": "Scan to answer short Questions"
+                },
+                {
+                  "id": "1.2",
+                  "text": "Deduce the meanings of the context"
+                },
+                {
+                  "id": "1.3",
+                  "text": "Analyze how a writer/poet uses language to apprehend to the senses for figurative language"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 2,
+          "title": "FORMAL AND LEXICAL ASPECT OF LANGUAGE",
+          "topics": [
+            {
+              "name": "Formal and Lexical Aspect of Language",
+              "slos": [
+                {
+                  "id": "2.1",
+                  "text": "Deduce the meaning of difficult words from the context using contextual clues."
+                },
+                {
+                  "id": "2.2",
+                  "text": "Explore the use of Synonyms with varying shades of meaning used for irony, parody and satire."
+                },
+                {
+                  "id": "2.3",
+                  "text": "Illustrate use of pronoun-antecedent agreement."
+                },
+                {
+                  "id": "2.4",
+                  "text": "Illustrate use of tenses."
+                },
+                {
+                  "id": "2.5",
+                  "text": "Illustrate use of infinitives and infinitives phrases."
+                },
+                {
+                  "id": "2.6",
+                  "text": "Illustrate the use of gerund and gerund phrases."
+                },
+                {
+                  "id": "2.7",
+                  "text": "Recognize varying position of adverbs in sentences according to their kinds and importance."
+                },
+                {
+                  "id": "2.8",
+                  "text": "Illustrate use of prepositions of position, time, movements and directions."
+                },
+                {
+                  "id": "2.9",
+                  "text": "Use in speech and writing, all the appropriate transitional devices."
+                },
+                {
+                  "id": "2.10",
+                  "text": "Illustrate use of all punctuation marks wherever applicable"
+                },
+                {
+                  "id": "2.11",
+                  "text": "Analyze sentences for different classes and phrases, evaluate how their position in sentences when change meaning and different communication function."
+                },
+                {
+                  "id": "2.12",
+                  "text": "Recognize and use sentence in version for various purposes."
+                },
+                {
+                  "id": "2.13",
+                  "text": "Use active and passive voice appropriately in speech and writing according to the required communicative function"
+                },
+                {
+                  "id": "2.14",
+                  "text": "Use direct and indirect speech appropriately in speech and writing according to the e required communicative function."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": 3,
+          "title": "WRITING SKILLS",
+          "topics": [
+            {
+              "name": "Writing Skills",
+              "slos": [
+                {
+                  "id": "3.1",
+                  "text": "Proof read and edit their own peers and given text for the error of usage and style."
+                },
+                {
+                  "id": "3.2",
+                  "text": "Faulty sentence structure"
+                },
+                {
+                  "id": "3.3",
+                  "text": "Subject verb agreement"
+                },
+                {
+                  "id": "3.4",
+                  "text": "Errors of functions and spellings"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "logical_reasoning",
+      "name": "Logical Reasoning",
+      "official_units": [
+        {
+          "unit_number": "5.1",
+          "title": "CRITICAL THINKING",
+          "topics": [
+            {
+              "name": "Critical Thinking",
+              "slos": [
+                {
+                  "id": "5.1.1",
+                  "text": "Develop logical arguments for the statements to be true or false."
+                },
+                {
+                  "id": "5.1.2",
+                  "text": "Give reasons for the right beliefs."
+                },
+                {
+                  "id": "5.1.3",
+                  "text": "Identify and critically evaluate false beliefs using logical reasoning."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": "5.2",
+          "title": "LETTER AND SYMBOLS SERIES",
+          "topics": [
+            {
+              "name": "Letter and Symbols Series",
+              "slos": [
+                {
+                  "id": "5.2.1",
+                  "text": "Develop arithmetical operations as per numbers."
+                },
+                {
+                  "id": "5.2.2",
+                  "text": "Develop geometrical progression as per numbers"
+                },
+                {
+                  "id": "5.2.3",
+                  "text": "Develop series/sequential orders as per letter and symbols (according to specific rules)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": "5.3",
+          "title": "LOGICAL DEDUCTIONS",
+          "topics": [
+            {
+              "name": "Logical Deductions",
+              "slos": [
+                {
+                  "id": "5.3.1",
+                  "text": "Predict new relations on the basis of given relations."
+                },
+                {
+                  "id": "5.3.2",
+                  "text": "Develop new structure on the basis of information in already drawn structures."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": "5.4",
+          "title": "LOGICAL PROBLEMS",
+          "topics": [
+            {
+              "name": "Logical Problems",
+              "slos": [
+                {
+                  "id": "5.4.1",
+                  "text": "Infer result of one problem to resolve another problem."
+                },
+                {
+                  "id": "5.4.2",
+                  "text": "Develop skills to solve puzzles."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": "5.5",
+          "title": "COURSE OF ACTION",
+          "topics": [
+            {
+              "name": "Course of Action",
+              "slos": [
+                {
+                  "id": "5.5.1",
+                  "text": "Develop skills to gather different parts of information."
+                },
+                {
+                  "id": "5.5.2",
+                  "text": "Use information for making decisions."
+                },
+                {
+                  "id": "5.5.3",
+                  "text": "Judge different courses by using arguments"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_number": "5.6",
+          "title": "CAUSE AND EFFECT",
+          "topics": [
+            {
+              "name": "Cause and Effect",
+              "slos": [
+                {
+                  "id": "5.6.1",
+                  "text": "Give reasons for incidents/events and accidents."
+                },
+                {
+                  "id": "5.6.2",
+                  "text": "Reject false beliefs through valid arguments."
+                },
+                {
+                  "id": "5.6.3",
+                  "text": "Build positive thinking in the society through strong arguments."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "additional_project_description_topics": {
+    "description": "Topics mentioned in the project brief but not used as official PM&DC unit names in this JSON. Classification is descriptive mapping only; these entries do not create PM&DC units or SLOs.",
+    "topics": [
+      {
+        "subject": "Biology",
+        "topic": "Variety of Life",
+        "classification": "Not listed as a separate official unit in the uploaded 2025 PDF",
+        "related_official_units": []
+      },
+      {
+        "subject": "Biology",
+        "topic": "Kingdom Animalia",
+        "classification": "Not listed as a separate official unit in the uploaded 2025 PDF",
+        "related_official_units": []
+      },
+      {
+        "subject": "Biology",
+        "topic": "Kingdom Plantae",
+        "classification": "Not listed as a separate official unit in the uploaded 2025 PDF",
+        "related_official_units": []
+      },
+      {
+        "subject": "Biology",
+        "topic": "Nutrition",
+        "classification": "Conceptually related; not an exact official unit title",
+        "related_official_units": [
+          "DIGESTION"
+        ]
+      },
+      {
+        "subject": "Biology",
+        "topic": "Gaseous Exchange",
+        "classification": "Conceptually related; not an exact official unit title",
+        "related_official_units": [
+          "RESPIRATION"
+        ]
+      },
+      {
+        "subject": "Biology",
+        "topic": "Transport",
+        "classification": "Conceptually related; not an exact official unit title",
+        "related_official_units": [
+          "CIRCULATION"
+        ]
+      },
+      {
+        "subject": "Biology",
+        "topic": "Human Health & Diseases",
+        "classification": "Broad umbrella topic; not a separate official unit title",
+        "related_official_units": [
+          "IMMUNITY",
+          "BIOTECHNOLOGY"
+        ]
+      },
+      {
+        "subject": "Chemistry",
+        "topic": "States of Matter",
+        "classification": "Broad grouping, not an exact official unit title",
+        "related_official_units": [
+          "GASES",
+          "LIQUIDS",
+          "SOLID"
+        ]
+      },
+      {
+        "subject": "Chemistry",
+        "topic": "Organic Chemistry",
+        "classification": "Broad grouping, not an exact official unit title",
+        "related_official_units": [
+          "FUNDAMENTAL PRINCIPLES OF ORGANIC CHEMISTRY",
+          "CHEMISTRY OF HYDROCARBONS",
+          "ALKYL HALIDES",
+          "ALCOHOLS AND PHENOLS",
+          "ALDEHYDES AND KETONES",
+          "CARBOXYLIC ACIDS"
+        ]
+      },
+      {
+        "subject": "Chemistry",
+        "topic": "Biochemistry",
+        "classification": "Conceptually related; not an exact official unit title",
+        "related_official_units": [
+          "MACRO MOLECULES"
+        ]
+      },
+      {
+        "subject": "Chemistry",
+        "topic": "Environmental Chemistry",
+        "classification": "Not listed as a separate official unit in the uploaded 2025 PDF",
+        "related_official_units": []
+      },
+      {
+        "subject": "Physics",
+        "topic": "Rotational Dynamics",
+        "classification": "Related label; official unit title is ROTATIONAL AND CIRCULAR MOTION",
+        "related_official_units": [
+          "ROTATIONAL AND CIRCULAR MOTION"
+        ]
+      },
+      {
+        "subject": "Physics",
+        "topic": "Oscillations",
+        "classification": "Covered within the official WAVES unit (SHM outcomes); not a separate official unit",
+        "related_official_units": [
+          "WAVES"
+        ]
+      },
+      {
+        "subject": "English",
+        "topic": "Grammar",
+        "classification": "Broad grouping; related to the official Formal and Lexical Aspect of Language and Writing Skills competencies",
+        "related_official_units": [
+          "FORMAL AND LEXICAL ASPECT OF LANGUAGE",
+          "WRITING SKILLS"
+        ]
+      },
+      {
+        "subject": "English",
+        "topic": "Vocabulary",
+        "classification": "Broad grouping; related to the official Formal and Lexical Aspect of Language competency",
+        "related_official_units": [
+          "FORMAL AND LEXICAL ASPECT OF LANGUAGE"
+        ]
+      },
+      {
+        "subject": "English",
+        "topic": "Comprehension",
+        "classification": "Broad grouping; related to the official Reading and Thinking Skills competency",
+        "related_official_units": [
+          "READING AND THINKING SKILLS"
+        ]
+      },
+      {
+        "subject": "English",
+        "topic": "Sentence Completion",
+        "classification": "Not explicitly listed as a separate competency in the uploaded 2025 PDF",
+        "related_official_units": []
+      }
+    ]
+  },
+  "implementation_notes": [
+    "Use subject.id, official_units[].unit_number and SLO id as stable source identifiers. Do not derive identifiers from array positions.",
+    "The PDF's Biology unit numbering is 1-16; Chemistry 1-20; Physics 1-16; English competencies 1-3; Logical Reasoning themes 5.1-5.6.",
+    "The PDF's Chemistry page 9 prints 'at ST' in SLO 1.2; this transcription preserves that source wording.",
+    "Some PDF text extraction contains apparent source typos (for example 'sentence in version', 'dies', and malformed formula glyphs). Verify against the rendered PDF page before editorially correcting. This file preserves extracted wording where visible.",
+    "Additional project-description topics are kept outside subjects[].official_units so they cannot be mistaken for official syllabus content."
+  ]
+}
