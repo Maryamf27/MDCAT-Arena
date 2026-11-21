@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "import:syllabus": "tsx scripts/import-syllabus.ts",
+    "import:syllabus:check": "tsx scripts/import-syllabus.ts --dry-run"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.7",
