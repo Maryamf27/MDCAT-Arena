@@ -2,8 +2,14 @@
 
 import { useState, type FormEvent } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import { LogIn } from "lucide-react";
+import { Eye, EyeOff, LogIn } from "lucide-react";
+import { z } from "zod";
 import { createClient } from "@/lib/supabase/client";
+
+const credentialsSchema = z.object({
+  email: z.email(),
+  password: z.string().min(6),
+});
 
 /** Only allow same-site relative redirects (blocks //evil.com and /\evil.com). */
 function safeNext(value: string | null): string {
@@ -19,25 +25,34 @@ export function LoginForm() {
   const [mode, setMode] = useState<"signin" | "signup">("signin");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [passwordVisible, setPasswordVisible] = useState(false);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [notice, setNotice] = useState<string | null>(null);
 
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setBusy(true);
     setError(null);
     setNotice(null);
-    const supabase = createClient();
+
+    const credentials = credentialsSchema.safeParse({ email: email.trim(), password });
+    if (!credentials.success) {
+      const emailIsInvalid = credentials.error.issues.some((issue) => issue.path[0] === "email");
+      setError(emailIsInvalid ? "Please enter a valid email address." : "Password must be at least 6 characters.");
+      return;
+    }
+
+    setBusy(true);
     try {
+      const supabase = createClient();
       if (mode === "signin") {
-        const { error: err } = await supabase.auth.signInWithPassword({ email, password });
+        const { error: err } = await supabase.auth.signInWithPassword(credentials.data);
         if (err) {
           setError(err.message);
           return;
         }
       } else {
-        const { data, error: err } = await supabase.auth.signUp({ email, password });
+        const { data, error: err } = await supabase.auth.signUp(credentials.data);
         if (err) {
           setError(err.message);
           return;
@@ -50,8 +65,8 @@ export function LoginForm() {
       }
       router.replace(next);
       router.refresh();
-    } catch {
-      setError("Could not reach the server. Check your connection and try again.");
+    } catch (cause) {
+      setError(cause instanceof Error ? cause.message : "Could not reach the server. Check your connection and try again.");
     } finally {
       setBusy(false);
     }
@@ -69,7 +84,7 @@ export function LoginForm() {
         </div>
       </div>
 
-      <form onSubmit={onSubmit} className="flex flex-col gap-4">
+      <form noValidate onSubmit={onSubmit} className="flex flex-col gap-4">
         <label className="flex flex-col gap-1 text-small font-bold">
           Email
           <input
@@ -82,19 +97,31 @@ export function LoginForm() {
             onChange={(e) => setEmail(e.target.value)}
           />
         </label>
-        <label className="flex flex-col gap-1 text-small font-bold">
-          Password
-          <input
-            className="field"
-            type="password"
-            name="password"
-            autoComplete={mode === "signin" ? "current-password" : "new-password"}
-            required
-            minLength={6}
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-        </label>
+        <div className="flex flex-col gap-1 text-small font-bold">
+          <label htmlFor="auth-password">Password</label>
+          <div className="relative">
+            <input
+              className="field pr-12"
+              id="auth-password"
+              type={passwordVisible ? "text" : "password"}
+              name="password"
+              autoComplete={mode === "signin" ? "current-password" : "new-password"}
+              required
+              minLength={6}
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <button
+              type="button"
+              className="absolute inset-y-0 right-3 flex items-center rounded p-1 text-muted hover:text-primary"
+              aria-label={passwordVisible ? "Hide password" : "Show password"}
+              aria-pressed={passwordVisible}
+              onClick={() => setPasswordVisible((visible) => !visible)}
+            >
+              {passwordVisible ? <EyeOff size={18} aria-hidden /> : <Eye size={18} aria-hidden />}
+            </button>
+          </div>
+        </div>
 
         {error ? (
           <p role="alert" className="rounded-[10px] border border-[#efc4c2] bg-[#fdf5f4] px-4 py-2 text-small">
