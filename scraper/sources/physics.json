@@ -1,0 +1,1373 @@
+{
+  "subject_id": "physics",
+  "subject_name": "Physics",
+  "syllabus_source": "PM&DC MDCAT 2025",
+  "source_inventory": [
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/physics-mcqs/physics-force-and-motion-online-mcqs-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Force and Motion"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/physics-mcqs/physics-work-and-energy-online-mcqs-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Work and Energy"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/physics-mcqs/physics-rotational-and-circular-motion-online-mcqs-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Rotational and Circular Motion"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/physics-mcqs/physics-vactors-and-equilibrium-online-mcqs-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Vectors and Equilibrium"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/physics-mcqs/physics-waves-online-mcqs-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Waves"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/physics-mcqs/physics-fluid-dynamics-online-mcqs-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Fluid Dynamics"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/physics-mcqs/thermodynamics-online-mcqs-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Thermodynamics"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/physics-mcqs/physics-electrostatics-online-mcqs-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Electrostatics"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/physics-mcqs/physics-electromagnetism-online-mcqs-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Electromagnetism"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/physics-mcqs/physics-current-electricity-online-mcqs-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Current Electricity"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/physics-mcqs/physics-electromagnetic-induction-online-mcqs-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Electromagnetic Induction"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/physics-mcqs/physics-electronics-online-mcqs-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Electronics"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/physics-mcqs/physics-alternating-current-online-mcqs-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Alternating Current"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/physics-mcqs/physics-dawn-of-modern-physics-test-online/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Dawn of Modern Physics"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/physics-mcqs/physics-atomic-spectra-online-mcqs-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Atomic Spectra"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/physics-mcqs/physics-nuclear-physics-online-mcqs-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Nuclear Physics"
+    }
+  ],
+  "units": [
+    {
+      "unit_number": 1,
+      "unit_title": "VECTORS AND EQUILIBRIUM",
+      "topics": [
+        {
+          "topic_name": "Addition of Vectors (Rectangular Components)",
+          "slos": [
+            {
+              "id": "1.1",
+              "text": "Determine the sum of vectors using perpendicular Components"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-vactors-and-equilibrium-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Product of Vectors (Scalar Product)",
+          "slos": [
+            {
+              "id": "1.2",
+              "text": "Describe Scalar Product of two vectors in term of angle between them"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-vactors-and-equilibrium-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Product of Vectors (Vector Product)",
+          "slos": [
+            {
+              "id": "1.3",
+              "text": "Describe Vector product of two vectors in terms of angle between them."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-vactors-and-equilibrium-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        }
+      ]
+    },
+    {
+      "unit_number": 2,
+      "unit_title": "FORCE AND MOTION",
+      "topics": [
+        {
+          "topic_name": "Displacement",
+          "slos": [
+            {
+              "id": "2.1",
+              "text": "Describe displacement."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-force-and-motion-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Velocity",
+          "slos": [
+            {
+              "id": "2.2",
+              "text": "Describe average velocity of objects."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-force-and-motion-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Displacement-time Graph",
+          "slos": [
+            {
+              "id": "2.3",
+              "text": "Interpret displacement-time graph of objects moving along the same straight line."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-force-and-motion-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Acceleration",
+          "slos": [
+            {
+              "id": "2.4",
+              "text": "Describe acceleration"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-force-and-motion-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Uniform and variable acceleration",
+          "slos": [
+            {
+              "id": "2.5",
+              "text": "Distinguish between uniform and variable acceleration."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-force-and-motion-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Projectile motion",
+          "slos": [
+            {
+              "id": "2.6",
+              "text": "Explain that projectile motion is two-dimensional motion in a vertical plane."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-force-and-motion-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Ideal Projectile",
+          "slos": [
+            {
+              "id": "2.7",
+              "text": "Communicate the ideas of a projectile in the absence of air resistance."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-force-and-motion-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Projectile motion (Velocity)",
+          "slos": [
+            {
+              "id": "2.8",
+              "text": "Explain Horizontal component (VH) of velocity is constant."
+            },
+            {
+              "id": "2.9",
+              "text": "Acceleration is in the vertical direction and is the same as that of a vertically free- falling object."
+            },
+            {
+              "id": "2.10",
+              "text": "Differentiate between the characteristics of horizontal motion and vertical motion"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-force-and-motion-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Projectile motion: Maximum Height, Range, Time of flight, Maximum angle",
+          "slos": [
+            {
+              "id": "2.11",
+              "text": "Evaluate, using equations of uniformly accelerated motion for a given initial velocity of frictionless projectile, the following issues: a. How much higher does it go? b. How far would it go along the level land? c. Where would it be after a given time? d. How long will it remain in air? e. Determine the parameters for a projectile launched from ground height f. Launch angle that results in the maximum range g. Relation between the launch angles that result in the same range."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-force-and-motion-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Newton’s Laws of motion",
+          "slos": [
+            {
+              "id": "2.12",
+              "text": "Apply Newton’s laws to explain the motion of objects in a variety of context."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-force-and-motion-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Newton’s Second Law and Linear momentum",
+          "slos": [
+            {
+              "id": "2.13",
+              "text": "Describe the Newton’s second law of motion as rate of change of momentum."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-force-and-motion-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Newton’s third law of motion",
+          "slos": [
+            {
+              "id": "2.14",
+              "text": "Correlate Newton’s third law of motion and conservation of momentum."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-force-and-motion-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Collision",
+          "slos": [
+            {
+              "id": "2.15",
+              "text": "Solve different problems of elastic and inelastic collisions between two bodies in one dimension by using law of conservation of momentum."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-force-and-motion-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Momentum and Explosive forces",
+          "slos": [
+            {
+              "id": "2.16",
+              "text": "Describe that momentum is conservational situations."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-force-and-motion-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Perfectly elastic collision in one dimension",
+          "slos": [
+            {
+              "id": "2.17",
+              "text": "Identify that for a perfectly elastic collision, the relative speed of approach is equal to the relative speed of separation."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-force-and-motion-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        }
+      ]
+    },
+    {
+      "unit_number": 3,
+      "unit_title": "WORK AND ENERGY",
+      "topics": [
+        {
+          "topic_name": "Work",
+          "slos": [
+            {
+              "id": "3.1",
+              "text": "Describe the concept of work in terms of the product of force F and displacement d in the direction of force"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-work-and-energy-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Energy",
+          "slos": [
+            {
+              "id": "3.2",
+              "text": "Describe energy"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-work-and-energy-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Kinetic Energy",
+          "slos": [
+            {
+              "id": "3.3",
+              "text": "Explain kinetic energy"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-work-and-energy-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Potential energy",
+          "slos": [
+            {
+              "id": "3.4",
+              "text": "Explain the difference between potential energy and gravitational potential energy."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-work-and-energy-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Absolute potential energy",
+          "slos": [
+            {
+              "id": "3.5",
+              "text": "Describe that the gravitational potential energy is measured from a reference level and can be positive or negative, to denote the orientation from the reference levels."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-work-and-energy-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Power",
+          "slos": [
+            {
+              "id": "3.6",
+              "text": "Express power as scalar product of force and velocity."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-work-and-energy-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Work energy theorem in resistive medium",
+          "slos": [
+            {
+              "id": "3.7",
+              "text": "Explain that work done against friction is dissipated as heat in the environment."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-work-and-energy-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Implications of energy losses in practical devices and Efficiency",
+          "slos": [
+            {
+              "id": "3.8",
+              "text": "State the implications of energy losses in practical devices"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-work-and-energy-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        }
+      ]
+    },
+    {
+      "unit_number": 4,
+      "unit_title": "ROTATIONAL AND CIRCULAR MOTION",
+      "topics": [
+        {
+          "topic_name": "Angular displacement",
+          "slos": [
+            {
+              "id": "4.1",
+              "text": "Define angular displacement, express angular displacement in radians."
+            },
+            {
+              "id": "4.2",
+              "text": "Define revolution, degree and radian"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-rotational-and-circular-motion-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Angular Velocity",
+          "slos": [
+            {
+              "id": "4.3",
+              "text": "Describe the term angular velocity"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-rotational-and-circular-motion-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Relation between angular and linear quantities",
+          "slos": [
+            {
+              "id": "4.4",
+              "text": "Find out the relationship between the following: a. Relation between linear and angular variables b. Relation between linear and angular displacements c. Relation between linear and angular velocities d. Relation between linear and angular accelerations"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-rotational-and-circular-motion-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        }
+      ]
+    },
+    {
+      "unit_number": 5,
+      "unit_title": "FLUID DYNAMICS",
+      "topics": [
+        {
+          "topic_name": "Terminal Velocity",
+          "slos": [
+            {
+              "id": "5.1",
+              "text": "Describe the terminal velocity of an object."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-fluid-dynamics-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Fluid Drag",
+          "slos": [
+            {
+              "id": "5.2",
+              "text": "Define and explain the term fluid drag."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-fluid-dynamics-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Fluid Flow",
+          "slos": [
+            {
+              "id": "5.3",
+              "text": "Define the terms: Steady (Streamline or laminar) flow, Incompressible flow and non-viscous flow as applied to the motion of an ideal fluid."
+            },
+            {
+              "id": "5.4",
+              "text": "Explain that at the sufficiently high velocity, the flow of viscous fluid undergoes a transition from laminar to turbulence conditions."
+            },
+            {
+              "id": "5.5",
+              "text": "Describe that majority of practical examples of fluid flow and resistance to motion in fluid involve turbulent rather than laminar conditions"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-fluid-dynamics-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Equation of Continuity",
+          "slos": [
+            {
+              "id": "5.6",
+              "text": "Describe equation of continuity Av= constant for the flow of an ideal and incompressible fluid and solve problems using it."
+            },
+            {
+              "id": "5.7",
+              "text": "Identify that the equation of continuity is the form of principle of conservation of mass."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-fluid-dynamics-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Bernoulli’s Equation",
+          "slos": [
+            {
+              "id": "5.8",
+              "text": "Interpret and apply Bernoulli’s effect in Blood physics."
+            },
+            {
+              "id": "5.9",
+              "text": "Derive Bernoulli’s equation for the case of horizontal tube of flow"
+            },
+            {
+              "id": "5.10",
+              "text": "Describe the pressure difference can arise from different rates of flow of fluid (Bernoulli’s effect)."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-fluid-dynamics-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        }
+      ]
+    },
+    {
+      "unit_number": 6,
+      "unit_title": "WAVES",
+      "topics": [
+        {
+          "topic_name": "Motion of wave",
+          "slos": [
+            {
+              "id": "6.1",
+              "text": "Describe the meaning of wave motion as illustrated by vibrations in ropes and springs."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-waves-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Progressive waves",
+          "slos": [
+            {
+              "id": "6.2",
+              "text": "Demonstrate that mechanical waves require a medium for their propagation while electromagnetic waves do not."
+            },
+            {
+              "id": "6.5",
+              "text": "Describe that energy is transferred due to a progressive wave."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-waves-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Characteristics of wave",
+          "slos": [
+            {
+              "id": "6.3",
+              "text": "Define and apply the following terms to the wave model; medium, displacement, amplitude, period, compression, rarefaction, crest, trough, wavelength, velocity."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-waves-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Wave Speed",
+          "slos": [
+            {
+              "id": "6.4",
+              "text": "Solve problems using the equation: v = fλ."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-waves-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Classification of progressive waves",
+          "slos": [
+            {
+              "id": "6.6",
+              "text": "Compare transverse and longitudinal waves."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-waves-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Speed of sound / Newton’s Formula for speed of sound in air",
+          "slos": [
+            {
+              "id": "6.7",
+              "text": "Explain that speed of sound depends on the properties of medium in which it propagates and describe Newton’s formula of speed of waves."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-waves-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Laplace’s Correction",
+          "slos": [
+            {
+              "id": "6.8",
+              "text": "Describe the Laplace correction in Newton’s formula for speed of sound in air."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-waves-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Effect of various factors on speed of sound",
+          "slos": [
+            {
+              "id": "6.9",
+              "text": "Identify the factors on which speed of sound in air depends."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-waves-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Superposition of waves",
+          "slos": [
+            {
+              "id": "6.10",
+              "text": "Describe the principle of super position of two waves from coherent sources."
+            },
+            {
+              "id": "6.16",
+              "text": "Explain the principle of Superposition"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-waves-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Interference of sound waves",
+          "slos": [
+            {
+              "id": "6.11",
+              "text": "Describe the phenomenon of interference of sound waves."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-waves-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Stationary waves",
+          "slos": [
+            {
+              "id": "6.12",
+              "text": "Explain the formation of stationary waves using graphical method"
+            },
+            {
+              "id": "6.13",
+              "text": "Define the terms, node and antinodes."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-waves-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Stationary waves in a stretched string",
+          "slos": [
+            {
+              "id": "6.14",
+              "text": "Describe modes of vibration of strings."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-waves-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Organ pipes",
+          "slos": [
+            {
+              "id": "6.15",
+              "text": "Describe formation of stationary waves in vibrating air columns."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-waves-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Simple Harmonic Motion, Terminologies of SHM, Circular motion and SHM, Energy",
+          "slos": [
+            {
+              "id": "6.17",
+              "text": "Explain Simple Harmonic Motion (S.H.M) and explain the characteristics of S.H.M. (Chapter: Oscillation)"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-waves-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Circular Motion and SHM (Acceleration and Velocity of Projection)",
+          "slos": [
+            {
+              "id": "6.18",
+              "text": "Describe that when an object moves in a circle, the motion of its projection on the diameter of a circle is SHM."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-waves-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        }
+      ]
+    },
+    {
+      "unit_number": 7,
+      "unit_title": "THERMODYNAMICS",
+      "topics": [
+        {
+          "topic_name": "Thermal equilibrium, Heat",
+          "slos": [
+            {
+              "id": "7.1",
+              "text": "Describe that thermal energies transferred from a region of higher temperature to a region of lower temperature."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/thermodynamics-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Molar specific heat of gas",
+          "slos": [
+            {
+              "id": "7.2",
+              "text": "Differentiate between specific heat and molar specific heat."
+            },
+            {
+              "id": "7.6",
+              "text": "Define the terms, specific heat and molar specific heats of a gas."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/thermodynamics-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Work",
+          "slos": [
+            {
+              "id": "7.3",
+              "text": "Calculate work done by a thermodynamic system during a volume change."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/thermodynamics-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "First law of thermodynamics",
+          "slos": [
+            {
+              "id": "7.4",
+              "text": "Describe the first law of thermodynamics expressed in terms of the change in internal energy, the heating of the system and work done on the system."
+            },
+            {
+              "id": "7.5",
+              "text": "Explain that first law of thermodynamics expresses the conservation of energy."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/thermodynamics-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Relation between molar specific heat at constant volume and constant pressure",
+          "slos": [
+            {
+              "id": "7.7",
+              "text": "Apply the first law of thermodynamics to derive the relation Cp−Cv=RC for an ideal gas"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/thermodynamics-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        }
+      ]
+    },
+    {
+      "unit_number": 8,
+      "unit_title": "ELECTROSTATICS",
+      "topics": [
+        {
+          "topic_name": "Columb’s Law",
+          "slos": [
+            {
+              "id": "8.1",
+              "text": "State Coulomb’s law and explain that force between two-point charges is reduced in a medium other than free space using Coulomb’s law"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-electrostatics-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Electric Field",
+          "slos": [
+            {
+              "id": "8.2",
+              "text": "Describe the concept of an electric field as an example of a field of force"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-electrostatics-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Electric field intensity due to a point charge",
+          "slos": [
+            {
+              "id": "8.3",
+              "text": "Calculate the magnitude and direction of the electric field at a point due to two charges with the same or opposite signs"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-electrostatics-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Representation of electric field by lines",
+          "slos": [
+            {
+              "id": "8.4",
+              "text": "Sketch the electric field lines for two-point charges of equal magnitude with same or opposite signs"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-electrostatics-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Electric field intensity due to an infinite sheet of charges",
+          "slos": [
+            {
+              "id": "8.5",
+              "text": "Describe and draw the electric field due to an infinite size conducting plate of positive or negative charge"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-electrostatics-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Electric potential",
+          "slos": [
+            {
+              "id": "8.6",
+              "text": "Define electric potential at a point in terms of the work done in bringing unit positive charge from infinity to that point"
+            },
+            {
+              "id": "8.7",
+              "text": "Define the unit of potential"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-electrostatics-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Electric potential energy and potential due to a point charge",
+          "slos": [
+            {
+              "id": "8.8",
+              "text": "Derive an expression for electric potential at a point due to a point charge"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-electrostatics-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Charging and discharging of a capacitor through a resistance",
+          "slos": [
+            {
+              "id": "8.9",
+              "text": "Demonstrate charging and discharging of a capacitor through a resistance"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-electrostatics-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        }
+      ]
+    },
+    {
+      "unit_number": 9,
+      "unit_title": "CURRENT ELECTRICITY",
+      "topics": [
+        {
+          "topic_name": "Steady current",
+          "slos": [
+            {
+              "id": "9.1",
+              "text": "Describe the concept of steady current."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-current-electricity-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Ohm’s Law",
+          "slos": [
+            {
+              "id": "9.2",
+              "text": "State Ohm’s law."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-current-electricity-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Factors on which resistance depends / Temperature coefficient of resistivity",
+          "slos": [
+            {
+              "id": "9.3",
+              "text": "Define resistivity and explain its dependence upon temperature."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-current-electricity-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Internal resistance of sources",
+          "slos": [
+            {
+              "id": "9.4",
+              "text": "Explain the internal resistance of sources and its consequences for external circuits."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-current-electricity-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Maximum power Output",
+          "slos": [
+            {
+              "id": "9.5",
+              "text": "Describe the conditions for maximum power transfer."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-current-electricity-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        }
+      ]
+    },
+    {
+      "unit_number": 10,
+      "unit_title": "ELECTROMAGNETISM",
+      "topics": [
+        {
+          "topic_name": "Magnetic flux density/Magnetic field",
+          "slos": [
+            {
+              "id": "10.1",
+              "text": "Define magnetic flux density and its units."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-electromagnetism-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Magnetic flux",
+          "slos": [
+            {
+              "id": "10.2",
+              "text": "Describe the concept of magnetic flux Φ (Phi) as scalar product of magnetic field (B) and area (A) using the relation ØB=B┴A=B.A."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-electromagnetism-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Motion of charged particle in magnetic field",
+          "slos": [
+            {
+              "id": "10.3",
+              "text": "Describe quantitatively the path followed by a charged particle shot into a magnetic field in a direction perpendicular to the field."
+            },
+            {
+              "id": "10.4",
+              "text": "Explain that a force may act on a charged particle in a uniform magnetic field."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-electromagnetism-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        }
+      ]
+    },
+    {
+      "unit_number": 11,
+      "unit_title": "ELECTROMAGNETIC INDUCTION",
+      "topics": [
+        {
+          "topic_name": "Faraday’s Law of electromagnetic induction",
+          "slos": [
+            {
+              "id": "11.1",
+              "text": "State Faraday’s law of electromagnetic induction."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-electromagnetic-induction-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Lenz’s Law",
+          "slos": [
+            {
+              "id": "11.2",
+              "text": "Account for Lenz’s law to predict the direction of an induced current and relate to the principle of conservation of energy."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-electromagnetic-induction-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Transformer",
+          "slos": [
+            {
+              "id": "11.3",
+              "text": "Describe the construction of a transformer and explain how it works."
+            },
+            {
+              "id": "11.4",
+              "text": "Describe how set-up and step-down transformers can be used to ensure efficient transfer of electricity along cables."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-electromagnetic-induction-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        }
+      ]
+    },
+    {
+      "unit_number": 12,
+      "unit_title": "ALTERNATING CURRENT",
+      "topics": [
+        {
+          "topic_name": "Phase of Alternating Current",
+          "slos": [
+            {
+              "id": "12.1",
+              "text": "Describe the phase of Alternating Current and explain how phase lag and phase lead occur in AC circuits"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-alternating-current-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "AC through Resistor, Capacitor and Inductor",
+          "slos": [
+            {
+              "id": "12.2",
+              "text": "Explain the flow of AC through resistors, Capacitors and Inductor"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-alternating-current-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Electromagnetic waves",
+          "slos": [
+            {
+              "id": "12.3",
+              "text": "Become familiar with EM spectrum (ranging from radio waves to Gamma rays)"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-alternating-current-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        }
+      ]
+    },
+    {
+      "unit_number": 13,
+      "unit_title": "ELECTRONICS",
+      "topics": [
+        {
+          "topic_name": "Rectification",
+          "slos": [
+            {
+              "id": "13.1",
+              "text": "Define rectification and describe the use of diodes for half and full wave rectifications."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-electronics-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "PN Junction",
+          "slos": [
+            {
+              "id": "13.2",
+              "text": "Describe the PN Junction and discuss its forward and reverse biasing"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-electronics-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        }
+      ]
+    },
+    {
+      "unit_number": 14,
+      "unit_title": "DAWN OF MODERN PHYSICS",
+      "topics": [
+        {
+          "topic_name": "Quantum Theory and Radiation",
+          "slos": [
+            {
+              "id": "14.1",
+              "text": "Explain the particle model of light in terms of photons with energy"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-dawn-of-modern-physics-test-online/"
+          ],
+          "mapping_status": "pending"
+        }
+      ]
+    },
+    {
+      "unit_number": 15,
+      "unit_title": "ATOMIC SPECTRA",
+      "topics": [
+        {
+          "topic_name": "Atomic Spectra",
+          "slos": [
+            {
+              "id": "15.1",
+              "text": "Describe and explain atomic spectra/ line spectrum"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-atomic-spectra-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        }
+      ]
+    },
+    {
+      "unit_number": 16,
+      "unit_title": "NUCLEAR PHYSICS",
+      "topics": [
+        {
+          "topic_name": "Composition of atomic nuclei",
+          "slos": [
+            {
+              "id": "16.1",
+              "text": "Describe a simple model for the atom to include protons, neutrons and electrons"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-nuclear-physics-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Spontaneous and random nuclear decay",
+          "slos": [
+            {
+              "id": "16.2",
+              "text": "Identify the spontaneous and random nature of nuclear decay."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-nuclear-physics-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Half-life and rate of decay",
+          "slos": [
+            {
+              "id": "16.3",
+              "text": "Describe the term half-life and solve problems using the equation λ = 0.693/T½."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-nuclear-physics-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Biological and Medical uses of radiation",
+          "slos": [
+            {
+              "id": "16.4",
+              "text": "Describe biological effects of radiation state and explain the different medical uses of radiation."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/physics-mcqs/physics-nuclear-physics-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        }
+      ]
+    }
+  ]
+}

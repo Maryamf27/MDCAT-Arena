@@ -1,0 +1,1639 @@
+{
+  "subject_id": "chemistry",
+  "subject_name": "Chemistry",
+  "syllabus_source": "PM&DC MDCAT 2025",
+  "source_inventory": [
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/chemistry-mcqs/basic-concepts-of-chemistry-online-mcqs-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Basic Concepts of Chemistry"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/chemistry-mcqs/chemistry-atomic-structure-online-mcqs-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Atomic Structure"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/chemistry-mcqs/chemistry-gases-test-1-online-mcqs/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Gases"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/chemistry-mcqs/chemistry-gases-test-2-online-mcqs/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Gases"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/chemistry-mcqs/chemistry-gases-test-3-online-mcqs/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Gases"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/chemistry-mcqs/chemistry-liquids-and-solids-online-mcqs-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Liquids and Solids"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/chemistry-mcqs/chemistry-chemical-bonding-online-mcqs-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Chemical Bonding"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/chemistry-mcqs/thermo-chemistry-online-mcqs-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Thermochemistry"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/chemistry-mcqs/chemistry-chemical-equilibrium-online-mcqs-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Chemical Equilibrium"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/chemistry-mcqs/chemistry-electro-chemistry-online-mcqs-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Electrochemistry"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/chemistry-mcqs/chemistry-alkyl-halides-online-mcqs-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Alkyl Halides"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/chemistry-mcqs/chemistry-carboxylic-acid-online-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Carboxylic Acids"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/chemistry-mcqs/chemistry-alcohols-and-phenols-online-mcqs-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Alcohols and Phenols"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/chemistry-mcqs/chemistry-macro-molecules-online-mcqs-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Macromolecules"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/chemistry-mcqs/chemistry-reaction-kinetics-online-mcqs-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Reaction Kinetics"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/chemistry-mcqs/fundamental-principles-of-organic-chemistry-online-mcqs-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Fundamental Principles of Organic Chemistry"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/chemistry-mcqs/chemistry-industrial-chemistry-online-mcqs-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Industrial Chemistry"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/chemistry-mcqs/chemistry-of-hydrocarbons-online-mcqs-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Hydrocarbons"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/chemistry-mcqs/chemistry-transition-elements-online-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Transition Elements"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/chemistry-mcqs/chemistry-s-block-elements-online-mcqs-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "S-Block Elements"
+    }
+  ],
+  "units": [
+    {
+      "unit_number": 1,
+      "unit_title": "INTRODUCTION OF FUNDAMENTALS CONCEPT OF CHEMISTRY",
+      "topics": [
+        {
+          "topic_name": "Moles and Avogadro’s Numbers",
+          "slos": [
+            {
+              "id": "1.1",
+              "text": "Construct mole ratios from balanced equations for use as conversion factors in stoichiometric problems."
+            },
+            {
+              "id": "1.2",
+              "text": "Perform stoichiometric calculations with balanced equations using moles, representative particles, masses and volumes of the gases (at ST)."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/basic-concepts-of-chemistry-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Limiting and Excess Reactants",
+          "slos": [
+            {
+              "id": "1.3",
+              "text": "Explain the limiting reagent in reaction"
+            },
+            {
+              "id": "1.4",
+              "text": "Calculate the maximum number of products produced and the amount of any un-reacted excess reagent"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/basic-concepts-of-chemistry-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Yield",
+          "slos": [
+            {
+              "id": "1.5",
+              "text": "Given information from which any two the following may be determine, calculate the third: theoretical yield, actual yield, percentage yield."
+            },
+            {
+              "id": "1.6",
+              "text": "Calculate the theoretical yield and the percent yield when given the balanced equation, the amount of reactants and the actual yield."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/basic-concepts-of-chemistry-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        }
+      ]
+    },
+    {
+      "unit_number": 2,
+      "unit_title": "ATOMIC STRUCTURE",
+      "topics": [
+        {
+          "topic_name": "Discovery of Proton",
+          "slos": [
+            {
+              "id": "2.1",
+              "text": "Describe discovery and properties of proton (Positive rays)"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-atomic-structure-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Planck’s Quantum Theory",
+          "slos": [
+            {
+              "id": "2.2",
+              "text": "Define Photon as a unit of radiation energy"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-atomic-structure-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Quantum Number",
+          "slos": [
+            {
+              "id": "2.3",
+              "text": "Describe the concept of orbitals."
+            },
+            {
+              "id": "2.4",
+              "text": "Distinguish among Principal energy level, energy sub-level and atomic orbitals"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-atomic-structure-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Shapes of orbitals",
+          "slos": [
+            {
+              "id": "2.5",
+              "text": "Describe the general shapes of S, P and orbitals."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-atomic-structure-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Spectrum of Hydrogen",
+          "slos": [
+            {
+              "id": "2.6",
+              "text": "Describe Hydrogen Atom using the quantum theory"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-atomic-structure-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Electronic Configuration",
+          "slos": [
+            {
+              "id": "2.7",
+              "text": "Use the Aufbau principle, the Pauli Exclusion Principle and Hund’s Rule to write the Electronic Configuration of atoms."
+            },
+            {
+              "id": "2.8",
+              "text": "Write electronic configuration of atom"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-atomic-structure-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        }
+      ]
+    },
+    {
+      "unit_number": 3,
+      "unit_title": "GASES",
+      "topics": [
+        {
+          "topic_name": "Kinetic Molecular Theory",
+          "slos": [
+            {
+              "id": "3.1",
+              "text": "List the postulates of Kinetic Molecular Theory"
+            },
+            {
+              "id": "3.2",
+              "text": "Describe the motion of particles of the gas according to kinetic theory."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-gases-test-1-online-mcqs/",
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-gases-test-2-online-mcqs/",
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-gases-test-3-online-mcqs/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Standard Temperature and Pressure (STP)",
+          "slos": [
+            {
+              "id": "3.3",
+              "text": "State the values of standard temperature and pressure (STP)"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-gases-test-1-online-mcqs/",
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-gases-test-2-online-mcqs/",
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-gases-test-3-online-mcqs/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Boyle’s Law",
+          "slos": [
+            {
+              "id": "3.4",
+              "text": "Describe the effect of change in pressure on the volume of gas."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-gases-test-1-online-mcqs/",
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-gases-test-2-online-mcqs/",
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-gases-test-3-online-mcqs/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Charles’s Law",
+          "slos": [
+            {
+              "id": "3.5",
+              "text": "Describe the effect of change in temperature on the volume of gas."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-gases-test-1-online-mcqs/",
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-gases-test-2-online-mcqs/",
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-gases-test-3-online-mcqs/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Absolute Zero",
+          "slos": [
+            {
+              "id": "3.6",
+              "text": "Explain the significance of the absolute zero, giving its value in degree."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-gases-test-1-online-mcqs/",
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-gases-test-2-online-mcqs/",
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-gases-test-3-online-mcqs/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Ideal Gas Equation",
+          "slos": [
+            {
+              "id": "3.7",
+              "text": "Derive Ideal Gas equation using Boyle’s Law, Charle’s Law and Avogadro’s Law."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-gases-test-1-online-mcqs/",
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-gases-test-2-online-mcqs/",
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-gases-test-3-online-mcqs/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Unit of “R”",
+          "slos": [
+            {
+              "id": "3.8",
+              "text": "Explain the significance and different units of ideal gas constant."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-gases-test-1-online-mcqs/",
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-gases-test-2-online-mcqs/",
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-gases-test-3-online-mcqs/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Real and Ideal Gas",
+          "slos": [
+            {
+              "id": "3.9",
+              "text": "Distinguish between Real and Ideal Gases."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-gases-test-1-online-mcqs/",
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-gases-test-2-online-mcqs/",
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-gases-test-3-online-mcqs/"
+          ],
+          "mapping_status": "pending"
+        }
+      ]
+    },
+    {
+      "unit_number": 4,
+      "unit_title": "LIQUIDS",
+      "topics": [
+        {
+          "topic_name": "Properties Of Liquids based on Kinetic Molecular Theory",
+          "slos": [
+            {
+              "id": "4.1",
+              "text": "Describe simple properties of liquids e.g diffusion, compression, expansion, motion of molecules, spaces between them, inter molecular forces and kinetic energy based on kinetic molecular theory."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-liquids-and-solids-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Evaporation, Boiling point and Vapor Pressure",
+          "slos": [
+            {
+              "id": "4.2",
+              "text": "Explain physical properties of liquid such as evaporation, vapor pressure, boiling point"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-liquids-and-solids-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Hydrogen Bonding",
+          "slos": [
+            {
+              "id": "4.3",
+              "text": "Describe the hydrogen bonding in H2O, NH3 and HF molecules."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-liquids-and-solids-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Anomalous behavior of Water",
+          "slos": [
+            {
+              "id": "4.4",
+              "text": "Anomalous behavior of water when its density shows maximum at 4 degrees centigrade."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-liquids-and-solids-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        }
+      ]
+    },
+    {
+      "unit_number": 5,
+      "unit_title": "SOLID",
+      "topics": [
+        {
+          "topic_name": "Crystalline Solids",
+          "slos": [
+            {
+              "id": "5.1",
+              "text": "Describe crystalline solid"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-liquids-and-solids-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Factors Affecting the Shape of Ionic Crystals",
+          "slos": [
+            {
+              "id": "5.2",
+              "text": "Name three factors that affect the shape of the ionic crystals."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-liquids-and-solids-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Difference between Ionic and Molecular Crystals",
+          "slos": [
+            {
+              "id": "5.3",
+              "text": "Give brief description of ionic and molecular crystals."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-liquids-and-solids-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Crystal lattice",
+          "slos": [
+            {
+              "id": "5.4",
+              "text": "Explain the structure of a crystal lattice"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-liquids-and-solids-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Lattice Energy",
+          "slos": [
+            {
+              "id": "5.5",
+              "text": "Define Lattice Energy,"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-liquids-and-solids-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        }
+      ]
+    },
+    {
+      "unit_number": 6,
+      "unit_title": "CHEMICAL EQUILIBRUM",
+      "topics": [
+        {
+          "topic_name": "Chemical Equilibrium",
+          "slos": [
+            {
+              "id": "6.1",
+              "text": "Define chemical equilibrium in terms of reversible reaction."
+            },
+            {
+              "id": "6.2",
+              "text": "Write both forward and reverse. Describe them macroscopic characteristics of each"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-chemical-equilibrium-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Le Chatelier’s principle",
+          "slos": [
+            {
+              "id": "6.3",
+              "text": "State Le Chatelier’s principle and be able to apply it to systems in equilibrium with changes in concentration, pressure, temperature or addition of catalyst."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-chemical-equilibrium-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Solubility Products",
+          "slos": [
+            {
+              "id": "6.4",
+              "text": "Define and explain solubility products."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-chemical-equilibrium-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Common Ion Effect",
+          "slos": [
+            {
+              "id": "6.5",
+              "text": "Define and explain the common ion effect by giving suitable examples."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-chemical-equilibrium-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Buffer Solution",
+          "slos": [
+            {
+              "id": "6.6",
+              "text": "Define buffer solution and explain types of buffers."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-chemical-equilibrium-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Haber’s Process",
+          "slos": [
+            {
+              "id": "6.7",
+              "text": "Explain synthesis of Ammonia by Haber’s process."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-chemical-equilibrium-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        }
+      ]
+    },
+    {
+      "unit_number": 7,
+      "unit_title": "REACTION KINETICS",
+      "topics": [
+        {
+          "topic_name": "Chemical Kinetics",
+          "slos": [
+            {
+              "id": "7.1",
+              "text": "Define chemical kinetics."
+            },
+            {
+              "id": "7.2",
+              "text": "Explain the terms: rate of reaction, rate equation."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-reaction-kinetics-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Factors affecting rate of reaction",
+          "slos": [
+            {
+              "id": "7.3",
+              "text": "Explain qualitatively factors affecting rate of reaction."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-reaction-kinetics-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Order of Reaction",
+          "slos": [
+            {
+              "id": "7.4",
+              "text": "Give the order with respect to the reactant, write the rate of law for reaction."
+            },
+            {
+              "id": "7.5",
+              "text": "Explain the meaning of the term “activation energy” and “activated complex”."
+            },
+            {
+              "id": "7.6",
+              "text": "Relate the ideas of activation energy and the activated complex to the rate of reaction."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-reaction-kinetics-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Rate Constant",
+          "slos": [
+            {
+              "id": "7.7",
+              "text": "Describe the role of the rate constant in the theoretical determination of reaction rate."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-reaction-kinetics-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        }
+      ]
+    },
+    {
+      "unit_number": 8,
+      "unit_title": "THERMO CHEMISTRY AND ENERGETICS OF CHEMICAL REACTION",
+      "topics": [
+        {
+          "topic_name": "Thermodynamics",
+          "slos": [
+            {
+              "id": "8.1",
+              "text": "Define Thermodynamics"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/thermo-chemistry-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Exothermic and Endothermic Reaction",
+          "slos": [
+            {
+              "id": "8.2",
+              "text": "Classify reactions as exothermic and endothermic"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/thermo-chemistry-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Different Terms Used",
+          "slos": [
+            {
+              "id": "8.3",
+              "text": "Define the terms system, surrounding boundary, state function, heat, heat capacity, internal energy, work done and enthalpy of a substance."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/thermo-chemistry-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Internal Energies",
+          "slos": [
+            {
+              "id": "8.4",
+              "text": "Name and define the units of the Internal energy."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/thermo-chemistry-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Law of Thermodynamics",
+          "slos": [
+            {
+              "id": "8.5",
+              "text": "Explain the first law of thermodynamics of energy conservation."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/thermo-chemistry-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Hess’s Law",
+          "slos": [
+            {
+              "id": "8.6",
+              "text": "Apply Hess’s Law to construct simple energy cycles."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/thermo-chemistry-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Enthalpy",
+          "slos": [
+            {
+              "id": "8.7",
+              "text": "Describe enthalpy of the reaction"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/thermo-chemistry-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        }
+      ]
+    },
+    {
+      "unit_number": 9,
+      "unit_title": "ELECTROCHEMISTRY",
+      "topics": [
+        {
+          "topic_name": "Redox Reaction",
+          "slos": [
+            {
+              "id": "9.1",
+              "text": "Give the characteristics of a redox reaction."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-electro-chemistry-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Oxidation and Reduction",
+          "slos": [
+            {
+              "id": "9.2",
+              "text": "Define oxidation and reduction in terms of a change in oxidation number."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-electro-chemistry-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Balancing Chemical Reaction",
+          "slos": [
+            {
+              "id": "9.3",
+              "text": "Use the oxidation number change method to identify atoms being oxidized or reduced in redox reactions."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-electro-chemistry-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Standard Hydrogen Electrode (SHE)",
+          "slos": [
+            {
+              "id": "9.4",
+              "text": "Define Cathode, anode, electrode potential and S.H.E"
+            },
+            {
+              "id": "9.5",
+              "text": "Define the standard electrode potential of an electrode."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-electro-chemistry-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        }
+      ]
+    },
+    {
+      "unit_number": 10,
+      "unit_title": "CHEMICAL BONDING",
+      "topics": [
+        {
+          "topic_name": "VSEPR Theory",
+          "slos": [
+            {
+              "id": "10.1",
+              "text": "Use VSEPR Theory to describe the shapes of the molecules."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-chemical-bonding-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Sigma and Pi Bond",
+          "slos": [
+            {
+              "id": "10.2",
+              "text": "Describe the features of sigma and pi-bonds."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-chemical-bonding-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Hybridization",
+          "slos": [
+            {
+              "id": "10.3",
+              "text": "Describe the shapes of simple molecules using orbital hybridization."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-chemical-bonding-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Application of VSEPR Theory",
+          "slos": [
+            {
+              "id": "10.4",
+              "text": "Determine the shapes of some molecules from the number of the bonded pairs."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-chemical-bonding-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Dipole Movement",
+          "slos": [
+            {
+              "id": "10.5",
+              "text": "Predict the molecular polarity from the shapes of molecules."
+            },
+            {
+              "id": "10.6",
+              "text": "Explain what is meant by the term ionic character of the covalent bond."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-chemical-bonding-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Application of Dipole Movement",
+          "slos": [
+            {
+              "id": "10.7",
+              "text": "Describe how knowledge of molecular polarity can be used to explain some physical and chemical properties of the molecules."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-chemical-bonding-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Bond Energy",
+          "slos": [
+            {
+              "id": "10.8",
+              "text": "Define bond energies and explain how they can be used to compare bonds strength of different chemical bonds."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-chemical-bonding-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        }
+      ]
+    },
+    {
+      "unit_number": 11,
+      "unit_title": "S- AND P- BLOCK ELEMENTS",
+      "topics": [
+        {
+          "topic_name": "Properties and their Trends",
+          "slos": [
+            {
+              "id": "11.1",
+              "text": "Define and explain the terms atomic radii, ionic radii, covalent radii, ionization energy, electron affinity, electro negativity, bond energy and bond length."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-s-block-elements-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "S-, P-, D- & F-Block Elements",
+          "slos": [
+            {
+              "id": "11.2",
+              "text": "Recognize the demarcation of the periodic table into S-block, P-block, D-block and F-block."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-s-block-elements-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Reaction of Group I elements",
+          "slos": [
+            {
+              "id": "11.3",
+              "text": "Describe reactions of Group I elements with water, oxygen and chlorine."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-s-block-elements-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Reaction of Group II elements",
+          "slos": [
+            {
+              "id": "11.4",
+              "text": "Describe reactions of Group II elements with water, oxygen and chlorine."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-s-block-elements-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Reaction of Group IV elements",
+          "slos": [
+            {
+              "id": "11.5",
+              "text": "Describe reactions of Group IV Elements."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-s-block-elements-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        }
+      ]
+    },
+    {
+      "unit_number": 12,
+      "unit_title": "TRANSITION ELEMENTS",
+      "topics": [
+        {
+          "topic_name": "Electronic Structure",
+          "slos": [
+            {
+              "id": "12.1",
+              "text": "Describe the electronic structures of the elements and ions of d-block Elements."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-transition-elements-online-test/"
+          ],
+          "mapping_status": "pending"
+        }
+      ]
+    },
+    {
+      "unit_number": 13,
+      "unit_title": "FUNDAMENTAL PRINCIPLES OF ORGANIC CHEMISTRY",
+      "topics": [
+        {
+          "topic_name": "Definition and Classification of Organic Compound",
+          "slos": [
+            {
+              "id": "13.1",
+              "text": "Define organic chemistry and organic compound."
+            },
+            {
+              "id": "13.2",
+              "text": "Classify organic compounds on structural basis."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/fundamental-principles-of-organic-chemistry-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Functional Group",
+          "slos": [
+            {
+              "id": "13.3",
+              "text": "Define functional group."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/fundamental-principles-of-organic-chemistry-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Isomerism",
+          "slos": [
+            {
+              "id": "13.4",
+              "text": "Explain stereoisomerism and its types."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/fundamental-principles-of-organic-chemistry-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        }
+      ]
+    },
+    {
+      "unit_number": 14,
+      "unit_title": "CHEMISTRY OF HYDROCARBONS",
+      "topics": [
+        {
+          "topic_name": "Nomenclature of Alkanes",
+          "slos": [
+            {
+              "id": "14.1",
+              "text": "Describe the nomenclature of Alkanes."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-of-hydrocarbons-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Free Radical Mechanism",
+          "slos": [
+            {
+              "id": "14.2",
+              "text": "Define Free Radical Initiation, propagation and termination."
+            },
+            {
+              "id": "14.3",
+              "text": "Describe the mechanism of the free radical substitution in alkanes exemplified by Methane and Ethane."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-of-hydrocarbons-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Nomenclature of Alkenes",
+          "slos": [
+            {
+              "id": "14.4",
+              "text": "Explain the IUPAC nomenclature of alkenes."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-of-hydrocarbons-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Shapes of Alkenes",
+          "slos": [
+            {
+              "id": "14.5",
+              "text": "Explain the shapes of the Ethene molecules in terms of Sigma and Pi C-C Bonds."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-of-hydrocarbons-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Structure and Reactivity of Alkenes",
+          "slos": [
+            {
+              "id": "14.6",
+              "text": "Describe the structure and reactivity of Alkenes as exemplified by Ethene."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-of-hydrocarbons-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Preparation of Alkanes",
+          "slos": [
+            {
+              "id": "14.7",
+              "text": "Explain Dehydration of Alcohols and Dehydrohalogenation of RX for the preparation of Ethane"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-of-hydrocarbons-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "MOT of Benzene",
+          "slos": [
+            {
+              "id": "14.8",
+              "text": "Explain the shape of Benzene Molecules (Molecular orbital treatment)."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-of-hydrocarbons-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Resonance and Resonance Energy",
+          "slos": [
+            {
+              "id": "14.9",
+              "text": "Define resonance, resonance energy and relative stability."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-of-hydrocarbons-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Reactivity of Benzene",
+          "slos": [
+            {
+              "id": "14.10",
+              "text": "Compare the reactivity of benzene with alkanes and alkenes."
+            },
+            {
+              "id": "14.11",
+              "text": "Define addition reactions of benzene and methylbenzene."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-of-hydrocarbons-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Chemical Reactions of Benzenes",
+          "slos": [
+            {
+              "id": "14.12",
+              "text": "Describe the mechanism of electrophilic substitution in Benzene."
+            },
+            {
+              "id": "14.13",
+              "text": "Discuss chemistry of benzene and methylbenzene by nitration, sulphonation, halogenation, Friedal Craft’s Alkylation and acylation."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-of-hydrocarbons-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Effect of Substituents",
+          "slos": [
+            {
+              "id": "14.14",
+              "text": "Apply the knowledge of positions of substituents in the electrophilic substitution of benzene."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-of-hydrocarbons-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "IUPAC System of Alkynes",
+          "slos": [
+            {
+              "id": "14.15",
+              "text": "Use the IUPAC naming System of Alkynes."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-of-hydrocarbons-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Preparation of Alkynes",
+          "slos": [
+            {
+              "id": "14.16",
+              "text": "Describe the preparation of Alkynes using elimination reactions."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-of-hydrocarbons-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Acidity of Alkynes",
+          "slos": [
+            {
+              "id": "14.17",
+              "text": "Describe the acidity of alkynes"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-of-hydrocarbons-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Reactions of Alkynes",
+          "slos": [
+            {
+              "id": "14.18",
+              "text": "Discuss chemistry of alkynes by hydrogenation, hydro halogenation and hydration."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-of-hydrocarbons-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Substitution vs Addition",
+          "slos": [
+            {
+              "id": "14.19",
+              "text": "Describe and differentiate between substitution and Addition reactions."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-of-hydrocarbons-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        }
+      ]
+    },
+    {
+      "unit_number": 15,
+      "unit_title": "ALKYL HALIDES",
+      "topics": [
+        {
+          "topic_name": "Nomenclature",
+          "slos": [
+            {
+              "id": "15.1",
+              "text": "Name Alkyl Halides using IUPAC system."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-alkyl-halides-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Structure and Reactivity",
+          "slos": [
+            {
+              "id": "15.2",
+              "text": "Discuss the structure and reactivity of RX."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-alkyl-halides-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Substitution vs Elimination",
+          "slos": [
+            {
+              "id": "15.3",
+              "text": "Describe the mechanism and types of nucleophilic substitution reactions."
+            },
+            {
+              "id": "15.4",
+              "text": "Describe the mechanism and types of elimination reactions."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-alkyl-halides-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        }
+      ]
+    },
+    {
+      "unit_number": 16,
+      "unit_title": "ALCOHOLS AND PHENOLS",
+      "topics": [
+        {
+          "topic_name": "Nomenclature, structure and reactivity of Alcohol",
+          "slos": [
+            {
+              "id": "16.1",
+              "text": "Explain nomenclature and structure of Alcohols."
+            },
+            {
+              "id": "16.2",
+              "text": "Explain the reactivity of Alcohols."
+            },
+            {
+              "id": "16.3",
+              "text": "Describe the chemistry of alcohols by preparation of ethers and esters."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-alcohols-and-phenols-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Nomenclature, structure and reactivity of Phenols",
+          "slos": [
+            {
+              "id": "16.4",
+              "text": "Explain the nomenclature, structure and reactivity of Alcohol"
+            },
+            {
+              "id": "16.5",
+              "text": "Discuss the reactivity of phenol and their chemistry by electrophilic aromatic substitution."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-alcohols-and-phenols-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Alcohols and Phenols",
+          "slos": [
+            {
+              "id": "16.6",
+              "text": "Differentiate between an alcohol and phenol."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-alcohols-and-phenols-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        }
+      ]
+    },
+    {
+      "unit_number": 17,
+      "unit_title": "ALDEHYDES AND KETONES",
+      "topics": [
+        {
+          "topic_name": "Nomenclature and structure of Aldehydes and Ketones",
+          "slos": [
+            {
+              "id": "17.1",
+              "text": "Explain nomenclature and structure of Aldehydes and Ketones."
+            }
+          ],
+          "source_urls": [],
+          "mapping_status": "not_found"
+        },
+        {
+          "topic_name": "Preparation",
+          "slos": [
+            {
+              "id": "17.2",
+              "text": "Discuss the preparation of aldehydes and ketones."
+            }
+          ],
+          "source_urls": [],
+          "mapping_status": "not_found"
+        },
+        {
+          "topic_name": "Reactivity of Aldehydes and Ketones",
+          "slos": [
+            {
+              "id": "17.3",
+              "text": "Describe Reactivity of Aldehydes and Ketones and their comparison."
+            }
+          ],
+          "source_urls": [],
+          "mapping_status": "not_found"
+        },
+        {
+          "topic_name": "Reaction of Aldehydes and Ketones",
+          "slos": [
+            {
+              "id": "17.4",
+              "text": "Describe Acid and Base catalyzed Nucleophilic addition reactions of aldehydes and ketones."
+            },
+            {
+              "id": "17.5",
+              "text": "Discuss the chemistry of Aldehydes and Ketones by their reduction to alcohols"
+            },
+            {
+              "id": "17.6",
+              "text": "Describe oxidation reactions of aldehydes and ketones."
+            }
+          ],
+          "source_urls": [],
+          "mapping_status": "not_found"
+        }
+      ]
+    },
+    {
+      "unit_number": 18,
+      "unit_title": "CARBOXYLIC ACIDS",
+      "topics": [
+        {
+          "topic_name": "Nomenclature, Structure and Preparation of Carboxylic Acid",
+          "slos": [
+            {
+              "id": "18.1",
+              "text": "Describe nomenclature, Structure and Preparation of Carboxylic Acid."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-carboxylic-acid-online-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Chemical Reactions/Reactivity",
+          "slos": [
+            {
+              "id": "18.2",
+              "text": "Discuss reactivity of carboxylic acid."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-carboxylic-acid-online-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Conversion of Carboxylic Acid",
+          "slos": [
+            {
+              "id": "18.3",
+              "text": "Describe the Chemistry of carboxylic acid by conversion to carboxylic acid derivative: acyl halides, an acid hydrides, esters and reaction involving into conversion of these."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-carboxylic-acid-online-test/"
+          ],
+          "mapping_status": "pending"
+        }
+      ]
+    },
+    {
+      "unit_number": 19,
+      "unit_title": "MACRO MOLECULES",
+      "topics": [
+        {
+          "topic_name": "Classification of Proteins",
+          "slos": [
+            {
+              "id": "19.1",
+              "text": "Explain the basis of classification and structure function relationship of proteins."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-macro-molecules-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Importance of Proteins",
+          "slos": [
+            {
+              "id": "19.2",
+              "text": "Describe the role of various proteins in maintaining body functions and their Nutritional importance."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-macro-molecules-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Enzymes as Biocatalyst",
+          "slos": [
+            {
+              "id": "19.3",
+              "text": "Describe the role of enzymes as Biocatalyst."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-macro-molecules-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        }
+      ]
+    },
+    {
+      "unit_number": 20,
+      "unit_title": "INDUSTRIAL CHEMISTRY",
+      "topics": [
+        {
+          "topic_name": "Adhesive",
+          "slos": [
+            {
+              "id": "20.1",
+              "text": "Know about types and application of Adhesive."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-industrial-chemistry-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Dyes",
+          "slos": [
+            {
+              "id": "20.2",
+              "text": "Know about types of dies and their uses."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-industrial-chemistry-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        },
+        {
+          "topic_name": "Polymers",
+          "slos": [
+            {
+              "id": "20.3",
+              "text": "Know about condensation and addition polymers and their sub-types."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/chemistry-mcqs/chemistry-industrial-chemistry-online-mcqs-test/"
+          ],
+          "mapping_status": "pending"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,529 @@
+{
+  "subject_id": "english",
+  "subject_name": "English",
+  "syllabus_source": "PM&DC MDCAT 2025",
+  "source_inventory": [
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/mdcat-english-test/",
+      "source_type": "test_page",
+      "mapping_status": "pending",
+      "chapter_group": "Main candidate page"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/mdcat/mdcat-english-spotting-errors-test-1-online/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "MDCAT spotting errors test"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-spotting-errors-test-1-online/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Spotting Errors Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-spotting-errors-test-2/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Spotting Errors Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-spotting-errors-test-3/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Spotting Errors Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-spotting-errors-4-online-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Spotting Errors Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-spotting-errors-5-online-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Spotting Errors Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-spotting-errors-6-online-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Spotting Errors Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-spotting-errors-7-online-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Spotting Errors Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-spotting-errors-8-online-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Spotting Errors Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-spotting-errors-test-9/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Spotting Errors Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-spotting-errors-10-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Spotting Errors Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-spotting-errors-test-11/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Spotting Errors Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-synonyms-1-online-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Synonyms Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-synonyms-2-online-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Synonyms Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-synonyms-test-3-online/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Synonyms Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-synonyms-4-online-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Synonyms Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-synonyms-5-online-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Synonyms Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-vocabulary-1-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Vocabulary Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-vocabulary-2-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Vocabulary Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-vocabulary-3-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Vocabulary Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-vocabulary-4-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Vocabulary Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-vocabulary-5-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Vocabulary Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-vocabulary-6-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Vocabulary Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-vocabulary-7-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Vocabulary Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-vocabulary-8-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Vocabulary Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-antonyms-1-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "unmapped",
+      "chapter_group": "Antonyms Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-antonyms-2-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "unmapped",
+      "chapter_group": "Antonyms Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-antonyms-3-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "unmapped",
+      "chapter_group": "Antonyms Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-antonyms-4-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "unmapped",
+      "chapter_group": "Antonyms Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-antonyms-5-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "unmapped",
+      "chapter_group": "Antonyms Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-antonyms-6-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "unmapped",
+      "chapter_group": "Antonyms Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-antonyms-7-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "unmapped",
+      "chapter_group": "Antonyms Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-antonyms-8-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "unmapped",
+      "chapter_group": "Antonyms Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-antonyms-9-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "unmapped",
+      "chapter_group": "Antonyms Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-prepositions-1-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Prepositions Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-prepositions-2-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Prepositions Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-prepositions-3-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Prepositions Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-prepositions-4-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Prepositions Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-direct-and-indirect-1-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Direct and Indirect Speech Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-direct-and-indirect-test-2/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Direct and Indirect Speech Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-direct-and-indirect-3-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Direct and Indirect Speech Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-active-and-passive-voice-1-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Active and Passive Voice Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-active-and-passive-voice-2-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Active and Passive Voice Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-active-and-passive-voice-3-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Active and Passive Voice Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-analogy-1-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "unmapped",
+      "chapter_group": "Analogy Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-analogy-2-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "unmapped",
+      "chapter_group": "Analogy Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-analogies-test-3/",
+      "source_type": "chapter_test",
+      "mapping_status": "unmapped",
+      "chapter_group": "Analogy Tests"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-reading-comprehension-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "Reading Comprehension Test"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-grammar-correction-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "pending",
+      "chapter_group": "English Grammar Correction Test"
+    },
+    {
+      "source_name": "GoTest",
+      "source_url": "https://gotest.com.pk/english-test/english-sentence-completion-test/",
+      "source_type": "chapter_test",
+      "mapping_status": "unmapped",
+      "chapter_group": "Sentence Completion Test"
+    }
+  ],
+  "units": [
+    {
+      "unit_number": 1,
+      "unit_title": "READING AND THINKING SKILLS",
+      "topics": [
+        {
+          "topic_name": "Reading and Thinking Skills",
+          "slos": [
+            {
+              "id": "1.1",
+              "text": "Scan to answer short Questions"
+            },
+            {
+              "id": "1.2",
+              "text": "Deduce the meanings of the context"
+            },
+            {
+              "id": "1.3",
+              "text": "Analyze how a writer/poet uses language to apprehend to the senses for figurative language"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/english-test/english-reading-comprehension-test/"
+          ],
+          "mapping_status": "pending"
+        }
+      ]
+    },
+    {
+      "unit_number": 2,
+      "unit_title": "FORMAL AND LEXICAL ASPECT OF LANGUAGE",
+      "topics": [
+        {
+          "topic_name": "Formal and Lexical Aspect of Language",
+          "slos": [
+            {
+              "id": "2.1",
+              "text": "Deduce the meaning of difficult words from the context using contextual clues."
+            },
+            {
+              "id": "2.2",
+              "text": "Explore the use of Synonyms with varying shades of meaning used for irony, parody and satire."
+            },
+            {
+              "id": "2.3",
+              "text": "Illustrate use of pronoun-antecedent agreement."
+            },
+            {
+              "id": "2.4",
+              "text": "Illustrate use of tenses."
+            },
+            {
+              "id": "2.5",
+              "text": "Illustrate use of infinitives and infinitives phrases."
+            },
+            {
+              "id": "2.6",
+              "text": "Illustrate the use of gerund and gerund phrases."
+            },
+            {
+              "id": "2.7",
+              "text": "Recognize varying position of adverbs in sentences according to their kinds and importance."
+            },
+            {
+              "id": "2.8",
+              "text": "Illustrate use of prepositions of position, time, movements and directions."
+            },
+            {
+              "id": "2.9",
+              "text": "Use in speech and writing, all the appropriate transitional devices."
+            },
+            {
+              "id": "2.10",
+              "text": "Illustrate use of all punctuation marks wherever applicable"
+            },
+            {
+              "id": "2.11",
+              "text": "Analyze sentences for different classes and phrases, evaluate how their position in sentences when change meaning and different communication function."
+            },
+            {
+              "id": "2.12",
+              "text": "Recognize and use sentence in version for various purposes."
+            },
+            {
+              "id": "2.13",
+              "text": "Use active and passive voice appropriately in speech and writing according to the required communicative function"
+            },
+            {
+              "id": "2.14",
+              "text": "Use direct and indirect speech appropriately in speech and writing according to the e required communicative function."
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/english-test/english-synonyms-1-online-test/",
+            "https://gotest.com.pk/english-test/english-synonyms-2-online-test/",
+            "https://gotest.com.pk/english-test/english-synonyms-test-3-online/",
+            "https://gotest.com.pk/english-test/english-synonyms-4-online-test/",
+            "https://gotest.com.pk/english-test/english-synonyms-5-online-test/",
+            "https://gotest.com.pk/english-test/english-vocabulary-1-test/",
+            "https://gotest.com.pk/english-test/english-vocabulary-2-test/",
+            "https://gotest.com.pk/english-test/english-vocabulary-3-test/",
+            "https://gotest.com.pk/english-test/english-vocabulary-4-test/",
+            "https://gotest.com.pk/english-test/english-vocabulary-5-test/",
+            "https://gotest.com.pk/english-test/english-vocabulary-6-test/",
+            "https://gotest.com.pk/english-test/english-vocabulary-7-test/",
+            "https://gotest.com.pk/english-test/english-vocabulary-8-test/",
+            "https://gotest.com.pk/english-test/english-prepositions-1-test/",
+            "https://gotest.com.pk/english-test/english-prepositions-2-test/",
+            "https://gotest.com.pk/english-test/english-prepositions-3-test/",
+            "https://gotest.com.pk/english-test/english-prepositions-4-test/",
+            "https://gotest.com.pk/english-test/english-direct-and-indirect-1-test/",
+            "https://gotest.com.pk/english-test/english-direct-and-indirect-test-2/",
+            "https://gotest.com.pk/english-test/english-direct-and-indirect-3-test/",
+            "https://gotest.com.pk/english-test/english-active-and-passive-voice-1-test/",
+            "https://gotest.com.pk/english-test/english-active-and-passive-voice-2-test/",
+            "https://gotest.com.pk/english-test/english-active-and-passive-voice-3-test/"
+          ],
+          "mapping_status": "pending"
+        }
+      ]
+    },
+    {
+      "unit_number": 3,
+      "unit_title": "WRITING SKILLS",
+      "topics": [
+        {
+          "topic_name": "Writing Skills",
+          "slos": [
+            {
+              "id": "3.1",
+              "text": "Proof read and edit their own peers and given text for the error of usage and style."
+            },
+            {
+              "id": "3.2",
+              "text": "Faulty sentence structure"
+            },
+            {
+              "id": "3.3",
+              "text": "Subject verb agreement"
+            },
+            {
+              "id": "3.4",
+              "text": "Errors of functions and spellings"
+            }
+          ],
+          "source_urls": [
+            "https://gotest.com.pk/mdcat/mdcat-english-spotting-errors-test-1-online/",
+            "https://gotest.com.pk/english-test/english-spotting-errors-test-1-online/",
+            "https://gotest.com.pk/english-test/english-spotting-errors-test-2/",
+            "https://gotest.com.pk/english-test/english-spotting-errors-test-3/",
+            "https://gotest.com.pk/english-test/english-spotting-errors-4-online-test/",
+            "https://gotest.com.pk/english-test/english-spotting-errors-5-online-test/",
+            "https://gotest.com.pk/english-test/english-spotting-errors-6-online-test/",
+            "https://gotest.com.pk/english-test/english-spotting-errors-7-online-test/",
+            "https://gotest.com.pk/english-test/english-spotting-errors-8-online-test/",
+            "https://gotest.com.pk/english-test/english-spotting-errors-test-9/",
+            "https://gotest.com.pk/english-test/english-spotting-errors-10-test/",
+            "https://gotest.com.pk/english-test/english-spotting-errors-test-11/",
+            "https://gotest.com.pk/english-test/english-grammar-correction-test/"
+          ],
+          "mapping_status": "pending"
+        }
+      ]
+    }
+  ]
+}

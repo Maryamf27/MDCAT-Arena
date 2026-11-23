@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "reference_scheme": "subject/unit/{unit_number}/topic/{topic_slug}",
+  "answer_index_base": 0,
+  "questions": [
+    {
+      "question": "Two viral isolates both have RNA genomes, but one genome is single-stranded and the other is double-stranded. Which feature distinguishes them in this classification?",
+      "options": [
+        "The number of strands in the genome",
+        "The temperature of the host organism",
+        "The number of cells in the host tissue",
+        "The location where the sample was collected"
+      ],
+      "correct_answer_index": 0,
+      "explanation": "Viral genomes can be distinguished by whether they are single-stranded or double-stranded.",
+      "subject": "biology",
+      "unit_id": "biology/unit/1",
+      "topic_id": "biology/unit/1/topic/viruses",
+      "slo_reference": "1.1",
+      "difficulty": "easy",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena independently authored sample"
+    },
+    {
+      "question": "A lake warms more slowly than nearby dry ground on a sunny afternoon. Which property of water best explains this difference?",
+      "options": [
+        "Its high specific heat capacity",
+        "Its ability to form ionic bonds with soil",
+        "Its low density in the liquid state",
+        "Its rapid evaporation at all temperatures"
+      ],
+      "correct_answer_index": 0,
+      "explanation": "Water can absorb substantial heat before its temperature changes appreciably because it has a high specific heat capacity.",
+      "subject": "biology",
+      "unit_id": "biology/unit/3",
+      "topic_id": "biology/unit/3/topic/biological-importance-of-water",
+      "slo_reference": "3.3",
+      "difficulty": "easy",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena independently authored sample"
+    },
+    {
+      "question": "A model shows two DNA strands winding around a shared axis. Which description best names this arrangement?",
+      "options": [
+        "A double helix",
+        "A phospholipid bilayer",
+        "A branched polysaccharide",
+        "A single amino-acid chain"
+      ],
+      "correct_answer_index": 0,
+      "explanation": "The Watson–Crick model describes DNA as two strands arranged in a double-helical structure.",
+      "subject": "biology",
+      "unit_id": "biology/unit/3",
+      "topic_id": "biology/unit/3/topic/structure-of-dna",
+      "slo_reference": "3.9",
+      "difficulty": "easy",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena independently authored sample"
+    },
+    {
+      "question": "A cell's DNA is enclosed by a membrane-bound nucleus. Which broad cell category does this observation support?",
+      "options": [
+        "A prokaryotic cell",
+        "A eukaryotic cell",
+        "A virus particle",
+        "A bacterial endospore"
+      ],
+      "correct_answer_index": 1,
+      "explanation": "Eukaryotic cells have DNA enclosed in a membrane-bound nucleus; prokaryotic cells do not.",
+      "subject": "biology",
+      "unit_id": "biology/unit/4",
+      "topic_id": "biology/unit/4/topic/prokaryotic-and-eukaryotic-cell",
+      "slo_reference": "4.2",
+      "difficulty": "easy",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena independently authored sample"
+    },
+    {
+      "question": "An experiment changes temperature while keeping pH and enzyme amount constant. Which factor is being tested for its effect on enzyme action?",
+      "options": [
+        "Temperature",
+        "Substrate identity",
+        "Cell size",
+        "Light intensity"
+      ],
+      "correct_answer_index": 0,
+      "explanation": "Because temperature is the variable changed while the other stated conditions are controlled, the experiment tests temperature's effect on enzyme action.",
+      "subject": "biology",
+      "unit_id": "biology/unit/6",
+      "topic_id": "biology/unit/6/topic/factors-that-affect-the-rate-of-enzyme-reactions",
+      "slo_reference": "6.3",
+      "difficulty": "easy",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena independently authored sample"
+    }
+  ]
+}
