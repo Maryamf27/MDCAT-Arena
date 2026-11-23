@@ -1,23 +1,34 @@
-import { createClient } from "@/lib/supabase/server";
+import { Suspense } from "react";
+import { PerformanceSection } from "@/components/dashboard/performance-section";
+import { PracticeEntry } from "@/components/dashboard/practice-entry";
+import { WelcomeSection } from "@/components/dashboard/welcome-section";
+import { SubjectsSection, SubjectsSkeleton } from "@/components/subjects/subjects-section";
+import { SectionHeading } from "@/components/ui/section";
 
-export const instant = false;
-
-export default async function Home() {
-  const supabase = await createClient();
-
-  const { data, error } = await supabase
-    .from("subjects")
-    .select("id")
-    .limit(1);
-
+export default function Home() {
   return (
-    <main className="p-10">
-      <h1 className="text-2xl font-bold">MDCAT Arena</h1>
-      <p>
-        {error
-          ? `Supabase response: ${error.message}`
-          : "Supabase connected successfully!"}
-      </p>
-    </main>
+    <div className="mx-auto flex max-w-6xl flex-col gap-10">
+      <WelcomeSection />
+
+      <section id="subjects"  className="scroll-mt-24">
+        <SectionHeading
+          title="Subjects"
+          description="The five MDCAT subjects. Pick one to start a practice session."
+        />
+        <Suspense fallback={<SubjectsSkeleton />}>
+          <SubjectsSection />
+        </Suspense>
+      </section>
+
+      <section>
+        <SectionHeading title="Continue practicing" />
+        <PracticeEntry />
+      </section>
+
+      <section>
+        <SectionHeading title="Your performance" />
+        <PerformanceSection />
+      </section>
+    </div>
   );
 }

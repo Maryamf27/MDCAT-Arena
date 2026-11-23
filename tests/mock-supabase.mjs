@@ -66,6 +66,41 @@ const tables = {
 
 export const requests = [];
 
+// --- Auth + attempt-persistence emulation -------------------------------------
+// Emulates GET /auth/v1/user and the two RPCs in
+// supabase/migrations/20261123000300_practice_attempt_persistence.sql with simple
+// in-memory logic. The REAL transactional behaviour (rollback, locking, RLS) is
+// covered against Postgres, not here; this only lets the API routes run offline.
+export const STUDENT = { id: uuid("user:student"), email: "student@test.dev", token: "test-student-token" };
+export const attempts = new Map(); // id -> { user_id, status, score, total, answers: [{questionId, selectedIndex}] }
+const SUBJECT_KEYS = ["biology", "chemistry", "physics", "english", "logical_reasoning"];
+const rpcError = (res, message) => { res.writeHead(400, { "Content-Type": "application/json" }); res.end(JSON.stringify({ code: "P0001", message })); };
+
+function handleRpc(name, body, res) {
+  if (name === "start_practice_attempt") {
+    if (!SUBJECT_KEYS.includes(body.p_subject_key)) return rpcError(res, "invalid_subject");
+    if (body.p_user_id !== STUDENT.id) return rpcError(res, "user_not_found");
+    const id = uuid(`attempt:${attempts.size}`);
+    attempts.set(id, { user_id: body.p_user_id, status: "in_progress", score: null, total: null, answers: [] });
+    res.writeHead(200, { "Content-Type": "application/json" }); return res.end(JSON.stringify(id));
+  }
+  if (name === "submit_practice_attempt") {
+    const a = attempts.get(body.p_attempt_id);
+    if (!a || a.user_id !== body.p_user_id) return rpcError(res, "attempt_not_found");
+    if (a.status === "submitted") {
+      res.writeHead(200, { "Content-Type": "application/json" });
+      return res.end(JSON.stringify({ alreadySubmitted: true, attemptId: body.p_attempt_id, submittedAt: "2026-11-23T00:00:00Z", score: a.score, totalPoints: a.total, answers: a.answers }));
+    }
+    const correct = body.p_answers.filter((x) => x.selectedIndex !== null &&
+      x.selectedIndex === questions.find((q) => q.id === x.questionId)?.correct_answer_index).length;
+    if (correct !== body.p_expected_correct) return rpcError(res, "score_mismatch");
+    Object.assign(a, { status: "submitted", score: correct, total: body.p_answers.length, answers: body.p_answers });
+    res.writeHead(200, { "Content-Type": "application/json" });
+    return res.end(JSON.stringify({ alreadySubmitted: false, attemptId: body.p_attempt_id, submittedAt: "2026-11-23T00:00:00Z", score: correct, totalPoints: body.p_answers.length }));
+  }
+  res.writeHead(404).end("{}");
+}
+
 function matches(row, key, expr) {
   if (expr.startsWith("eq.")) return String(row[key]) === expr.slice(3);
   if (expr.startsWith("in.(")) return expr.slice(4, -1).split(",").includes(String(row[key]));
@@ -75,6 +110,17 @@ function matches(row, key, expr) {
 export function startMock(port) {
   const server = http.createServer((req, res) => {
     const url = new URL(req.url, `http://127.0.0.1:${port}`);
+    if (url.pathname === "/auth/v1/user") {
+      const ok = req.headers.authorization === `Bearer ${STUDENT.token}`;
+      res.writeHead(ok ? 200 : 401, { "Content-Type": "application/json" });
+      res.end(JSON.stringify(ok ? { id: STUDENT.id, aud: "authenticated", role: "authenticated", email: STUDENT.email, app_metadata: {}, user_metadata: {}, created_at: "2026-01-01T00:00:00Z" } : { msg: "invalid JWT" }));
+      return;
+    }
+    if (url.pathname.startsWith("/rest/v1/rpc/")) {
+      let raw = ""; req.on("data", (d) => (raw += d));
+      req.on("end", () => handleRpc(url.pathname.replace("/rest/v1/rpc/", ""), JSON.parse(raw || "{}"), res));
+      return;
+    }
     const table = url.pathname.replace("/rest/v1/", "");
     requests.push({ table, select: url.searchParams.get("select") });
     const rows = tables[table];

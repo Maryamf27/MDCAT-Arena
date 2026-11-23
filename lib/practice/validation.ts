@@ -35,9 +35,10 @@ export const questionsQuerySchema = z
   });
 export type QuestionsQuery = z.infer<typeof questionsQuerySchema>;
 
-/** Body validation for POST /api/practice/submit. */
+/** Body validation for POST /api/practice/submit. attemptId comes from POST /api/practice/attempts. */
 export const submitSchema = z
   .object({
+    attemptId: uuid,
     answers: z
       .array(
         z.object({
@@ -59,3 +60,7 @@ export const submitSchema = z
     });
   });
 export type SubmitBody = z.infer<typeof submitSchema>;
+
+/** Body validation for POST /api/practice/attempts (start a practice attempt). */
+export const startAttemptSchema = z.object({ subject: subjectKey }).strict();
+export type StartAttemptBody = z.infer<typeof startAttemptSchema>;

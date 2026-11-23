@@ -1,8 +1,9 @@
 // End-to-end test of the practice API against a MOCK Supabase (no real DB used).
+// The mock emulates Supabase Auth's /user endpoint and the two attempt RPCs; see tests/mock-supabase.mjs.
 // Run: npm run test:practice
 import { spawn } from "node:child_process";
 import assert from "node:assert/strict";
-import { startMock, requests, questions, INACTIVE_ID } from "./mock-supabase.mjs";
+import { startMock, requests, questions, attempts, INACTIVE_ID, STUDENT } from "./mock-supabase.mjs";
 
 const MOCK_PORT = 54399;
 const APP_PORT = 3199;
@@ -36,10 +37,24 @@ async function check(name, fn) {
   catch (e) { console.error(`  FAIL ${name}\n       ${e.message}`); process.exitCode = 1; }
 }
 const get = async (path) => { const r = await fetch(BASE + path); return { status: r.status, text: await r.text(), headers: r.headers }; };
-const post = async (body, raw = false) => {
-  const r = await fetch(`${BASE}/api/practice/submit`, { method: "POST",
-    headers: { "Content-Type": "application/json" }, body: raw ? body : JSON.stringify(body) });
+// Session cookie exactly as @supabase/ssr stores it (name derives from the Supabase URL host).
+const cookieName = `sb-${new URL(`http://127.0.0.1:${MOCK_PORT}`).hostname.split(".")[0]}-auth-token`;
+const session = {
+  access_token: STUDENT.token, token_type: "bearer", expires_in: 3600,
+  expires_at: Math.floor(Date.now() / 1000) + 3600, refresh_token: "rt",
+  user: { id: STUDENT.id, aud: "authenticated", role: "authenticated", email: STUDENT.email, app_metadata: {}, user_metadata: {}, created_at: "2026-01-01T00:00:00Z" },
+};
+const AUTH = { Cookie: `${cookieName}=base64-${Buffer.from(JSON.stringify(session)).toString("base64url")}` };
+const send = async (path, body, { raw = false, auth = true } = {}) => {
+  const r = await fetch(BASE + path, { method: "POST",
+    headers: { "Content-Type": "application/json", ...(auth ? AUTH : {}) }, body: raw ? body : JSON.stringify(body) });
   return { status: r.status, text: await r.text() };
+};
+const startAttempt = async () => json(await send("/api/practice/attempts", { subject: "biology" })).data.attemptId;
+// Submits to a fresh attempt unless an attemptId is given; every submit consumes its attempt.
+const post = async (body, raw = false, auth = true) => {
+  if (raw) return send("/api/practice/submit", body, { raw, auth });
+  return send("/api/practice/submit", { attemptId: body.attemptId ?? (await startAttempt()), ...body }, { auth });
 };
 const json = (res) => JSON.parse(res.text);
 
@@ -137,10 +152,14 @@ await check("scores wrong and unanswered questions server-side", async () => {
   assert.equal(data.results[1].isCorrect, false);
 });
 await check("ignores any client-supplied score or answer key", async () => {
-  const r = await post({ answers: allCorrect, score: 999 });
+  const attemptId = await startAttempt();
+  const r = await send("/api/practice/submit", { attemptId, answers: allCorrect, score: 999 });
   assert.equal(r.status, 400); // strict schema rejects unknown fields
-  const r2 = await post({ answers: [{ questionId: active[0].id, selectedIndex: 0, correct_answer_index: 0 }] });
+  const r2 = await send("/api/practice/submit", { attemptId, answers: [{ questionId: active[0].id, selectedIndex: 0, correct_answer_index: 0 }] });
   assert.equal(r2.status, 400);
+  const r3 = await send("/api/practice/submit", { attemptId, answers: [{ questionId: active[0].id, selectedIndex: 0, isCorrect: true }] });
+  assert.equal(r3.status, 400);
+  assert.equal(attempts.get(attemptId).status, "in_progress"); // nothing saved by rejected requests
 });
 await check("rejects invalid JSON (400)", async () => {
   const r = await post("{not json", true);
@@ -148,15 +167,17 @@ await check("rejects invalid JSON (400)", async () => {
 });
 await check("rejects bad shapes (400)", async () => {
   const q = active[0].id;
+  const attemptId = await startAttempt();
   for (const body of [
-    {}, { answers: [] },
-    { answers: [{ questionId: "nope", selectedIndex: 0 }] },
-    { answers: [{ questionId: q, selectedIndex: 4 }] },
-    { answers: [{ questionId: q, selectedIndex: -1 }] },
-    { answers: [{ questionId: q, selectedIndex: 1.5 }] },
-    { answers: [{ questionId: q, selectedIndex: "1" }] },
-    { answers: [{ questionId: q, selectedIndex: 0 }, { questionId: q, selectedIndex: 1 }] },
-  ]) assert.equal((await post(body)).status, 400, JSON.stringify(body));
+    {}, { attemptId }, { attemptId, answers: [] }, { answers: allCorrect },
+    { attemptId, answers: [{ questionId: "nope", selectedIndex: 0 }] },
+    { attemptId, answers: [{ questionId: q, selectedIndex: 4 }] },
+    { attemptId, answers: [{ questionId: q, selectedIndex: -1 }] },
+    { attemptId, answers: [{ questionId: q, selectedIndex: 1.5 }] },
+    { attemptId, answers: [{ questionId: q, selectedIndex: "1" }] },
+    { attemptId: "not-a-uuid", answers: [{ questionId: q, selectedIndex: 0 }] },
+    { attemptId, answers: [{ questionId: q, selectedIndex: 0 }, { questionId: q, selectedIndex: 1 }] },
+  ]) assert.equal((await send("/api/practice/submit", body)).status, 400, JSON.stringify(body));
 });
 await check("rejects unknown and inactive question ids (422)", async () => {
   const r = await post({ answers: [{ questionId: INACTIVE_ID, selectedIndex: 0 },
@@ -167,6 +188,46 @@ await check("rejects unknown and inactive question ids (422)", async () => {
 await check("rejects oversized bodies (413)", async () => {
   const r = await post(JSON.stringify({ pad: "x".repeat(20000) }), true);
   assert.equal(r.status, 413);
+});
+console.log("Attempt persistence (auth + attempts)");
+await check("anonymous callers get 401 on start and submit", async () => {
+  assert.equal((await send("/api/practice/attempts", { subject: "biology" }, { auth: false })).status, 401);
+  const r = await send("/api/practice/submit", { attemptId: "11111111-1111-4111-8111-111111111111", answers: allCorrect }, { auth: false });
+  assert.equal(r.status, 401); assert.equal(json(r).error.code, "unauthorized");
+});
+await check("start returns an attempt id owned by the signed-in student, with no answer keys", async () => {
+  const r = await send("/api/practice/attempts", { subject: "biology" });
+  assert.equal(r.status, 201);
+  const { attemptId } = json(r).data;
+  assert.equal(attempts.get(attemptId).user_id, STUDENT.id);
+  for (const secret of SECRETS) assert.ok(!r.text.includes(secret), `leaked ${secret}`);
+});
+await check("start rejects an unknown subject and any client-supplied user_id (400)", async () => {
+  assert.equal((await send("/api/practice/attempts", { subject: "astrology" })).status, 400);
+  assert.equal((await send("/api/practice/attempts", { subject: "biology", user_id: "x" })).status, 400);
+});
+await check("submit saves the score and returns the saved attempt id", async () => {
+  const attemptId = await startAttempt();
+  const r = await post({ attemptId, answers: allCorrect });
+  assert.equal(r.status, 200);
+  const { data } = json(r);
+  assert.equal(data.attemptId, attemptId); assert.equal(data.alreadySubmitted, false);
+  assert.equal(attempts.get(attemptId).status, "submitted");
+  assert.equal(attempts.get(attemptId).score, data.score.correct);
+});
+await check("a repeated submit saves nothing new and reports the ORIGINAL result", async () => {
+  const attemptId = await startAttempt();
+  const wrongOnes = active.map((q) => ({ questionId: q.id, selectedIndex: (q.correct_answer_index + 1) % 4 }));
+  const first = json(await post({ attemptId, answers: wrongOnes })).data;
+  const again = await post({ attemptId, answers: allCorrect }); // different payload must not change the saved result
+  assert.equal(again.status, 200);
+  const data = json(again).data;
+  assert.equal(data.alreadySubmitted, true);
+  assert.equal(data.score.correct, first.score.correct); assert.equal(data.score.correct, 0);
+});
+await check("an unknown attempt id is a 404 and writes nothing", async () => {
+  const r = await post({ attemptId: "22222222-2222-4222-8222-222222222222", answers: allCorrect });
+  assert.equal(r.status, 404); assert.equal(json(r).error.code, "attempt_not_found");
 });
 await check("GET on submit is not allowed (405)", async () => {
   assert.equal((await get("/api/practice/submit")).status, 405);
