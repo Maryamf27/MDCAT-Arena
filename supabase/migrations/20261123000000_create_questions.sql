@@ -1,21 +1,13 @@
--- =============================================================================
--- Reconcile the existing public.questions table with the syllabus-aware schema.
--- =============================================================================
--- Never creates/drops public.questions. Existing columns, rows, constraints,
--- RLS policies, table grants, and RLS settings are preserved. Legacy columns
--- question_text/source_name/source_url/syllabus_node_id remain intact.
--- Run manually against the intended Supabase project; this file is not run by
--- the repository workflow.
--- =============================================================================
-
 begin;
 
--- 0. Verify the supplied legacy schema and inspect the real FK/node types.
+-- 0. Verify the supplied legacy schema (incl. the composite legacy FK) and inspect node types.
 do $$
 declare
   required_missing text[];
-  q_att smallint;
-  referenced_id_att smallint;
+  q_node_att smallint;
+  q_subject_att smallint;
+  ref_id_att smallint;
+  ref_subject_att smallint;
   fk_total integer;
   fk_correct integer;
   fk_definition text;
@@ -68,35 +60,52 @@ begin
     raise exception 'Expected public.subjects and public.syllabus_nodes';
   end if;
 
-  select attnum into q_att from pg_attribute
+  -- Existing legacy FK is composite:
+  --   FOREIGN KEY (syllabus_node_id, subject_id)
+  --   REFERENCES public.syllabus_nodes (id, subject_id)
+  -- Verify it by attnum/conkey/confkey (order-sensitive). Never drop or recreate it.
+  select attnum into q_node_att from pg_attribute
    where attrelid = 'public.questions'::regclass
      and attname = 'syllabus_node_id' and not attisdropped;
-  select attnum into referenced_id_att from pg_attribute
+  select attnum into q_subject_att from pg_attribute
+   where attrelid = 'public.questions'::regclass
+     and attname = 'subject_id' and not attisdropped;
+  select attnum into ref_id_att from pg_attribute
    where attrelid = 'public.syllabus_nodes'::regclass
      and attname = 'id' and not attisdropped;
+  select attnum into ref_subject_att from pg_attribute
+   where attrelid = 'public.syllabus_nodes'::regclass
+     and attname = 'subject_id' and not attisdropped;
+
+  if q_node_att is null or q_subject_att is null
+     or ref_id_att is null or ref_subject_att is null then
+    raise exception 'Could not resolve attnums for the syllabus_node_id/subject_id composite FK check';
+  end if;
 
   select count(*),
          count(*) filter (
            where c.confrelid = 'public.syllabus_nodes'::regclass
-             and c.conkey = array[q_att]::smallint[]
-             and c.confkey = array[referenced_id_att]::smallint[]
+             and c.conkey  = array[q_node_att, q_subject_att]::smallint[]
+             and c.confkey = array[ref_id_att, ref_subject_att]::smallint[]
          )
     into fk_total, fk_correct
     from pg_constraint c
    where c.conrelid = 'public.questions'::regclass
      and c.contype = 'f'
-     and q_att = any(c.conkey);
+     and q_node_att = any(c.conkey);
 
   if fk_total <> 1 or fk_correct <> 1 then
-    raise exception 'Expected exactly one FK from questions.syllabus_node_id to syllabus_nodes.id; found %, correct-target FKs %',
+    raise exception 'Expected exactly one composite FK questions(syllabus_node_id, subject_id) -> syllabus_nodes(id, subject_id); found % FK(s) on syllabus_node_id, % matching',
       fk_total, fk_correct;
   end if;
 
   select pg_get_constraintdef(c.oid) into fk_definition
     from pg_constraint c
    where c.conrelid = 'public.questions'::regclass
-     and c.contype = 'f' and q_att = any(c.conkey);
-  raise notice 'Existing syllabus_node_id FK: %', fk_definition;
+     and c.contype = 'f'
+     and c.conkey  = array[q_node_att, q_subject_att]::smallint[]
+     and c.confkey = array[ref_id_att, ref_subject_att]::smallint[];
+  raise notice 'Existing composite syllabus_node_id FK (preserved): %', fk_definition;
 
   for node_type_row in
     select n.node_type::text as node_type, count(*) as question_count
@@ -122,9 +131,6 @@ begin
   end loop;
 end
 $$;
-
--- Ensure the columns used by the resolver exist. These are the inferred
--- syllabus_nodes/subjects fields written by scripts/import-syllabus.ts.
 do $$
 declare
   missing text[];
@@ -168,9 +174,7 @@ alter table public.questions add column if not exists source_reference text;
 alter table public.questions add column if not exists question_hash text;
 alter table public.questions add column if not exists is_active boolean;
 
--- Convert canonical dataset paths into database UUID references. The path
--- columns in syllabus_nodes use the subject UUID prefix; callers use the
--- canonical subject key (biology/unit/3/topic/...).
+
 create or replace function public.resolve_question_syllabus_refs(
   p_subject_key text,
   p_unit_path text,
@@ -208,9 +212,6 @@ as $$
      and p_topic_path like p_unit_path || '/topic/%';
 $$;
 
--- Inspect the referenced node's actual type above, then map each legacy row
--- through the real hierarchy. A unit/topic reference is accepted only when it
--- has exactly one SLO descendant; ambiguity aborts instead of guessing.
 create temporary table questions_schema_backfill_map on commit drop as
 with candidate_paths as (
   select q.id as question_id,
@@ -289,10 +290,6 @@ begin
   end if;
 end
 $$;
-
--- Backfill question from question_text and preserve legacy source attribution.
--- "legacy" is deliberate: source_name/source_url alone cannot establish
--- whether the question itself was independently authored or copied.
 update public.questions q
    set question = coalesce(nullif(btrim(q.question), ''), q.question_text::text),
        unit_id = coalesce(q.unit_id, m.unit_id),
@@ -328,8 +325,7 @@ alter table public.questions alter column question_hash set not null;
 alter table public.questions alter column is_active set default true;
 alter table public.questions alter column is_active set not null;
 
--- content_hash is retained unchanged; question_hash follows the normalized
--- question-text definition used by the intended importer.
+
 create unique index if not exists questions_question_hash_key
   on public.questions (question_hash);
 
@@ -394,8 +390,7 @@ begin
 end
 $$;
 
--- Validate all mapped rows and guard future writes against wrong node types,
--- subjects, or parent/child relationships.
+
 do $$
 begin
   if exists (
