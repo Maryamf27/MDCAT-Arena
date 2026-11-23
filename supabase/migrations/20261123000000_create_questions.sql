@@ -131,6 +131,9 @@ begin
   end loop;
 end
 $$;
+
+-- Ensure the columns used by the resolver exist. These are the inferred
+-- syllabus_nodes/subjects fields written by scripts/import-syllabus.ts.
 do $$
 declare
   missing text[];
@@ -174,7 +177,9 @@ alter table public.questions add column if not exists source_reference text;
 alter table public.questions add column if not exists question_hash text;
 alter table public.questions add column if not exists is_active boolean;
 
-
+-- Convert canonical dataset paths into database UUID references. The path
+-- columns in syllabus_nodes use the subject UUID prefix; callers use the
+-- canonical subject key (biology/unit/3/topic/...).
 create or replace function public.resolve_question_syllabus_refs(
   p_subject_key text,
   p_unit_path text,
@@ -290,6 +295,10 @@ begin
   end if;
 end
 $$;
+
+-- Backfill question from question_text and preserve legacy source attribution.
+-- "legacy" is deliberate: source_name/source_url alone cannot establish
+-- whether the question itself was independently authored or copied.
 update public.questions q
    set question = coalesce(nullif(btrim(q.question), ''), q.question_text::text),
        unit_id = coalesce(q.unit_id, m.unit_id),
@@ -325,7 +334,8 @@ alter table public.questions alter column question_hash set not null;
 alter table public.questions alter column is_active set default true;
 alter table public.questions alter column is_active set not null;
 
-
+-- content_hash is retained unchanged; question_hash follows the normalized
+-- question-text definition used by the intended importer.
 create unique index if not exists questions_question_hash_key
   on public.questions (question_hash);
 
@@ -390,7 +400,8 @@ begin
 end
 $$;
 
-
+-- Validate all mapped rows and guard future writes against wrong node types,
+-- subjects, or parent/child relationships.
 do $$
 begin
   if exists (
@@ -491,8 +502,7 @@ create index if not exists questions_slo_node_id_idx on public.questions (slo_no
 create index if not exists questions_active_selection_idx
   on public.questions (subject_id, difficulty) where is_active;
 
--- Existing status/content_hash and all existing RLS policies/grants remain as-is.
--- This migration intentionally does not change RLS, policies, grants, or other tables.
+
 revoke all on function public.resolve_question_syllabus_refs(text, text, text, text)
   from public, anon, authenticated;
 grant execute on function public.resolve_question_syllabus_refs(text, text, text, text)

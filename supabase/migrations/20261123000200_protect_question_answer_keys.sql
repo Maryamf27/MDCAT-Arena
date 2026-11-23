@@ -1,4 +1,3 @@
-
 begin;
 
 alter table public.questions enable row level security;
@@ -14,4 +13,3 @@ grant select (
 grant all on table public.questions to service_role;
 
 commit;
-
