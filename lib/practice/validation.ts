@@ -1,12 +1,12 @@
 import { z } from "zod";
+import { SUBJECT_KEYS } from "@/lib/subjects";
 import { DIFFICULTIES } from "./types";
-
-const SUBJECT_KEYS = ["biology", "chemistry", "physics", "english", "logical_reasoning"] as const;
 
 const uuid = z.string().uuid();
 const subjectKey = z.enum(SUBJECT_KEYS);
 const unitNumber = z.string().regex(/^\d{1,2}(\.\d{1,2})?$/, "unit must be a unit number such as 3 or 5.1");
 const topicSlug = z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, "topic must be a slug such as structure-of-dna").max(120);
+const sloReference = z.string().regex(/^\d{1,2}\.\d{1,2}$/, "slo must be a syllabus outcome identifier such as 3.9");
 
 const isUuid = (v: string) => uuid.safeParse(v).success;
 
@@ -16,12 +16,13 @@ export const questionsQuerySchema = z
     subject: z.union([uuid, subjectKey]).optional(),
     unit: z.union([uuid, unitNumber]).optional(),
     topic: z.union([uuid, topicSlug]).optional(),
+    slo: z.union([uuid, sloReference]).optional(),
     difficulty: z.enum(DIFFICULTIES).optional(),
     limit: z.coerce.number().int().min(1).max(50).default(10),
   })
   .superRefine((q, ctx) => {
-    if (!q.subject && !q.unit && !q.topic) {
-      ctx.addIssue({ code: "custom", message: "Provide at least one of subject, unit or topic" });
+    if (!q.subject && !q.unit && !q.topic && !q.slo) {
+      ctx.addIssue({ code: "custom", message: "Provide at least one of subject, unit, topic or SLO" });
     }
     if (q.unit && !isUuid(q.unit) && !q.subject) {
       ctx.addIssue({ code: "custom", path: ["subject"], message: "subject is required when unit is a unit number" });
@@ -31,6 +32,9 @@ export const questionsQuerySchema = z
     }
     if (q.topic && !isUuid(q.topic) && (!q.subject || !q.unit || isUuid(q.subject) || isUuid(q.unit))) {
       ctx.addIssue({ code: "custom", path: ["topic"], message: "a topic slug requires subject key and unit number; otherwise pass the topic UUID" });
+    }
+    if (q.slo && !isUuid(q.slo) && (!q.subject || isUuid(q.subject))) {
+      ctx.addIssue({ code: "custom", path: ["slo"], message: "an SLO reference requires a subject key; otherwise pass the SLO UUID" });
     }
   });
 export type QuestionsQuery = z.infer<typeof questionsQuerySchema>;

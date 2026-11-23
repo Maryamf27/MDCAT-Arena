@@ -1,6 +1,5 @@
-import { BookX } from "lucide-react";
 import { getSubjects } from "@/lib/subjects-data";
-import { EmptyState, ErrorState, Skeleton } from "@/components/ui/states";
+import { Skeleton } from "@/components/ui/states";
 import { SubjectCard } from "./subject-card";
 
 const GRID = "grid gap-4 sm:grid-cols-2 xl:grid-cols-3";
@@ -24,24 +23,18 @@ export function SubjectsSkeleton() {
 export async function SubjectsSection() {
   const result = await getSubjects();
 
-  if (!result.ok) {
-    return <ErrorState description={result.message} />;
-  }
-  if (result.subjects.length === 0) {
-    return (
-      <EmptyState
-        icon={BookX}
-        title="No subjects found"
-        description="The subjects table has no MDCAT subjects yet. Run the syllabus import and check back."
-      />
-    );
-  }
-
   return (
-    <div className={GRID}>
-      {result.subjects.map((subject) => (
-        <SubjectCard key={subject.id} subject={subject} />
-      ))}
+    <div className="flex flex-col gap-4">
+      {result.availabilityMessage ? (
+        <p role="status" className="rounded-[10px] border border-line bg-white px-4 py-3 text-small text-muted">
+          {result.availabilityMessage}
+        </p>
+      ) : null}
+      <div className={GRID}>
+        {result.subjects.map((subject) => (
+          <SubjectCard key={subject.meta.key} subject={subject} />
+        ))}
+      </div>
     </div>
   );
 }

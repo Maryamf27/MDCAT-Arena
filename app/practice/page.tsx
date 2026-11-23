@@ -10,7 +10,7 @@ export default function PracticeIndexPage() {
     <div className="mx-auto max-w-6xl">
       <SectionHeading
         title="Choose a subject"
-        description="Biology currently has the approved sample questions. Other subjects will fill up as questions are approved."
+        description="Choose from Biology, Chemistry, Physics, English, or Logical Reasoning. Availability counts reflect active Supabase questions only."
       />
       <Suspense fallback={<SubjectsSkeleton />}>
         <SubjectsSection />

@@ -3,15 +3,9 @@ import { ApiError } from "./errors";
 import { PUBLIC_QUESTION_COLUMNS, type PublicQuestion } from "@/lib/questions/public";
 import type { AnswerKey, QuestionFilters, QuestionScope } from "./types";
 import type { QuestionsQuery } from "./validation";
+import { SUBJECT_META } from "@/lib/subjects";
 
-// Mirrors SUBJECT_CODES in scripts/import-syllabus.ts.
-const SUBJECT_CODES: Record<string, string> = {
-  biology: "BIO",
-  chemistry: "CHEM",
-  physics: "PHY",
-  english: "ENG",
-  logical_reasoning: "LR",
-};
+const SUBJECT_CODES = Object.fromEntries(SUBJECT_META.map((subject) => [subject.key, subject.code]));
 
 const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 const isUuid = (v: string) => UUID_RE.test(v);
@@ -31,7 +25,7 @@ function dbError(context: string, error: { message: string }): ApiError {
  */
 export async function resolveScope(
   db: SupabaseClient,
-  query: Pick<QuestionsQuery, "subject" | "unit" | "topic">
+  query: Pick<QuestionsQuery, "subject" | "unit" | "topic" | "slo">
 ): Promise<QuestionScope> {
   const scope: QuestionScope = {};
 
@@ -87,6 +81,23 @@ export async function resolveScope(
     }
   }
 
+  if (query.slo) {
+    if (isUuid(query.slo)) {
+      scope.sloId = query.slo;
+    } else {
+      const { data, error } = await db
+        .from("syllabus_nodes")
+        .select("id")
+        .eq("subject_id", scope.subjectId!)
+        .eq("node_type", "slo")
+        .eq("source_identifier", query.slo)
+        .limit(1);
+      if (error) throw dbError("SLO lookup", error);
+      if (!data?.length) throw new ApiError(404, "slo_not_found", `Unknown SLO "${query.slo}"`);
+      scope.sloId = data[0].id as string;
+    }
+  }
+
   return scope;
 }
 
@@ -129,6 +140,7 @@ export async function listActiveQuestions(
   if (filters.scope.subjectId) q = q.eq("subject_id", filters.scope.subjectId);
   if (filters.scope.unitId) q = q.eq("unit_id", filters.scope.unitId);
   if (filters.scope.topicId) q = q.eq("topic_id", filters.scope.topicId);
+  if (filters.scope.sloId) q = q.eq("slo_node_id", filters.scope.sloId);
   if (filters.difficulty) q = q.eq("difficulty", filters.difficulty);
 
   const { data, error } = await q.limit(POOL_LIMIT);

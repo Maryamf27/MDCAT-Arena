@@ -5,11 +5,11 @@ import { listActiveQuestions, resolveScope } from "@/lib/practice/repository";
 import { questionsQuerySchema } from "@/lib/practice/validation";
 
 /**
- * GET /api/practice/questions?subject=biology&unit=3&topic=structure-of-dna&difficulty=easy&limit=10
+ * GET /api/practice/questions?subject=physics&unit=3&topic=waves&slo=3.9&limit=10
  *
  * Returns random active questions WITHOUT correct_answer_index or explanation.
- * Subject/unit/topic accept either human keys (biology, 3, structure-of-dna)
- * or database UUIDs. At least one of subject, unit, topic is required.
+ * Subject keys and SLO references resolve through the live syllabus tables;
+ * unit, topic and SLO filters also accept their database UUIDs.
  */
 export async function GET(request: NextRequest) {
   try {

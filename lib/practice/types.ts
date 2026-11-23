@@ -5,6 +5,7 @@ export type QuestionScope = {
   subjectId?: string;
   unitId?: string;
   topicId?: string;
+  sloId?: string;
 };
 
 export type QuestionFilters = {

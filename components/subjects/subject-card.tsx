@@ -11,11 +11,20 @@ export function SubjectCard({ subject }: { subject: SubjectRecord }) {
         <span className="grid h-12 w-12 place-items-center rounded-xl bg-mint text-primary">
           <SubjectIcon name={subject.meta.icon} />
         </span>
-        {subject.unitCount !== null ? (
-          <Badge tone="neutral">
-            {subject.unitCount} {subject.unitCount === 1 ? "unit" : "units"}
-          </Badge>
-        ) : null}
+        <div className="flex flex-wrap justify-end gap-2">
+          {subject.questionCount === null ? (
+            <Badge tone="neutral">Count unavailable</Badge>
+          ) : subject.questionCount === 0 ? (
+            <Badge tone="warning">Questions coming soon</Badge>
+          ) : (
+            <Badge tone="success">{subject.questionCount} active questions</Badge>
+          )}
+          {subject.unitCount !== null ? (
+            <Badge tone="neutral">
+              {subject.unitCount} {subject.unitCount === 1 ? "unit" : "units"}
+            </Badge>
+          ) : null}
+        </div>
       </div>
 
       <div className="flex-1">

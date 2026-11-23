@@ -1,12 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { useCallback, useEffect, useState } from "react";
-import { ArrowLeft, ArrowRight, Library, LogIn, Send } from "lucide-react";
+import { useState } from "react";
+import { ArrowLeft, ArrowRight, LogIn, Send } from "lucide-react";
 import type { SubmissionResult } from "@/lib/practice/types";
 import { ProgressBar } from "@/components/ui/progress-bar";
 import { EmptyState, ErrorState, Skeleton } from "@/components/ui/states";
 import { QuestionCard } from "./question-card";
+import { PracticeSetup, type PracticeSelection } from "./practice-setup";
 import { ResultsView } from "./results-view";
 import {
   parseApiErrorCode,
@@ -18,6 +19,7 @@ import {
 const SESSION_SIZE = 5;
 
 type Phase =
+  | { name: "ready" }
   | { name: "loading" }
   | { name: "error"; message: string }
   | { name: "signin" }
@@ -35,88 +37,82 @@ function isSubmissionResult(value: unknown): value is SubmissionResult {
 export function PracticeSession({
   subjectKey,
   subjectLabel,
+  questionCount,
 }: {
   subjectKey: string;
   subjectLabel: string;
+  questionCount: number | null;
 }) {
-  const [phase, setPhase] = useState<Phase>({ name: "loading" });
+  const [phase, setPhase] = useState<Phase>({ name: "ready" });
   const [questions, setQuestions] = useState<PracticeQuestion[]>([]);
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [current, setCurrent] = useState(0);
   const [submitError, setSubmitError] = useState<string | null>(null);
-  const [loadId, setLoadId] = useState(0);
   const [attemptId, setAttemptId] = useState<string | null>(null);
 
-  // Fetch a fresh set of questions whenever loadId changes.
-  useEffect(() => {
-    const controller = new AbortController();
-
-    async function load() {
-      try {
-        // 1) Start a saved attempt for the signed-in student.
-        const started = await fetch("/api/practice/attempts", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ subject: subjectKey }),
-          signal: controller.signal,
-        });
-        const startedJson: unknown = await started.json().catch(() => null);
-        if (started.status === 401) {
-          setPhase({ name: "signin" });
-          return;
-        }
-        const newAttemptId =
-          typeof startedJson === "object" && startedJson !== null
-            ? ((startedJson as { data?: { attemptId?: unknown } }).data?.attemptId ?? null)
-            : null;
-        if (!started.ok || typeof newAttemptId !== "string") {
-          setPhase({
-            name: "error",
-            message: parseApiErrorMessage(startedJson) ?? "Your practice session could not be started.",
-          });
-          return;
-        }
-        setAttemptId(newAttemptId);
-
-        // 2) Fetch the questions (unchanged endpoint).
-        const res = await fetch(
-          `/api/practice/questions?subject=${encodeURIComponent(subjectKey)}&limit=${SESSION_SIZE}`,
-          { signal: controller.signal, cache: "no-store" }
-        );
-        const json: unknown = await res.json().catch(() => null);
-        if (!res.ok) {
-          setPhase({
-            name: "error",
-            message: parseApiErrorMessage(json) ?? "The questions could not be loaded.",
-          });
-          return;
-        }
-        const parsed = parseQuestionsResponse(json);
-        if (!parsed) {
-          setPhase({ name: "error", message: "The server sent questions in an unexpected format." });
-          return;
-        }
-        setQuestions(parsed);
-        setPhase(parsed.length === 0 ? { name: "empty" } : { name: "answering" });
-      } catch (err) {
-        if (err instanceof DOMException && err.name === "AbortError") return;
-        setPhase({ name: "error", message: "Could not reach the server. Check your connection and try again." });
-      }
-    }
-
-    void load();
-    return () => controller.abort();
-  }, [subjectKey, loadId]);
-
-  const restart = useCallback(() => {
+  async function startPractice(filters: PracticeSelection) {
     setPhase({ name: "loading" });
     setQuestions([]);
     setAnswers({});
     setCurrent(0);
     setSubmitError(null);
     setAttemptId(null);
-    setLoadId((n) => n + 1);
-  }, []);
+    try {
+      const query = new URLSearchParams({ subject: subjectKey, limit: String(SESSION_SIZE) });
+      if (filters.unitId) query.set("unit", filters.unitId);
+      if (filters.topicId) query.set("topic", filters.topicId);
+      if (filters.sloId) query.set("slo", filters.sloId);
+
+      const response = await fetch(`/api/practice/questions?${query.toString()}`, { cache: "no-store" });
+      const responseJson: unknown = await response.json().catch(() => null);
+      if (!response.ok) {
+        setPhase({ name: "error", message: parseApiErrorMessage(responseJson) ?? "The questions could not be loaded." });
+        return;
+      }
+      const parsed = parseQuestionsResponse(responseJson);
+      if (!parsed) {
+        setPhase({ name: "error", message: "The server sent questions in an unexpected format." });
+        return;
+      }
+      if (parsed.length === 0) {
+        setPhase({ name: "empty" });
+        return;
+      }
+
+      const started = await fetch("/api/practice/attempts", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ subject: subjectKey }),
+      });
+      const startedJson: unknown = await started.json().catch(() => null);
+      if (started.status === 401) {
+        setPhase({ name: "signin" });
+        return;
+      }
+      const newAttemptId =
+        typeof startedJson === "object" && startedJson !== null
+          ? ((startedJson as { data?: { attemptId?: unknown } }).data?.attemptId ?? null)
+          : null;
+      if (!started.ok || typeof newAttemptId !== "string") {
+        setPhase({ name: "error", message: parseApiErrorMessage(startedJson) ?? "Your practice session could not be started." });
+        return;
+      }
+      setAttemptId(newAttemptId);
+      setQuestions(parsed);
+      setPhase({ name: "answering" });
+    } catch {
+      setPhase({ name: "error", message: "Could not reach the server. Check your connection and try again." });
+    }
+  }
+
+  function restart() {
+    setPhase({ name: "ready" });
+    setQuestions([]);
+    setAnswers({});
+    setCurrent(0);
+    setSubmitError(null);
+    setAttemptId(null);
+  }
 
   async function submit() {
     if (!attemptId) return;
@@ -175,6 +171,21 @@ export function PracticeSession({
     );
   }
 
+  if (phase.name === "ready" || phase.name === "empty") {
+    return (
+      <div className="mx-auto max-w-4xl">
+        <PracticeSetup
+          subjectKey={subjectKey}
+          subjectLabel={subjectLabel}
+          questionCount={questionCount}
+          busy={false}
+          emptyMessage={phase.name === "empty" ? "No active questions match this subject and syllabus selection. Adjust the filters and try again." : undefined}
+          onStart={startPractice}
+        />
+      </div>
+    );
+  }
+
   if (phase.name === "error") {
     return (
       <div className="mx-auto max-w-3xl">
@@ -201,23 +212,6 @@ export function PracticeSession({
           action={
             <Link href={`/login?next=${encodeURIComponent(`/practice/${subjectKey}`)}`} className="btn btn-primary">
               Sign in
-            </Link>
-          }
-        />
-      </div>
-    );
-  }
-
-  if (phase.name === "empty") {
-    return (
-      <div className="mx-auto max-w-3xl">
-        <EmptyState
-          icon={Library}
-          title={`No ${subjectLabel} questions yet`}
-          description="There are no approved questions for this subject yet. Try Biology, or check back once more questions are added."
-          action={
-            <Link href="/practice/biology" className="btn btn-primary">
-              Practice Biology
             </Link>
           }
         />

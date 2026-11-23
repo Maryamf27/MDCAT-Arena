@@ -13,7 +13,7 @@ export function WelcomeSection() {
         Answer, submit and review the explanation behind every question.
       </p>
       <div className="mt-6 flex flex-wrap gap-3">
-        <Link href="/practice/biology" className="btn btn-accent btn-lg">
+        <Link href="/practice" className="btn btn-accent btn-lg">
           Start Practicing
           <ArrowRight size={18} aria-hidden />
         </Link>
