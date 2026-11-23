@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     template: "%s · MDCAT Arena",
   },
   description:
-    "Practice MDCAT questions subject by subject and track your preparation.",
+    "Prepare for MDCAT with subject practice, timed mock examinations, and saved performance results.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
