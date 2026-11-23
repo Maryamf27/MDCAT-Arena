@@ -11,7 +11,9 @@
     "import:syllabus:check": "tsx scripts/import-syllabus.ts --dry-run",
     "import:questions": "tsx scripts/import-questions.ts",
     "import:questions:check": "tsx scripts/import-questions.ts --dry-run",
-    "test:practice": "node tests/practice-api.e2e.mjs"
+    "test:practice": "node tests/practice-api.e2e.mjs",
+    "import:questions:all": "tsx scripts/import-all-questions.ts",
+    "import:questions:all:check": "tsx scripts/import-all-questions.ts --dry-run"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.7",

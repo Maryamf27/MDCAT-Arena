@@ -1,13 +1,3 @@
-/**
- * Import independently authored questions (JSON) into public.questions.
- *
- *   npm run import:questions:check   # validate + show plan, no database access
- *   npm run import:questions         # validate, resolve UUIDs, insert, verify
- *
- * Server-side only: uses SUPABASE_SERVICE_ROLE_KEY. Never import from app code.
- * Answer keys (correct_answer_index / explanation) are written to the database
- * but are never printed; verification logs only match/mismatch booleans.
- */
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 import dotenv from "dotenv";
 import crypto from "node:crypto";
