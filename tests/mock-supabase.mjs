@@ -17,18 +17,26 @@ export const SUBJECT_ID = uuid("subject:biology");
 const nodes = [];
 const unitIds = new Map();
 const topicIds = new Map();
+const sloIds = new Map();
 for (const q of dataset.questions) {
   if (!unitIds.has(q.unit_id)) {
     const id = uuid(q.unit_id);
     unitIds.set(q.unit_id, id);
-    nodes.push({ id, subject_id: SUBJECT_ID, node_type: "unit", parent_id: null,
-      source_path: q.unit_id.replace("biology", SUBJECT_ID) });
+    nodes.push({ id, subject_id: SUBJECT_ID, node_type: "unit", parent_id: null, title: `Unit ${q.unit_id.split("/").at(-1)}`,
+      source_path: q.unit_id.replace("biology", SUBJECT_ID), sort_order: nodes.length });
   }
   if (!topicIds.has(q.topic_id)) {
     const id = uuid(q.topic_id);
     topicIds.set(q.topic_id, id);
     nodes.push({ id, subject_id: SUBJECT_ID, node_type: "topic", parent_id: unitIds.get(q.unit_id),
-      source_path: q.topic_id.replace("biology", SUBJECT_ID) });
+      title: q.topic_id.split("/").at(-1), source_path: q.topic_id.replace("biology", SUBJECT_ID), sort_order: nodes.length });
+  }
+  const sloKey = `${q.topic_id}:${q.slo_reference}`;
+  if (!sloIds.has(sloKey)) {
+    const id = uuid(`slo:${sloKey}`);
+    sloIds.set(sloKey, id);
+    nodes.push({ id, subject_id: SUBJECT_ID, node_type: "slo", parent_id: topicIds.get(q.topic_id),
+      title: `SLO ${q.slo_reference}`, source_identifier: q.slo_reference, source_path: `${q.topic_id}/slo/${q.slo_reference}`, sort_order: nodes.length });
   }
 }
 
@@ -43,7 +51,7 @@ export const questions = dataset.questions.map((q, i) => ({
   unit_id: unitIds.get(q.unit_id),
   topic_id: topicIds.get(q.topic_id),
   syllabus_node_id: topicIds.get(q.topic_id),
-  slo_node_id: uuid(`slo:${i}`),
+  slo_node_id: sloIds.get(`${q.topic_id}:${q.slo_reference}`),
   slo_reference: q.slo_reference,
   difficulty: q.difficulty,
   source_type: q.source_type,
@@ -59,7 +67,7 @@ export const INACTIVE_ID = uuid("question:inactive");
 questions.push({ ...questions[0], id: INACTIVE_ID, question: "inactive question", is_active: false, status: "draft" });
 
 const tables = {
-  subjects: [{ id: SUBJECT_ID, code: "BIO" }],
+  subjects: [{ id: SUBJECT_ID, code: "BIO", name: "Biology" }],
   syllabus_nodes: nodes,
   questions,
 };

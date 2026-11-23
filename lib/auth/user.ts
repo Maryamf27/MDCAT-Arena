@@ -12,6 +12,7 @@ export type AuthenticatedUser = { id: string; email: string | null };
  * request bodies are never trusted for it.
  */
 export async function getAuthenticatedUser(): Promise<AuthenticatedUser | null> {
+  if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) return null;
   const supabase = await createClient();
   const { data, error } = await supabase.auth.getUser();
   if (error || !data.user) return null;

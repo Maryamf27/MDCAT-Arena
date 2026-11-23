@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { PracticeSession } from "@/components/practice/practice-session";
 import { SUBJECT_KEYS, getSubjectMetaByKey, isSubjectKey } from "@/lib/subjects";
+import { getSubjects } from "@/lib/subjects-data";
 
 export function generateStaticParams() {
   return SUBJECT_KEYS.map((subject) => ({ subject }));
@@ -18,5 +19,7 @@ export default async function PracticeSubjectPage(props: PageProps<"/practice/[s
   if (!isSubjectKey(subject)) notFound();
 
   const meta = getSubjectMetaByKey(subject);
-  return <PracticeSession subjectKey={meta.key} subjectLabel={meta.label} />;
+  const availability = await getSubjects();
+  const questionCount = availability.subjects.find((item) => item.meta.key === subject)?.questionCount ?? null;
+  return <PracticeSession subjectKey={meta.key} subjectLabel={meta.label} questionCount={questionCount} />;
 }

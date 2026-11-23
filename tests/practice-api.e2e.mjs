@@ -100,6 +100,16 @@ await check("filters by topic slug", async () => {
   const { data } = json(await get("/api/practice/questions?subject=biology&unit=3&topic=structure-of-dna"));
   assert.equal(data.count, 1); assert.equal(data.questions[0].slo_reference, "3.9");
 });
+await check("filters by a syllabus SLO UUID", async () => {
+  const q = active[0];
+  const { data } = json(await get(`/api/practice/questions?subject=biology&slo=${q.slo_node_id}`));
+  assert.equal(data.count, active.filter((item) => item.slo_node_id === q.slo_node_id).length);
+});
+await check("resolves SLO references from the live subject syllabus", async () => {
+  const q = active[0];
+  const { data } = json(await get(`/api/practice/questions?subject=biology&slo=${q.slo_reference}`));
+  assert.equal(data.count, active.filter((item) => item.slo_reference === q.slo_reference).length);
+});
 await check("filters by difficulty (none match hard)", async () => {
   const { data } = json(await get("/api/practice/questions?subject=biology&difficulty=hard"));
   assert.equal(data.count, 0);
@@ -124,6 +134,16 @@ await check("unit number without subject is rejected (400)", async () => {
 await check("unknown subject in database returns 404", async () => {
   const r = await get("/api/practice/questions?subject=chemistry");
   assert.equal(r.status, 404); assert.equal(json(r).error.code, "subject_not_found");
+});
+await check("syllabus filters return units, topics and SLOs from database rows", async () => {
+  const r = await get("/api/practice/structure?subject=biology");
+  assert.equal(r.status, 200);
+  const { data } = json(r);
+  assert.ok(data.units.length > 0);
+  const q = active[0];
+  const topic = data.units.flatMap((unit) => unit.topics).find((item) => item.id === q.topic_id);
+  assert.ok(topic, "live topic missing");
+  assert.ok(topic.slos.some((slo) => slo.reference === q.slo_reference), "live SLO missing");
 });
 
 console.log("POST /api/practice/submit");
@@ -199,6 +219,15 @@ await check("anonymous callers get 401 on start, submit, history and analytics",
     assert.equal(response.status, 401, path);
     assert.equal(json(response).error.code, "unauthorized");
   }
+  const attemptId = "11111111-1111-4111-8111-111111111111";
+  for (const path of ["/api/mock-tests", "/api/mock-tests/history", `/api/mock-tests/${attemptId}`, `/api/mock-tests/attempts/${attemptId}`, `/api/mock-tests/attempts/${attemptId}/result`, "/api/mock-tests/admin"]) {
+    const response = await get(path);
+    assert.equal(response.status, 401, path);
+  }
+  assert.equal((await send("/api/mock-tests", {}, { auth: false })).status, 401);
+  assert.equal((await send(`/api/mock-tests/${attemptId}/start`, {}, { auth: false })).status, 401);
+  assert.equal((await send(`/api/mock-tests/attempts/${attemptId}/answers`, {}, { auth: false })).status, 401);
+  assert.equal((await send(`/api/mock-tests/attempts/${attemptId}/submit`, {}, { auth: false })).status, 401);
 });
 await check("start returns an attempt id owned by the signed-in student, with no answer keys", async () => {
   const r = await send("/api/practice/attempts", { subject: "biology" });

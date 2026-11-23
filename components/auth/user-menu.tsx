@@ -14,6 +14,10 @@ export function UserMenu() {
   const [status, setStatus] = useState<Status>({ state: "loading" });
 
   useEffect(() => {
+    if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) {
+      const timer = window.setTimeout(() => setStatus({ state: "out" }), 0);
+      return () => window.clearTimeout(timer);
+    }
     const supabase = createClient();
     let active = true;
 
