@@ -27,7 +27,9 @@ export default function Home() {
 
       <section>
         <SectionHeading title="Your performance" />
-        <PerformanceSection />
+        <Suspense fallback={<div className="card h-40" aria-label="Loading performance" />}>
+          <PerformanceSection />
+        </Suspense>
       </section>
     </div>
   );

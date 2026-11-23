@@ -1,15 +1,5 @@
-import type { Metadata } from "next";
-import { History } from "lucide-react";
-import { PlaceholderPage } from "@/components/ui/placeholder-page";
-
-export const metadata: Metadata = { title: "History" };
+import { redirect } from "next/navigation";
 
 export default function Page() {
-  return (
-    <PlaceholderPage
-      icon={History}
-      title="History: coming soon"
-      description="Your past practice sessions will be listed here once attempts are saved."
-    />
-  );
+  redirect("/practice/history");
 }
