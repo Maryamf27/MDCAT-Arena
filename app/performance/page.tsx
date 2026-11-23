@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { ChartNoAxesColumn } from "lucide-react";
-import { PlaceholderPage } from "@/components/ui/placeholder-page";
+import { Suspense } from "react";
+import { PerformanceSection } from "@/components/dashboard/performance-section";
+import { SectionHeading } from "@/components/ui/section";
 
-export const metadata: Metadata = { title: "Performance" };
+export const metadata: Metadata = { title: "Performance", description: "Track your real MDCAT practice accuracy, subject performance and progress." };
 
 export default function Page() {
-  return (
-    <PlaceholderPage
-      icon={ChartNoAxesColumn}
-      title="Performance: coming soon"
-      description="Detailed performance analytics will appear here once practice attempts are being recorded."
-    />
-  );
+  return <div className="mx-auto flex max-w-6xl flex-col gap-6">
+    <SectionHeading title="Your performance" description="Statistics and learning insights from your completed practice attempts." />
+    <Suspense fallback={<div className="card h-40" aria-label="Loading performance" />}>
+      <PerformanceSection />
+    </Suspense>
+  </div>;
 }

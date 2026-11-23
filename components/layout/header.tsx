@@ -20,6 +20,11 @@ const STATIC_TITLES: Record<string, string> = {
 
 function describe(pathname: string): { title: string; crumbs: Crumb[] } {
   const parts = pathname.split("/").filter(Boolean);
+  if (parts[0] === "practice" && parts[1] === "history") {
+    return parts[2]
+      ? { title: "Saved results", crumbs: [{ label: "History", href: "/practice/history" }, { label: "Results" }] }
+      : { title: "Practice history", crumbs: [{ label: "History" }] };
+  }
   if (parts[0] === "practice" && parts[1]) {
     const key = decodeURIComponent(parts[1]);
     const label = isSubjectKey(key)

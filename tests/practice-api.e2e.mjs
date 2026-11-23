@@ -190,10 +190,15 @@ await check("rejects oversized bodies (413)", async () => {
   assert.equal(r.status, 413);
 });
 console.log("Attempt persistence (auth + attempts)");
-await check("anonymous callers get 401 on start and submit", async () => {
+await check("anonymous callers get 401 on start, submit, history and analytics", async () => {
   assert.equal((await send("/api/practice/attempts", { subject: "biology" }, { auth: false })).status, 401);
   const r = await send("/api/practice/submit", { attemptId: "11111111-1111-4111-8111-111111111111", answers: allCorrect }, { auth: false });
   assert.equal(r.status, 401); assert.equal(json(r).error.code, "unauthorized");
+  for (const path of ["/api/practice/history", "/api/practice/analytics", "/api/practice/history/11111111-1111-4111-8111-111111111111"]) {
+    const response = await get(path);
+    assert.equal(response.status, 401, path);
+    assert.equal(json(response).error.code, "unauthorized");
+  }
 });
 await check("start returns an attempt id owned by the signed-in student, with no answer keys", async () => {
   const r = await send("/api/practice/attempts", { subject: "biology" });

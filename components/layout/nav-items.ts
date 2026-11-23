@@ -23,7 +23,7 @@ export const NAV_ITEMS: readonly NavItem[] = [
   { href: "/mock-tests", label: "Mock Tests", icon: FileCheck2 },
   { href: "/subjects", label: "Subjects", icon: Library },
   { href: "/performance", label: "Performance", icon: ChartNoAxesColumn },
-  { href: "/history", label: "History", icon: History },
+  { href: "/practice/history", label: "History", icon: History },
   { href: "/profile", label: "Profile", icon: UserRound },
 ];
 
