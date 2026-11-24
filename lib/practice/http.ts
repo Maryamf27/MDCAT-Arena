@@ -1,3 +1,4 @@
+import { unstable_rethrow } from "next/navigation";
 import { ZodError } from "zod";
 import { ApiError } from "./errors";
 
@@ -26,6 +27,9 @@ export function errorResponse(error: unknown): Response {
       { status: 400, headers: NO_STORE }
     );
   }
+  // Next signals "this needs request time" (cookies(), request.url) by throwing; that is not a
+  // failure, so let Next handle it instead of logging it or answering 500.
+  unstable_rethrow(error);
   // Never leak internal messages (they can contain SQL/schema details or keys).
   console.error("[practice-api] unexpected error:", error);
   return Response.json(

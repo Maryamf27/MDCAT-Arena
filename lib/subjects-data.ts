@@ -1,3 +1,4 @@
+import { unstable_rethrow } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { SUBJECT_META, type SubjectMeta } from "@/lib/subjects";
@@ -89,6 +90,9 @@ export async function getSubjects(): Promise<SubjectsResult> {
         : null,
     };
   } catch (error) {
+    // cookies() rejects while Next prerenders the static shell; that means "render this at
+    // request time", not "Supabase is down". Let Next handle it instead of caching the fallback.
+    unstable_rethrow(error);
     console.error("[subjects] subject availability is unavailable:", error);
     return unavailableSubjects("Current subject and question availability could not be checked.");
   }

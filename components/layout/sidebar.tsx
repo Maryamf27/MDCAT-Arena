@@ -3,13 +3,11 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { X } from "lucide-react";
-import { useSignedIn } from "@/components/auth/use-signed-in";
 import { Brand } from "./brand";
 import { NAV_ITEMS, isActive } from "./nav-items";
 
 export function SidebarContent({ onNavigate, onClose }: { onNavigate?: () => void; onClose?: () => void }) {
   const pathname = usePathname();
-  const signedIn = useSignedIn();
 
   return (
     <div className="flex h-full flex-col">
@@ -53,15 +51,6 @@ export function SidebarContent({ onNavigate, onClose }: { onNavigate?: () => voi
         </ul>
       </nav>
 
-      {signedIn === null ? null : (
-        <div className="border-t border-line p-4">
-          <p className="text-small text-muted">
-            {signedIn
-              ? "Your practice attempts are saved to your account."
-              : "Sign in to save your practice attempts to your account."}
-          </p>
-        </div>
-      )}
     </div>
   );
 }

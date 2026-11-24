@@ -1,17 +1,19 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
-import { redirect } from "next/navigation";
 import { AuthForm } from "@/components/auth/auth-form";
-import { getAuthenticatedUser } from "@/lib/auth/user";
+import { SignedInRedirect } from "@/components/auth/signed-in-redirect";
 
 export const metadata: Metadata = { title: "Sign in" };
 
-export default async function LoginPage() {
-  // Already signed in: no reason to show the form.
-  if (await getAuthenticatedUser().catch(() => null)) redirect("/");
+export default function LoginPage() {
   return (
-    <Suspense fallback={null}>
-      <AuthForm mode="signin" />
-    </Suspense>
+    <>
+      <Suspense fallback={null}>
+        <SignedInRedirect />
+      </Suspense>
+      <Suspense fallback={null}>
+        <AuthForm mode="signin" />
+      </Suspense>
+    </>
   );
 }
