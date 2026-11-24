@@ -6,7 +6,14 @@ import { useRouter } from "next/navigation";
 import { LogIn, LogOut, UserRound } from "lucide-react";
 import { createClient } from "@/lib/supabase/client";
 
-type Status = { state: "loading" } | { state: "out" } | { state: "in"; email: string };
+type Status = { state: "loading" } | { state: "out" } | { state: "in"; email: string; name: string | null };
+
+type SessionUser = { email?: string; user_metadata?: Record<string, unknown> };
+
+function signedIn(user: SessionUser): Status {
+  const name = user.user_metadata?.display_name;
+  return { state: "in", email: user.email ?? "Student", name: typeof name === "string" && name.trim() ? name : null };
+}
 
 /** Header profile area, driven by the real Supabase session. */
 export function UserMenu() {
@@ -23,11 +30,11 @@ export function UserMenu() {
 
     void supabase.auth.getUser().then(({ data }) => {
       if (!active) return;
-      setStatus(data.user ? { state: "in", email: data.user.email ?? "Student" } : { state: "out" });
+      setStatus(data.user ? signedIn(data.user) : { state: "out" });
     });
 
     const { data: sub } = supabase.auth.onAuthStateChange((_event, session) => {
-      setStatus(session?.user ? { state: "in", email: session.user.email ?? "Student" } : { state: "out" });
+      setStatus(session?.user ? signedIn(session.user) : { state: "out" });
     });
     return () => {
       active = false;
@@ -50,14 +57,18 @@ export function UserMenu() {
 
   return (
     <div className="flex items-center gap-2">
-      <span className="flex items-center gap-2 rounded-[10px] border border-line px-2 py-1">
+      <Link
+        href="/profile"
+        aria-label="Open your profile"
+        className="flex items-center gap-2 rounded-[10px] border border-line px-2 py-1 no-underline hover:border-primary"
+      >
         <span className="grid h-8 w-8 place-items-center rounded-full bg-mint text-primary">
           <UserRound size={18} aria-hidden />
         </span>
         <span className="hidden max-w-[10rem] truncate text-sm font-bold text-ink sm:block" title={status.email}>
-          {status.email}
+          {status.name ?? status.email}
         </span>
-      </span>
+      </Link>
       <button
         type="button"
         className="btn btn-ghost btn-sm"

@@ -40,6 +40,7 @@ for (const q of dataset.questions) {
   }
 }
 
+const DB_DIFFICULTIES = ["easy", "moderate", "difficult"];
 export const questions = dataset.questions.map((q, i) => ({
   id: uuid(`question:${i}`),
   question: q.question,
@@ -53,7 +54,8 @@ export const questions = dataset.questions.map((q, i) => ({
   syllabus_node_id: topicIds.get(q.topic_id),
   slo_node_id: sloIds.get(`${q.topic_id}:${q.slo_reference}`),
   slo_reference: q.slo_reference,
-  difficulty: q.difficulty,
+  // Stored in the DATABASE vocabulary (easy | moderate | difficult), spread across levels.
+  difficulty: DB_DIFFICULTIES[i % 3],
   source_type: q.source_type,
   source_reference: q.source_reference,
   source_name: q.source_reference,
@@ -66,25 +68,49 @@ export const questions = dataset.questions.map((q, i) => ({
 export const INACTIVE_ID = uuid("question:inactive");
 questions.push({ ...questions[0], id: INACTIVE_ID, question: "inactive question", is_active: false, status: "draft" });
 
+// profiles table emulation (rows: { user_id, display_name, role, created_at }).
+export const profileRows = [];
+
 const tables = {
   subjects: [{ id: SUBJECT_ID, code: "BIO", name: "Biology" }],
   syllabus_nodes: nodes,
   questions,
+  profiles: profileRows,
 };
 
 export const requests = [];
+export const rpcCalls = [];
+const PUBLIC_COLUMNS = ["id", "subject_id", "syllabus_node_id", "unit_id", "topic_id", "slo_node_id", "slo_reference", "question", "options", "difficulty", "created_at"];
 
 // --- Auth + attempt-persistence emulation -------------------------------------
 // Emulates GET /auth/v1/user and the two RPCs in
 // supabase/migrations/20261123000300_practice_attempt_persistence.sql with simple
 // in-memory logic. The REAL transactional behaviour (rollback, locking, RLS) is
 // covered against Postgres, not here; this only lets the API routes run offline.
-export const STUDENT = { id: uuid("user:student"), email: "student@test.dev", token: "test-student-token" };
+export const STUDENT = { id: uuid("user:student"), email: "student@test.dev", token: "test-student-token", name: "Ayesha Khan" };
 export const attempts = new Map(); // id -> { user_id, status, score, total, answers: [{questionId, selectedIndex}] }
 const SUBJECT_KEYS = ["biology", "chemistry", "physics", "english", "logical_reasoning"];
 const rpcError = (res, message) => { res.writeHead(400, { "Content-Type": "application/json" }); res.end(JSON.stringify({ code: "P0001", message })); };
 
 function handleRpc(name, body, res) {
+  rpcCalls.push({ name, body });
+  // Emulates public.sample_practice_questions (see supabase/migrations/20261124000000_*.sql):
+  // active rows only, AND-ed filters, DB difficulty words, random order, <= 50 rows,
+  // answer-free columns only. Real SQL behaviour is tested against Postgres in tests/sql/.
+  if (name === "sample_practice_questions") {
+    const rows = questions
+      .filter((q) => q.is_active)
+      .filter((q) => !body.p_subject_id || q.subject_id === body.p_subject_id)
+      .filter((q) => !body.p_unit_id || q.unit_id === body.p_unit_id)
+      .filter((q) => !body.p_topic_id || q.topic_id === body.p_topic_id)
+      .filter((q) => !body.p_slo_node_id || q.slo_node_id === body.p_slo_node_id)
+      .filter((q) => !body.p_difficulty || q.difficulty === body.p_difficulty)
+      .sort(() => Math.random() - 0.5)
+      .slice(0, Math.min(Math.max(body.p_limit ?? 10, 1), 50))
+      .map((q) => Object.fromEntries(PUBLIC_COLUMNS.map((c) => [c, q[c]])));
+    res.writeHead(200, { "Content-Type": "application/json" });
+    return res.end(JSON.stringify(rows));
+  }
   if (name === "start_practice_attempt") {
     if (!SUBJECT_KEYS.includes(body.p_subject_key)) return rpcError(res, "invalid_subject");
     if (body.p_user_id !== STUDENT.id) return rpcError(res, "user_not_found");
@@ -111,6 +137,7 @@ function handleRpc(name, body, res) {
 
 function matches(row, key, expr) {
   if (expr.startsWith("eq.")) return String(row[key]) === expr.slice(3);
+  if (expr === "is.null") return row[key] === null || row[key] === undefined;
   if (expr.startsWith("in.(")) return expr.slice(4, -1).split(",").includes(String(row[key]));
   throw new Error(`mock: unsupported filter ${key}=${expr}`);
 }
@@ -121,7 +148,7 @@ export function startMock(port) {
     if (url.pathname === "/auth/v1/user") {
       const ok = req.headers.authorization === `Bearer ${STUDENT.token}`;
       res.writeHead(ok ? 200 : 401, { "Content-Type": "application/json" });
-      res.end(JSON.stringify(ok ? { id: STUDENT.id, aud: "authenticated", role: "authenticated", email: STUDENT.email, app_metadata: {}, user_metadata: {}, created_at: "2026-01-01T00:00:00Z" } : { msg: "invalid JWT" }));
+      res.end(JSON.stringify(ok ? { id: STUDENT.id, aud: "authenticated", role: "authenticated", email: STUDENT.email, app_metadata: {}, user_metadata: { display_name: STUDENT.name }, created_at: "2026-01-01T00:00:00Z" } : { msg: "invalid JWT" }));
       return;
     }
     if (url.pathname.startsWith("/rest/v1/rpc/")) {
@@ -130,6 +157,26 @@ export function startMock(port) {
       return;
     }
     const table = url.pathname.replace("/rest/v1/", "");
+    if (table === "profiles" && req.method !== "GET") {
+      let raw = ""; req.on("data", (d) => (raw += d));
+      req.on("end", () => {
+        const body = JSON.parse(raw || "{}");
+        const prefer = String(req.headers.prefer ?? "");
+        if (req.method === "POST") {
+          for (const row of Array.isArray(body) ? body : [body]) {
+            const existing = profileRows.find((p) => p.user_id === row.user_id);
+            if (!existing) profileRows.push({ role: "user", display_name: null, created_at: "2026-11-24T00:00:00Z", ...row });
+            else if (!prefer.includes("ignore-duplicates")) Object.assign(existing, row);
+          }
+        } else if (req.method === "PATCH") {
+          let targets = profileRows;
+          for (const [key, expr] of url.searchParams) targets = targets.filter((r) => matches(r, key, expr));
+          targets.forEach((r) => Object.assign(r, body));
+        }
+        res.writeHead(req.method === "POST" ? 201 : 204).end();
+      });
+      return;
+    }
     requests.push({ table, select: url.searchParams.get("select") });
     const rows = tables[table];
     if (!rows) { res.writeHead(404).end("{}"); return; }

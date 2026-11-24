@@ -2,7 +2,12 @@ import "server-only";
 import { createClient } from "@/lib/supabase/server";
 import { ApiError } from "@/lib/practice/errors";
 
-export type AuthenticatedUser = { id: string; email: string | null };
+export type AuthenticatedUser = {
+  id: string;
+  email: string | null;
+  /** Name typed at sign-up (auth user metadata). User-editable: validate before storing. */
+  displayName: string | null;
+};
 
 /**
  * Resolves the signed-in student from the Supabase session cookie using the
@@ -16,7 +21,12 @@ export async function getAuthenticatedUser(): Promise<AuthenticatedUser | null> 
   const supabase = await createClient();
   const { data, error } = await supabase.auth.getUser();
   if (error || !data.user) return null;
-  return { id: data.user.id, email: data.user.email ?? null };
+  const metaName = data.user.user_metadata?.display_name;
+  return {
+    id: data.user.id,
+    email: data.user.email ?? null,
+    displayName: typeof metaName === "string" ? metaName : null,
+  };
 }
 
 export async function requireUser(): Promise<AuthenticatedUser> {

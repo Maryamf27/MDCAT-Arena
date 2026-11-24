@@ -5,6 +5,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { Eye, EyeOff, LogIn } from "lucide-react";
 import { z } from "zod";
 import { createClient } from "@/lib/supabase/client";
+import { DISPLAY_NAME_MAX, displayNameSchema } from "@/lib/profile/validation";
 
 const credentialsSchema = z.object({
   email: z.email(),
@@ -23,6 +24,7 @@ export function LoginForm() {
   const router = useRouter();
   const next = safeNext(useSearchParams().get("next"));
   const [mode, setMode] = useState<"signin" | "signup">("signin");
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [passwordVisible, setPasswordVisible] = useState(false);
@@ -34,6 +36,16 @@ export function LoginForm() {
     e.preventDefault();
     setError(null);
     setNotice(null);
+
+    let displayName: string | null = null;
+    if (mode === "signup") {
+      const parsedName = displayNameSchema.safeParse(name);
+      if (!parsedName.success) {
+        setError(name.trim() ? parsedName.error.issues[0]?.message ?? "Please enter a valid name." : "Please enter your name.");
+        return;
+      }
+      displayName = parsedName.data;
+    }
 
     const credentials = credentialsSchema.safeParse({ email: email.trim(), password });
     if (!credentials.success) {
@@ -52,7 +64,11 @@ export function LoginForm() {
           return;
         }
       } else {
-        const { data, error: err } = await supabase.auth.signUp(credentials.data);
+        const { data, error: err } = await supabase.auth.signUp({
+          ...credentials.data,
+          // Kept in auth user metadata; copied into profiles.display_name on first profile load.
+          options: { data: { display_name: displayName } },
+        });
         if (err) {
           setError(err.message);
           return;
@@ -62,6 +78,10 @@ export function LoginForm() {
           setMode("signin");
           return;
         }
+      }
+      if (mode === "signup") {
+        // Best effort: create the profile row (with the name) right away.
+        await fetch("/api/profile", { cache: "no-store" }).catch(() => undefined);
       }
       router.replace(next);
       router.refresh();
@@ -85,6 +105,21 @@ export function LoginForm() {
       </div>
 
       <form noValidate onSubmit={onSubmit} className="flex flex-col gap-4">
+        {mode === "signup" ? (
+          <label className="flex flex-col gap-1 text-small font-bold">
+            Name
+            <input
+              className="field"
+              type="text"
+              name="name"
+              autoComplete="name"
+              required
+              maxLength={DISPLAY_NAME_MAX + 20}
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+          </label>
+        ) : null}
         <label className="flex flex-col gap-1 text-small font-bold">
           Email
           <input

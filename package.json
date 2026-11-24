@@ -15,7 +15,7 @@
     "import:questions:all": "tsx scripts/import-all-questions.ts",
     "import:questions:all:check": "tsx scripts/import-all-questions.ts --dry-run",
     "typecheck": "tsc --noEmit",
-    "test:unit": "node --import tsx --test tests/practice-retrieval.test.tsx",
+    "test:unit": "node --import tsx --test tests/practice-retrieval.test.tsx tests/navigation-profile.test.ts",
     "test:sampling-sql": "bash tests/sql/run-sampling-test.sh"
   },
   "dependencies": {

@@ -3,7 +3,7 @@
 // Run: npm run test:practice
 import { spawn } from "node:child_process";
 import assert from "node:assert/strict";
-import { startMock, requests, questions, attempts, INACTIVE_ID, STUDENT } from "./mock-supabase.mjs";
+import { startMock, requests, rpcCalls, questions, attempts, profileRows, INACTIVE_ID, STUDENT } from "./mock-supabase.mjs";
 
 const MOCK_PORT = 54399;
 const APP_PORT = 3199;
@@ -50,6 +50,10 @@ const send = async (path, body, { raw = false, auth = true } = {}) => {
     headers: { "Content-Type": "application/json", ...(auth ? AUTH : {}) }, body: raw ? body : JSON.stringify(body) });
   return { status: r.status, text: await r.text() };
 };
+const authFetch = async (path, method = "GET", body, { raw = false } = {}) => {
+  const r = await fetch(BASE + path, { method, headers: { "Content-Type": "application/json", ...AUTH }, ...(body === undefined ? {} : { body: raw ? body : JSON.stringify(body) }) });
+  return { status: r.status, text: await r.text() };
+};
 const startAttempt = async () => json(await send("/api/practice/attempts", { subject: "biology" })).data.attemptId;
 // Submits to a fresh attempt unless an attemptId is given; every submit consumes its attempt.
 const post = async (body, raw = false, auth = true) => {
@@ -84,13 +88,17 @@ await check("returns active questions and hides the answer key", async () => {
   }
   assert.equal(r.headers.get("cache-control"), "no-store");
 });
-await check("never requests answer columns from the database", async () => {
-  const selects = requests.filter((x) => x.table === "questions").map((x) => x.select ?? "");
-  const listCalls = selects.filter((s) => s.includes("question,") || s.startsWith("id,subject_id"));
-  assert.ok(listCalls.length > 0);
-  for (const s of listCalls) {
-    assert.ok(!s.includes("correct_answer_index") && !s.includes("explanation"), `select leaked: ${s}`);
-  }
+await check("lists via database-side sampling and never reads or selects answer columns", async () => {
+  const tableReadsBefore = requests.filter((x) => x.table === "questions").length;
+  rpcCalls.length = 0;
+  const r = await get("/api/practice/questions?subject=biology&limit=3");
+  assert.equal(r.status, 200);
+  assert.equal(requests.filter((x) => x.table === "questions").length, tableReadsBefore, "listing must not load questions rows into Node");
+  assert.equal(rpcCalls.length, 1);
+  assert.equal(rpcCalls[0].name, "sample_practice_questions");
+  assert.equal(rpcCalls[0].body.p_limit, 3, "only the requested number of rows is fetched");
+  const body = JSON.stringify(rpcCalls[0].body);
+  assert.ok(!body.includes("correct_answer_index") && !body.includes("explanation"));
 });
 await check("filters by unit number", async () => {
   const { data } = json(await get("/api/practice/questions?subject=biology&unit=3"));
@@ -110,9 +118,26 @@ await check("resolves SLO references from the live subject syllabus", async () =
   const { data } = json(await get(`/api/practice/questions?subject=biology&slo=${q.slo_reference}`));
   assert.equal(data.count, active.filter((item) => item.slo_reference === q.slo_reference).length);
 });
-await check("filters by difficulty (none match hard)", async () => {
-  const { data } = json(await get("/api/practice/questions?subject=biology&difficulty=hard"));
-  assert.equal(data.count, 0);
+const API_TO_DB = { easy: "easy", medium: "moderate", hard: "difficult" };
+for (const [api, dbWord] of Object.entries(API_TO_DB)) {
+  await check(`filters by difficulty=${api} (database value "${dbWord}")`, async () => {
+    rpcCalls.length = 0;
+    const { data } = json(await get(`/api/practice/questions?subject=biology&difficulty=${api}&limit=50`));
+    assert.equal(rpcCalls[0].body.p_difficulty, dbWord);
+    assert.equal(data.count, active.filter((q) => q.difficulty === dbWord).length);
+    assert.ok(data.count > 0, "fixture has questions at this level");
+    assert.ok(data.questions.every((q) => q.difficulty === api), `all returned as "${api}"`);
+  });
+}
+await check("accepts database words as legacy difficulty aliases", async () => {
+  const { data } = json(await get("/api/practice/questions?subject=biology&difficulty=moderate&limit=50"));
+  assert.equal(data.count, active.filter((q) => q.difficulty === "moderate").length);
+  assert.ok(data.questions.every((q) => q.difficulty === "medium"));
+});
+await check("presents difficulty in API words only (never moderate/difficult)", async () => {
+  const { data } = json(await get("/api/practice/questions?subject=biology&limit=50"));
+  const levels = new Set(data.questions.map((q) => q.difficulty));
+  assert.deepEqual([...levels].sort(), ["easy", "hard", "medium"]);
 });
 await check("accepts UUID filters", async () => {
   const q = active[0];
@@ -144,6 +169,77 @@ await check("syllabus filters return units, topics and SLOs from database rows",
   const topic = data.units.flatMap((unit) => unit.topics).find((item) => item.id === q.topic_id);
   assert.ok(topic, "live topic missing");
   assert.ok(topic.slos.some((slo) => slo.reference === q.slo_reference), "live SLO missing");
+});
+
+
+console.log("Profile (GET/PATCH /api/profile)");
+await check("anonymous callers get 401 on profile read and update", async () => {
+  assert.equal((await get("/api/profile")).status, 401);
+  const r = await send("/api/profile", {}, { auth: false });
+  assert.equal(r.status, 405); // POST is not offered
+  const patch = await fetch(BASE + "/api/profile", { method: "PATCH", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ displayName: "Hacker" }) });
+  assert.equal(patch.status, 401);
+  assert.equal(profileRows.length, 0, "nothing written for anonymous callers");
+});
+await check("first read creates the profile row, seeded with the name given at sign-up", async () => {
+  const r = await authFetch("/api/profile");
+  assert.equal(r.status, 200);
+  const { profile } = json(r).data;
+  assert.equal(profile.displayName, STUDENT.name);
+  assert.equal(profile.userId, STUDENT.id);
+  assert.equal(profile.email, STUDENT.email);
+  assert.ok(!("role" in profile) && !r.text.includes('"role"'), "role is never exposed");
+  assert.equal(profileRows.length, 1);
+  assert.equal(profileRows[0].user_id, STUDENT.id);
+  assert.equal(profileRows[0].display_name, STUDENT.name);
+});
+await check("a repeat read does not create a second row", async () => {
+  await authFetch("/api/profile");
+  assert.equal(profileRows.length, 1);
+});
+await check("an existing profile with no name is back-filled from the sign-up name", async () => {
+  profileRows[0].display_name = null; // e.g. row created earlier by starting a practice attempt
+  const { profile } = json(await authFetch("/api/profile")).data;
+  assert.equal(profile.displayName, STUDENT.name);
+  assert.equal(profileRows[0].display_name, STUDENT.name);
+});
+await check("PATCH saves a trimmed, whitespace-collapsed name and leaves role alone", async () => {
+  profileRows[0].role = "admin"; // prove PATCH cannot disturb it
+  const r = await authFetch("/api/profile", "PATCH", { displayName: "  Sara   Ahmed  " });
+  assert.equal(r.status, 200);
+  assert.equal(json(r).data.profile.displayName, "Sara Ahmed");
+  assert.equal(profileRows[0].display_name, "Sara Ahmed");
+  assert.equal(profileRows[0].role, "admin");
+});
+await check("a saved name is not overwritten by the sign-up name on the next read", async () => {
+  const { profile } = json(await authFetch("/api/profile")).data;
+  assert.equal(profile.displayName, "Sara Ahmed");
+  profileRows[0].role = "user";
+});
+await check("PATCH accepts non-Latin names (Urdu)", async () => {
+  const r = await authFetch("/api/profile", "PATCH", { displayName: "عائشہ خان" });
+  assert.equal(r.status, 200);
+  assert.equal(json(r).data.profile.displayName, "عائشہ خان");
+});
+await check("PATCH rejects invalid names and extra fields (400) and saves nothing", async () => {
+  const before = profileRows[0].display_name;
+  for (const body of [
+    {}, { displayName: "" }, { displayName: " " }, { displayName: "A" }, { displayName: "x".repeat(51) },
+    { displayName: "<script>alert(1)</script>" }, { displayName: "Bad\u0007Name" }, { displayName: 42 },
+    { displayName: "Valid Name", role: "admin" }, { displayName: "Valid Name", user_id: "x" },
+  ]) {
+    const r = await authFetch("/api/profile", "PATCH", body);
+    assert.equal(r.status, 400, JSON.stringify(body));
+    assert.equal(json(r).error.code, "validation_error");
+  }
+  assert.equal(profileRows[0].display_name, before);
+  assert.equal(profileRows[0].role, "user");
+});
+await check("PATCH rejects invalid JSON (400) and oversized bodies (413)", async () => {
+  const bad = await authFetch("/api/profile", "PATCH", "{nope", { raw: true });
+  assert.equal(bad.status, 400); assert.equal(json(bad).error.code, "invalid_json");
+  const big = await authFetch("/api/profile", "PATCH", JSON.stringify({ displayName: "x".repeat(5000) }), { raw: true });
+  assert.equal(big.status, 413);
 });
 
 console.log("POST /api/practice/submit");
