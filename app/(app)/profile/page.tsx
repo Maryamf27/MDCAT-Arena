@@ -6,8 +6,8 @@ export const metadata: Metadata = { title: "Profile", description: "View and upd
 
 export default function Page() {
   return (
-    <div className="mx-auto flex max-w-2xl flex-col gap-6">
-      <SectionHeading title="Your profile" description="Manage how your name appears in MDCAT Arena." />
+    <div className="mx-auto flex max-w-5xl flex-col gap-6">
+      <SectionHeading title="Your profile" description="Manage your account details and password." />
       <ProfileForm />
     </div>
   );
