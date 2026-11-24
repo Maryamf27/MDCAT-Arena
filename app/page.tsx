@@ -4,6 +4,7 @@ import { PracticeEntry } from "@/components/dashboard/practice-entry";
 import { WelcomeSection } from "@/components/dashboard/welcome-section";
 import { SubjectsSection, SubjectsSkeleton } from "@/components/subjects/subjects-section";
 import { SectionHeading } from "@/components/ui/section";
+import { PerformanceSkeleton } from "@/components/dashboard/performance-skeleton";
 
 export default function Home() {
   return (
@@ -27,7 +28,7 @@ export default function Home() {
 
       <section>
         <SectionHeading title="Your performance" />
-        <Suspense fallback={<div className="card h-40" aria-label="Loading performance" />}>
+       <Suspense fallback={<PerformanceSkeleton />}>
           <PerformanceSection />
         </Suspense>
       </section>
