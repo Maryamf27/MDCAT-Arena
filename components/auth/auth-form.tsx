@@ -1,8 +1,9 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
-import { Eye, EyeOff, LogIn } from "lucide-react";
+import { Eye, EyeOff, LogIn, UserPlus } from "lucide-react";
 import { z } from "zod";
 import { createClient } from "@/lib/supabase/client";
 import { DISPLAY_NAME_MAX, displayNameSchema } from "@/lib/profile/validation";
@@ -20,17 +21,22 @@ function safeNext(value: string | null): string {
   return "/";
 }
 
-export function LoginForm() {
+export function AuthForm({ mode }: { mode: "signin" | "signup" }) {
   const router = useRouter();
-  const next = safeNext(useSearchParams().get("next"));
-  const [mode, setMode] = useState<"signin" | "signup">("signin");
+  const searchParams = useSearchParams();
+  const next = safeNext(searchParams.get("next"));
+  const nextQuery = next !== "/" ? `?next=${encodeURIComponent(next)}` : "";
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [passwordVisible, setPasswordVisible] = useState(false);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [notice, setNotice] = useState<string | null>(null);
+  const [notice, setNotice] = useState<string | null>(
+    mode === "signin" && searchParams.get("confirm") === "1"
+      ? "Account created. Check your email to confirm it, then sign in."
+      : null,
+  );
 
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -74,8 +80,7 @@ export function LoginForm() {
           return;
         }
         if (!data.session) {
-          setNotice("Account created. Check your email to confirm it, then sign in.");
-          setMode("signin");
+          router.replace(`/login?confirm=1${next !== "/" ? `&next=${encodeURIComponent(next)}` : ""}`);
           return;
         }
       }
@@ -96,11 +101,13 @@ export function LoginForm() {
     <div className="card mx-auto w-full max-w-md p-6 md:p-8">
       <div className="mb-6 flex items-center gap-3">
         <span className="grid h-10 w-10 place-items-center rounded-[10px] bg-mint text-primary">
-          <LogIn size={20} aria-hidden />
+          {mode === "signin" ? <LogIn size={20} aria-hidden /> : <UserPlus size={20} aria-hidden />}
         </span>
         <div>
           <h2 className="text-heading">{mode === "signin" ? "Sign in" : "Create your account"}</h2>
-          <p className="text-small text-muted">Sign in to save your practice attempts.</p>
+          <p className="text-small text-muted">
+            {mode === "signin" ? "Welcome back. Sign in to continue." : "Sign up to save your practice attempts."}
+          </p>
         </div>
       </div>
 
@@ -174,17 +181,12 @@ export function LoginForm() {
         </button>
       </form>
 
-      <button
-        type="button"
-        className="mt-4 w-full text-center text-small font-bold text-primary hover:underline"
-        onClick={() => {
-          setMode(mode === "signin" ? "signup" : "signin");
-          setError(null);
-          setNotice(null);
-        }}
+      <Link
+        href={mode === "signin" ? `/signup${nextQuery}` : `/login${nextQuery}`}
+        className="mt-4 block w-full text-center text-small font-bold text-primary hover:underline"
       >
         {mode === "signin" ? "New here? Create an account" : "Already have an account? Sign in"}
-      </button>
+      </Link>
     </div>
   );
 }

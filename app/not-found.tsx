@@ -4,7 +4,7 @@ import { EmptyState } from "@/components/ui/states";
 
 export default function NotFound() {
   return (
-    <div className="mx-auto max-w-3xl">
+    <div className="mx-auto max-w-3xl px-4 py-16">
       <EmptyState
         icon={SearchX}
         title="Page not found"

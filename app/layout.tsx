@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import { Nunito_Sans, Plus_Jakarta_Sans } from "next/font/google";
-import { Suspense } from "react";
-import { AppShell } from "@/components/layout/app-shell";
 import "./globals.css";
 
 const plusJakarta = Plus_Jakarta_Sans({
@@ -31,11 +29,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${plusJakarta.variable} ${nunitoSans.variable} h-full antialiased`}
     >
-      <body className="min-h-full">
-        <Suspense fallback={<main className="mx-auto max-w-6xl p-8" aria-label="Loading application" />}>
-          <AppShell>{children}</AppShell>
-        </Suspense>
-      </body>
+      <body className="min-h-full">{children}</body>
     </html>
   );
 }

@@ -48,10 +48,15 @@ export function UserMenu() {
 
   if (status.state === "out") {
     return (
-      <Link href="/login" className="btn btn-secondary btn-sm">
-        <LogIn size={16} aria-hidden />
-        Sign in
-      </Link>
+      <div className="flex items-center gap-2">
+        <Link href="/login" className="btn btn-secondary btn-sm">
+          <LogIn size={16} aria-hidden />
+          Sign in
+        </Link>
+        <Link href="/signup" className="btn btn-primary btn-sm hidden sm:inline-flex">
+          Sign up
+        </Link>
+      </div>
     );
   }
 

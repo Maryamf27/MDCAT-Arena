@@ -11,7 +11,17 @@ export default function Home() {
     <div className="mx-auto flex max-w-6xl flex-col gap-10">
       <WelcomeSection />
 
-      <section id="subjects"  className="scroll-mt-24">
+      <section id="performance" className="scroll-mt-24">
+        <SectionHeading
+          title="Your performance"
+          description="Your analytics and progress from completed practice attempts."
+        />
+        <Suspense fallback={<PerformanceSkeleton />}>
+          <PerformanceSection />
+        </Suspense>
+      </section>
+
+      <section id="subjects" className="scroll-mt-24">
         <SectionHeading
           title="Subjects"
           description="The five MDCAT subjects. Pick one to start a practice session."
@@ -24,13 +34,6 @@ export default function Home() {
       <section>
         <SectionHeading title="Continue practicing" />
         <PracticeEntry />
-      </section>
-
-      <section>
-        <SectionHeading title="Your performance" />
-       <Suspense fallback={<PerformanceSkeleton />}>
-          <PerformanceSection />
-        </Suspense>
       </section>
     </div>
   );
