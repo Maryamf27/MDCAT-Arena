@@ -1,0 +1,56 @@
+# Biology Unit 13 Respiration, Unit 14 Digestion
+@ 13.1
+E|Why does the trachea have C-shaped rings of cartilage?|To keep the airway open|To make sound|To exchange gases|To produce mucus|Rings prevent collapse during inspiration.
+E|What is the function of the epiglottis?|Covers the glottis during swallowing|Produces voice|Warms air|Exchanges gases|It prevents food from entering the trachea.
+E|Where does gas exchange occur in the lungs?|Alveoli|Trachea|Bronchi|Larynx|Alveoli are thin-walled air sacs.
+M|How do cilia and mucus protect the respiratory tract?|Trap and move dust and microbes upward|Absorb oxygen|Make heat|Store air|The mucociliary escalator clears debris.
+M|What is the function of the larynx?|Production of sound by vocal cords|Gas exchange|Filtering blood|Storing air|The larynx is the voice box.
+M|What is the function of pleural fluid?|Reduces friction between lung and chest wall|Exchanges gases|Stores oxygen|Produces mucus|Pleurae cover lungs and line the thoracic cavity.
+M|What happens to the diaphragm during inspiration?|It contracts and flattens|It relaxes and domes|It expands the lungs directly|It remains unchanged|Thoracic volume increases.
+H|What is the function of surfactant in alveoli?|Reduces surface tension to prevent collapse|Absorbs oxygen|Produces mucus|Kills bacteria|Lack of surfactant causes respiratory distress in premature babies.
+H|Which structure's cartilage rings are incomplete to allow the oesophagus to expand?|Trachea|Bronchioles|Alveoli|Larynx|The open part faces the oesophagus.
+H|What do the external intercostal muscles do during inspiration?|Lift the ribs upward and outward|Lower ribs|Relax the diaphragm|Close the glottis|They increase chest volume.
+@ 13.2
+E|By which process do oxygen and carbon dioxide cross the alveolar wall?|Diffusion|Active transport|Osmosis|Endocytosis|Gases move down partial pressure gradients.
+E|How thick is the respiratory membrane?|One cell layer thick|Many cell layers thick|Cartilage|Bone|Alveolar and capillary walls are thin.
+E|Which pigment carries most oxygen in blood?|Haemoglobin|Myoglobin|Chlorophyll|Insulin|It forms oxyhaemoglobin.
+M|Why does oxygen diffuse from the alveolus into blood?|Alveolar partial pressure of oxygen is higher than in blood|Blood has more oxygen|It is pumped|It is pushed by CO2|The gradient favours entry.
+M|In what form is most carbon dioxide transported in blood?|Bicarbonate ions|Dissolved only|Carbamino compounds only|Oxyhaemoglobin|About 70 percent is bicarbonate.
+M|Which enzyme converts carbon dioxide and water to carbonic acid in red cells?|Carbonic anhydrase|Amylase|Catalase|Lipase|It speeds CO2 transport.
+M|What makes gas exchange efficient in the lungs?|Large surface area of alveoli|Thick walls|Small number of capillaries|Dry surfaces|Millions of alveoli give a very large area.
+H|What is the Bohr effect?|Increased CO2 lowers haemoglobin affinity for oxygen|Increased CO2 raises affinity|Oxygen increases CO2|It has no effect|It helps unloading oxygen in active tissues.
+H|Why is carbon monoxide dangerous?|It binds haemoglobin more strongly than oxygen|It dissolves in plasma|It destroys alveoli|It lacks affinity|CO forms carboxyhaemoglobin.
+H|How does pulmonary fibrosis reduce gas exchange?|It thickens the respiratory membrane|It enlarges alveoli|It increases surface area|It adds surfactant|Diffusion distance increases.
+@ 13.3
+E|Which substance in cigarette smoke causes addiction?|Nicotine|Tar|Carbon monoxide|Ammonia|Nicotine stimulates reward pathways.
+E|Which component of smoke is carcinogenic?|Tar|Oxygen|Nitrogen|Water|Tar contains cancer-causing chemicals.
+E|How does carbon monoxide from smoke affect blood?|Binds haemoglobin and lowers oxygen transport|Increases oxygen|Clots blood|Dissolves cells|Carboxyhaemoglobin forms.
+M|Why do smokers develop a chronic cough?|Cilia are paralysed and mucus accumulates|Cilia grow|Mucus decreases|Alveoli expand|Smoke damages the mucociliary system.
+M|What happens in emphysema?|Alveolar walls break down reducing surface area|Alveoli multiply|Bronchi dilate|Mucus decreases|Gas exchange is impaired.
+M|What is chronic bronchitis?|Long-term inflammation of bronchi with excess mucus|Acute infection of alveoli|Lung cancer|Pleural effusion|It is common in smokers.
+M|Which disease is strongly linked to smoking?|Lung cancer|Anaemia|Cholera|Rickets|Smoking is the main cause of lung cancer.
+H|How does nicotine affect the cardiovascular system?|Raises heart rate and blood pressure|Lowers both|Dilates all vessels|No effect|It causes vasoconstriction.
+H|What characterises COPD?|Chronic airflow limitation|Increased airflow|Excess oxygen|Normal alveoli|COPD includes emphysema and chronic bronchitis.
+H|What is passive smoking?|Inhaling smoke from others' cigarettes|Smoking after meals|Chewing tobacco|Smoking slowly|It increases risk of disease in non-smokers.
+@ 14.1
+E|Which is the correct order of the digestive tract?|Mouth, pharynx, oesophagus, stomach, small intestine, large intestine|Mouth, stomach, pharynx, oesophagus|Pharynx, mouth, stomach, intestine|Stomach, mouth, oesophagus|Food moves in this sequence.
+E|Which part of the digestive system is the longest?|Small intestine|Stomach|Oesophagus|Rectum|It is about six metres long.
+E|Where does digestion begin?|Mouth|Stomach|Duodenum|Ileum|Salivary amylase starts starch digestion.
+M|Which is the first part of the small intestine?|Duodenum|Jejunum|Ileum|Caecum|It receives bile and pancreatic juice.
+M|Where is the appendix attached?|Caecum|Stomach|Duodenum|Rectum|It is a small projection of the caecum.
+M|Which sphincter separates the oesophagus from the stomach?|Cardiac sphincter|Pyloric sphincter|Anal sphincter|Ileocaecal valve|It prevents reflux.
+M|Which are the layers of the gut wall from inside out?|Mucosa, submucosa, muscularis, serosa|Serosa, muscularis, mucosa|Muscularis, serosa, mucosa|Submucosa, mucosa, serosa|This is the standard order.
+H|What is the order of the parts of the small intestine?|Duodenum, jejunum, ileum|Ileum, jejunum, duodenum|Jejunum, duodenum, ileum|Duodenum, ileum, jejunum|Digestion is followed by absorption.
+H|What lies at the junction of the ileum and caecum?|Ileocaecal valve|Pyloric sphincter|Cardiac sphincter|Epiglottis|It controls flow into the large intestine.
+H|Which part of the large intestine follows the caecum?|Colon|Ileum|Duodenum|Jejunum|The colon ends in the rectum.
+@ 14.2
+E|Which enzyme in saliva digests starch?|Salivary amylase|Pepsin|Lipase|Trypsin|It converts starch to maltose.
+E|Which enzyme digests proteins in the stomach?|Pepsin|Amylase|Lipase|Maltase|It works at acidic pH.
+E|Which organ produces bile?|Liver|Gallbladder|Pancreas|Stomach|Bile is stored in the gallbladder.
+M|What is the role of hydrochloric acid in the stomach?|Activates pepsinogen and kills bacteria|Digests fat|Digests starch|Absorbs water|It creates an acidic pH.
+M|What does bile do?|Emulsifies fats|Digests proteins|Digests starch|Absorbs vitamins|It increases surface area for lipase.
+M|Which pancreatic enzymes act in the small intestine?|Amylase, lipase and trypsin|Pepsin only|Salivary amylase|Rennin|Pancreatic juice is alkaline.
+M|Where does most absorption of nutrients occur?|Ileum, by villi|Stomach|Mouth|Colon|Villi increase surface area.
+H|Which enzyme activates trypsinogen?|Enterokinase|Pepsin|Amylase|Lipase|It is secreted by the duodenum.
+H|Which hormone stimulates the pancreas to release bicarbonate?|Secretin|Gastrin|Insulin|Glucagon|It is released when acidic chyme enters the duodenum.
+H|Which stomach cells secrete intrinsic factor needed for vitamin B12 absorption?|Parietal cells|Chief cells|Goblet cells|Paneth cells|Deficiency causes pernicious anaemia.

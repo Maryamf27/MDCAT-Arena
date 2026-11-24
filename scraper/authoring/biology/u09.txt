@@ -1,0 +1,78 @@
+# Biology Unit 9 Support and Movement
+@ 9.1
+E|Which cells are found in the lacunae of cartilage?|Chondrocytes|Osteocytes|Myocytes|Neurons|Chondrocytes maintain the cartilage matrix.
+E|What is the name of mature bone cells?|Osteocytes|Chondrocytes|Fibroblasts|Myoblasts|Osteocytes live in lacunae within the bone matrix.
+E|How many types of muscle tissue are found in the human body?|Three|Two|Four|Five|They are skeletal, smooth and cardiac muscle.
+M|Which two components give bone its strength and slight flexibility?|Calcium phosphate crystals and collagen fibres|Keratin and elastin|Cellulose and lignin|Glycogen and fat|Mineral provides hardness while collagen resists tension.
+M|What is the function of osteoclasts?|Resorb bone matrix|Form new bone matrix|Store fat|Produce blood cells|Osteoclasts break down bone, while osteoblasts form it.
+M|How do cartilage cells obtain nutrients?|By diffusion from surrounding tissue because cartilage lacks blood vessels|Through blood vessels in the matrix|Through nerve fibres|Through bone marrow|Cartilage is avascular and relies on the perichondrium and synovial fluid.
+M|What is the structural unit of compact bone?|Haversian system (osteon)|Sarcomere|Nephron|Alveolus|An osteon consists of concentric lamellae around a central canal.
+H|Which structure of a long bone contains red bone marrow and a network of trabeculae?|Spongy (cancellous) bone|Compact bone|Periosteum|Articular cartilage|Spongy bone has bony struts with spaces filled with marrow.
+H|Which type of cartilage forms the intervertebral discs?|Fibrocartilage|Hyaline cartilage|Elastic cartilage|Calcified cartilage|Fibrocartilage withstands compression and tension.
+H|Which membrane covers the outer surface of a bone and contains bone-forming cells?|Periosteum|Perichondrium|Synovial membrane|Endosteum only|The periosteum has an osteogenic layer for growth and repair.
+@ 9.2
+E|Which tissue is more flexible: cartilage or bone?|Cartilage|Bone|Both equally|Neither|Cartilage has a firm but flexible matrix, while bone is rigid.
+E|Which is a function of bone?|Storage of calcium and support of the body|Production of insulin|Digestion of food|Gas exchange|Bones support, protect organs and store minerals.
+E|What is a function of articular cartilage?|Reduces friction and absorbs shock in joints|Produces blood cells|Secretes hormones|Stores glycogen|Smooth cartilage lets bone ends glide.
+M|Why does cartilage heal slowly after injury?|It has no blood supply|It has no cells|It contains no collagen|It is too hard|Poor nutrient and cell delivery slows repair.
+M|Where is hyaline cartilage found?|Trachea rings, nose and ends of bones|Ear pinna|Intervertebral discs|Tendons|It is the most common cartilage with a glassy matrix.
+M|Elastic cartilage is found in the|External ear and epiglottis|Intervertebral discs|Ribs only|Knee menisci|Elastic fibres give flexibility.
+M|Red bone marrow is mainly responsible for|Production of blood cells|Storage of fat|Calcium storage|Muscle contraction|Haematopoiesis occurs in red marrow of flat bones and the ends of long bones.
+H|Which hormone raises blood calcium by stimulating osteoclasts?|Parathyroid hormone|Calcitonin|Insulin|Thyroxine|PTH releases calcium from bone.
+H|During endochondral ossification, what is replaced by bone?|Hyaline cartilage model|Fibrous membrane|Muscle|Adipose tissue|Most bones of the limbs form from cartilage.
+H|Which small channels connect osteocytes in compact bone?|Canaliculi|Nephrons|Capillary lumens|Alveoli|They allow nutrient and waste exchange between osteocytes.
+@ 9.3
+E|Which muscle type is voluntary, striated and multinucleate?|Skeletal muscle|Smooth muscle|Cardiac muscle|Myoepithelial cells|Skeletal muscle fibres are long cylindrical multinucleate cells.
+E|Which muscle is involuntary, non-striated with spindle-shaped cells?|Smooth muscle|Skeletal muscle|Cardiac muscle|Tendon|Smooth muscle lines walls of hollow organs.
+E|Where is cardiac muscle found?|In the heart wall|In the intestinal wall|In the biceps|In blood vessels|Cardiac muscle forms the myocardium.
+M|Which feature distinguishes cardiac muscle from skeletal muscle?|Branched fibres joined by intercalated discs|Multiple peripheral nuclei|No striations|Voluntary control|Intercalated discs are unique to cardiac muscle.
+M|Which muscle type fatigues most quickly with sustained activity?|Skeletal muscle|Cardiac muscle|Smooth muscle|All equally|Cardiac muscle is highly resistant to fatigue.
+M|Where are the nuclei located in skeletal muscle fibres?|At the periphery, beneath the sarcolemma|At the centre|Absent|In the sarcomere|Skeletal fibres have many peripheral nuclei.
+M|Which nervous system division controls smooth and cardiac muscle?|Autonomic nervous system|Somatic nervous system|Sensory system|Voluntary system|These muscles are involuntary.
+H|Which muscle lacks troponin and relies on calmodulin for contraction?|Smooth muscle|Skeletal muscle|Cardiac muscle|All muscle|Calcium binds calmodulin, activating myosin light-chain kinase.
+H|Why does cardiac muscle contract as a functional unit?|Gap junctions in intercalated discs allow rapid spread of impulses|It has a nerve to every cell|It is multinucleate|It lacks striations|Electrical coupling forms a functional syncytium.
+H|Which muscle type has the greatest capacity for regeneration after injury?|Smooth muscle|Cardiac muscle|Skeletal muscle only|None regenerates|Smooth muscle cells can divide, whereas cardiac muscle has very limited regeneration.
+@ 9.4
+E|What is the basic contractile unit of skeletal muscle?|Sarcomere|Nephron|Neuron|Alveolus|A sarcomere lies between two Z lines.
+E|Which protein forms the thick filaments of a sarcomere?|Myosin|Actin|Collagen|Keratin|Thick filaments are made of myosin.
+E|Which protein is the main component of thin filaments?|Actin|Myosin|Elastin|Haemoglobin|Thin filaments are actin with tropomyosin and troponin.
+M|The I band consists of|Thin filaments only|Thick filaments only|Both overlapping|Z lines only|The I band is isotropic and contains only actin.
+M|Which band corresponds to the entire length of the thick filaments?|A band|I band|H zone|Z line|The A band is anisotropic.
+M|The H zone is the region of the sarcomere containing|Only thick filaments|Only thin filaments|Overlap of thick and thin|Z lines|The H zone lies at the centre of the A band.
+M|A muscle fibre is made up of many|Myofibrils|Nephrons|Neurons|Chondrocytes|Myofibrils contain repeating sarcomeres.
+H|During contraction, which bands shorten?|I band and H zone|A band only|All bands lengthen|Z lines|The A band remains constant as filaments slide.
+H|Which protein of the thin filament binds calcium ions?|Troponin|Tropomyosin|Myosin|Titin|Troponin binds Ca2+ and shifts tropomyosin.
+H|The M line is located at|The centre of the sarcomere anchoring thick filaments|The boundary of the sarcomere|The end of the I band|The sarcolemma|The M line holds thick filaments in position.
+@ 9.5
+E|Which theory describes muscle contraction?|Sliding filament theory|Fluid mosaic theory|Natural selection|Cell theory|Actin and myosin filaments slide past each other.
+E|Where is calcium stored in a muscle fibre?|Sarcoplasmic reticulum|Mitochondria|Golgi apparatus|Nucleus|Ca2+ is released when the action potential reaches it.
+E|What is the role of ATP binding to the myosin head?|Detachment from actin|Binding to actin|Release of calcium|Formation of troponin|ATP binding releases the cross-bridge.
+M|Which neurotransmitter triggers muscle fibre contraction?|Acetylcholine|Dopamine|Serotonin|GABA|Acetylcholine from the motor neuron depolarises the sarcolemma.
+M|What does calcium do after it binds to troponin?|Moves tropomyosin to expose myosin-binding sites on actin|Breaks actin|Destroys myosin|Forms ATP|Exposed sites allow cross-bridges to form.
+M|What is the power stroke?|Myosin head pivots and pulls actin toward the centre of the sarcomere|Actin pulls myosin outward|Calcium pumps out|The Z line lengthens|The pivoting head slides the thin filament inward.
+M|Why does rigor mortis occur?|No ATP is available to detach myosin from actin|Too much ATP|Calcium is absent|Actin is lost|Cross-bridges remain attached after death.
+H|Which sequence is correct?|Cross-bridge formation, power stroke, detachment by ATP, re-cocking|Detachment, power stroke, cross-bridge formation|Power stroke, re-cocking, cross-bridge|Cross-bridge, detachment, power stroke|ATP hydrolysis re-cocks the head for the next cycle.
+H|What is the role of acetylcholinesterase at the neuromuscular junction?|Breaks down acetylcholine to end stimulation|Synthesises acetylcholine|Releases calcium|Produces ATP|Without it the muscle would remain stimulated.
+H|Which compound rapidly regenerates ATP in contracting muscle?|Creatine phosphate|Glycogen only|Lactic acid|Urea|Creatine phosphate donates phosphate to ADP.
+@ 9.6
+E|Which joints are immovable, like the sutures of the skull?|Fibrous joints|Cartilaginous joints|Synovial joints|Ball-and-socket joints|Fibrous joints are held by dense connective tissue.
+E|Which joints are slightly movable, like intervertebral discs?|Cartilaginous joints|Fibrous joints|Synovial joints|Pivot joints|Cartilage connects the bones.
+E|Which joints are freely movable and contain a joint cavity?|Synovial joints|Fibrous joints|Cartilaginous joints|Sutures|Synovial joints have fluid-filled cavities.
+M|Which joints are examples of ball-and-socket joints?|Shoulder and hip|Elbow and knee|Atlas and axis|Wrist and ankle|They allow movement in many directions.
+M|Which joints are hinge joints?|Elbow and knee|Shoulder and hip|Neck rotation|Carpals|Hinge joints move in one plane.
+M|Which joint allows rotation of the head between atlas and axis?|Pivot joint|Hinge joint|Saddle joint|Gliding joint|The odontoid process rotates in the atlas.
+M|Which structure reduces friction in a synovial joint?|Synovial fluid|Periosteum|Ligament|Tendon|Synovial fluid lubricates the joint.
+H|Which joint at the base of the thumb is a saddle joint?|Carpometacarpal joint|Elbow|Hip|Knee|It allows opposition of the thumb.
+H|Which joints are gliding joints?|Between carpal bones|Knee|Hip|Skull|Flat surfaces slide over each other.
+H|Ligaments connect|Bone to bone|Muscle to bone|Muscle to muscle|Cartilage to skin|Tendons connect muscle to bone.
+@ 9.7
+E|What is arthritis?|Inflammation of one or more joints|Inflammation of muscles|Bone cancer|Fracture of bone|Arthritis causes pain and stiffness.
+E|Which type of arthritis results from wear and tear of articular cartilage?|Osteoarthritis|Rheumatoid arthritis|Gout|Septic arthritis|Osteoarthritis is a degenerative joint disease.
+E|Rheumatoid arthritis is caused by|An autoimmune attack on the synovial membrane|Wear and tear|Uric acid crystals|A bacterial toxin|The immune system attacks the joint lining.
+M|Gout is caused by deposition of|Uric acid crystals in joints|Calcium crystals in muscle|Cholesterol in arteries|Urea in the kidneys|Gout commonly affects the big toe.
+M|Which symptoms are typical of arthritis?|Joint pain, stiffness and swelling|Fever and rash|Cough|Diarrhoea|Reduced range of movement is common.
+M|Rheumatoid arthritis usually affects|Small joints symmetrically|Only one large joint|Only the spine|Only the skull|Both hands are often involved.
+M|Which factor increases risk of osteoarthritis?|Obesity and joint injury|Low calorie diet|Young age|Vitamin C intake|Extra load damages cartilage.
+H|Which arthritis is autoimmune?|Rheumatoid arthritis|Osteoarthritis|Gout|Traumatic arthritis|Immune cells attack the synovium.
+H|Why is gout linked to diet and metabolism?|Purine breakdown produces uric acid|Fat produces uric acid|Sugar forms urea|Protein forms crystals of calcium|High purine intake can raise uric acid.
+H|What causes narrowing of the joint space seen on X-ray in osteoarthritis?|Loss of articular cartilage|Growth of cartilage|Excess synovial fluid|Loss of muscle|Cartilage thinning reduces the space.

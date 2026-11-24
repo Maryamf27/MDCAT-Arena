@@ -1,0 +1,110 @@
+{
+  "biology": {
+    "dataset": "scraper/output/biology/authored-questions.json",
+    "total_slos": 69,
+    "target_questions": 690,
+    "questions": 690,
+    "slos_with_any": 69,
+    "slos_complete": 69,
+    "slos_missing": [],
+    "slos_partial": {},
+    "difficulty": {
+      "easy": 207,
+      "medium": 276,
+      "hard": 207
+    },
+    "answer_positions": {
+      "0": 168,
+      "1": 172,
+      "2": 177,
+      "3": 173
+    },
+    "correct_is_longest_option_pct": 69.3,
+    "explanation_words_median": 8.0,
+    "short_explanations_under_8_words": 316,
+    "per_unit_quality": {
+      "1": {
+        "questions": 20,
+        "explanation_words_median": 15.5,
+        "correct_is_longest_pct": 65.0
+      },
+      "2": {
+        "questions": 10,
+        "explanation_words_median": 17.0,
+        "correct_is_longest_pct": 30.0
+      },
+      "3": {
+        "questions": 100,
+        "explanation_words_median": 12.0,
+        "correct_is_longest_pct": 61.0
+      },
+      "4": {
+        "questions": 40,
+        "explanation_words_median": 11.0,
+        "correct_is_longest_pct": 67.5
+      },
+      "5": {
+        "questions": 70,
+        "explanation_words_median": 10.0,
+        "correct_is_longest_pct": 64.3
+      },
+      "6": {
+        "questions": 40,
+        "explanation_words_median": 10.0,
+        "correct_is_longest_pct": 82.5
+      },
+      "7": {
+        "questions": 30,
+        "explanation_words_median": 8.5,
+        "correct_is_longest_pct": 76.7
+      },
+      "8": {
+        "questions": 30,
+        "explanation_words_median": 9.0,
+        "correct_is_longest_pct": 66.7
+      },
+      "9": {
+        "questions": 70,
+        "explanation_words_median": 7.0,
+        "correct_is_longest_pct": 64.3
+      },
+      "10": {
+        "questions": 70,
+        "explanation_words_median": 6.0,
+        "correct_is_longest_pct": 70.0
+      },
+      "11": {
+        "questions": 40,
+        "explanation_words_median": 8.0,
+        "correct_is_longest_pct": 70.0
+      },
+      "12": {
+        "questions": 10,
+        "explanation_words_median": 6.0,
+        "correct_is_longest_pct": 90.0
+      },
+      "13": {
+        "questions": 30,
+        "explanation_words_median": 5.0,
+        "correct_is_longest_pct": 76.7
+      },
+      "14": {
+        "questions": 20,
+        "explanation_words_median": 5.0,
+        "correct_is_longest_pct": 65.0
+      },
+      "15": {
+        "questions": 80,
+        "explanation_words_median": 5.5,
+        "correct_is_longest_pct": 75.0
+      },
+      "16": {
+        "questions": 30,
+        "explanation_words_median": 5.0,
+        "correct_is_longest_pct": 86.7
+      }
+    },
+    "validation_errors": 0,
+    "validation_error_samples": []
+  }
+}

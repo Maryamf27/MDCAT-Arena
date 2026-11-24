@@ -1,0 +1,34 @@
+# Biology Unit 8 Reproduction
+@ 8.1
+E|Which organs produce sperm and testosterone?|Testes|Prostate gland|Epididymis|Seminal vesicles|The testes are the male gonads.
+E|Where does fertilisation normally occur in the female reproductive tract?|Fallopian tube (oviduct)|Uterus|Vagina|Cervix|The sperm meets the ovum in the ampulla of the oviduct.
+E|Which hormones are produced mainly by the ovaries?|Oestrogen and progesterone|Testosterone and insulin|Thyroxine and adrenaline|FSH and LH|The ovary makes sex steroids and ova.
+M|Which cells of the testis secrete testosterone?|Leydig (interstitial) cells|Sertoli cells|Sperm cells|Epithelial cells of the epididymis|Leydig cells lie between the seminiferous tubules and respond to LH.
+M|Which hormone stimulates spermatogenesis through the Sertoli cells?|FSH|Oxytocin|Prolactin|Insulin|FSH acts on Sertoli cells, which support developing sperm.
+M|What is the function of the prostate gland and seminal vesicles?|Secrete fluids that form semen|Produce sperm|Store sperm|Produce testosterone|They add alkaline and fructose-rich secretions that nourish and activate sperm.
+M|What is the function of the epididymis?|Storage and maturation of sperm|Production of testosterone|Secretion of mucus|Fertilisation|Sperm mature and are stored in the coiled epididymis.
+H|Why are the testes located in the scrotum?|Sperm production needs a temperature slightly below body temperature|They need more oxygen|They require more pressure|They secrete urine|The scrotum keeps the testes about 2 to 3 degrees Celsius cooler.
+H|What is the effect of a vasectomy?|Sperm cannot reach the semen while testosterone production continues|Testosterone is no longer produced|Ejaculation is impossible|Sperm are not made|The vas deferens is cut, but the testes still secrete hormones.
+H|What is the role of Sertoli cells besides nourishing germ cells?|They secrete inhibin that regulates FSH|They secrete testosterone|They make semen|They contract to expel sperm|Inhibin provides negative feedback on FSH secretion.
+@ 8.2
+E|What is the average length of the human menstrual cycle?|28 days|7 days|14 days|60 days|The cycle typically lasts about 28 days.
+E|On which day of a 28-day cycle does ovulation usually occur?|Day 14|Day 1|Day 7|Day 28|Ovulation occurs about midway through the cycle.
+E|What causes menstruation?|Fall in progesterone and shedding of the endometrium|Rise in testosterone|Rise in progesterone|Rupture of the follicle|When the corpus luteum degenerates, hormone levels drop and the lining is shed.
+M|Which hormone stimulates the growth of ovarian follicles at the beginning of the cycle?|FSH|Progesterone|Oxytocin|Testosterone|FSH from the anterior pituitary stimulates follicle development.
+M|What triggers ovulation?|A surge of LH|A surge of progesterone|A rise in prolactin|A fall in FSH|The mid-cycle LH surge causes the mature follicle to rupture.
+M|Which structure secretes progesterone after ovulation?|Corpus luteum|Pituitary gland|Placenta only|Primary follicle|The remains of the follicle form the corpus luteum.
+M|What is the effect of oestrogen on the endometrium in the first half of the cycle?|It thickens and repairs the lining|It sheds the lining|It makes the lining secretory|It destroys the lining|Oestrogen drives the proliferative phase.
+H|What is the effect of high progesterone and oestrogen in the luteal phase on FSH and LH?|They inhibit release of FSH and LH by negative feedback|They stimulate FSH and LH|They have no effect|They convert FSH to LH|It prevents development of new follicles.
+H|Which hormone maintains the corpus luteum in early pregnancy?|Human chorionic gonadotropin (hCG)|FSH|Oxytocin|Prolactin|hCG from the embryo prevents menstruation by keeping progesterone high.
+H|What causes the LH surge before ovulation?|Positive feedback from high oestrogen|Negative feedback from progesterone|Fall in FSH|Release of hCG|A sustained high oestrogen level stimulates the pituitary to release LH.
+@ 8.3
+E|Which virus causes the sexually transmitted disease AIDS?|HIV|HPV|HSV-1|Hepatitis A virus|AIDS is caused by the human immunodeficiency virus.
+E|Which bacterium causes syphilis?|Treponema pallidum|Neisseria gonorrhoeae|Chlamydia trachomatis|Vibrio cholerae|Syphilis is caused by the spirochaete Treponema pallidum.
+E|Which bacterium causes gonorrhoea?|Neisseria gonorrhoeae|Treponema pallidum|Salmonella typhi|Mycobacterium tuberculosis|It is a gram-negative diplococcus.
+M|Which STD is often asymptomatic and caused by Chlamydia trachomatis?|Chlamydia infection|Syphilis|Genital herpes|Trichomoniasis|Chlamydia is the most common bacterial STD and can cause pelvic inflammatory disease.
+M|Genital herpes is characterised by|Painful blisters caused by herpes simplex virus|Painless chancre caused by bacteria|Warts caused by protozoa|Yellow discharge caused by fungus|Herpes simplex virus produces recurring vesicles.
+M|Which virus is linked to genital warts and cervical cancer?|Human papillomavirus|HIV|Hepatitis A|Influenza|Types 16 and 18 are major causes of cervical cancer.
+M|Trichomoniasis is caused by which organism?|Trichomonas vaginalis, a protozoan|Candida|Treponema|Neisseria|It is a flagellated protozoan infecting the urogenital tract.
+H|The primary stage of syphilis is characterised by|A painless chancre at the site of infection|A painful blister|A purulent discharge|Genital warts|The hard, painless ulcer appears about three weeks after infection.
+H|Which statement about hepatitis B is correct?|It can be sexually transmitted and a vaccine is available|It is caused by bacteria|It is only transmitted by food|No vaccine exists|HBV spreads through blood and body fluids.
+H|Which list includes only STDs caused by bacteria?|Syphilis, gonorrhoea and chlamydia|Genital herpes, HPV and HIV|Trichomoniasis, syphilis and HIV|Genital warts, gonorrhoea and herpes|The others involve viruses or protozoa.

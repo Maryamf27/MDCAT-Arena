@@ -1,0 +1,34 @@
+# Biology Unit 16 Biotechnology
+@ 16.1
+E|What does a vaccine contain?|An antigen that stimulates immunity|Antibodies|Antibiotics|Hormone|Antigen primes lymphocytes.
+E|An attenuated vaccine contains|Weakened live pathogens|Dead cells only|Toxins only|Antibodies|Examples include MMR and BCG.
+E|Which vaccine uses inactivated virus?|Salk polio vaccine|BCG|MMR|Oral polio|Inactivated virus cannot replicate.
+M|How is hepatitis B vaccine produced?|Recombinant DNA technology in yeast|From dead virus|From blood|From mice|HBsAg gene is inserted into yeast.
+M|What are toxoid vaccines?|Inactivated toxins|Live bacteria|Antibodies|Whole viruses|Tetanus and diphtheria vaccines are toxoids.
+M|How does an mRNA vaccine work?|Cells make the antigen from the delivered mRNA|It injects antibodies|It injects live virus|It alters DNA|The antigen triggers immunity.
+M|Why are booster doses given?|To strengthen memory response|To kill bacteria|To supply antibodies|To lower fever|They produce a secondary response.
+H|What is herd immunity?|Protection of unvaccinated people when most are immune|Immunity in animals|Immunity from antibodies|Immunity at birth|It reduces transmission.
+H|Why are live vaccines risky for immunocompromised people?|The weakened pathogen may cause disease|They contain toxins|They are inactive|They lack antigen|Immune defence is weak.
+H|What are conjugate vaccines?|Polysaccharides linked to proteins to boost response|Live virus|Pure toxin|DNA|Hib vaccine is an example.
+@ 16.2
+E|What is a DNA probe?|A labelled single-stranded DNA that hybridises with a complementary sequence|A protein|A lipid|An antibody|Probes detect specific genes.
+E|What are monoclonal antibodies?|Identical antibodies produced from one B cell clone|Mixed antibodies|Enzymes|Hormones|They bind a single epitope.
+E|Which test uses monoclonal antibodies to detect hCG?|Pregnancy test|Blood group test|ECG|X-ray|The strip binds hCG.
+M|What is a hybridoma?|Fusion of B cell with myeloma cell|Fusion of two sperm|Fusion of T cells|A bacterium|It produces monoclonal antibodies indefinitely.
+M|What does PCR do?|Amplifies specific DNA sequences|Digests DNA|Makes protein|Sequences RNA|It copies DNA using Taq polymerase.
+M|Which technique detects RNA viruses like SARS-CoV-2?|RT-PCR|ELISA only|Western blot|X-ray|Reverse transcriptase makes DNA from RNA.
+M|What does ELISA use?|Antibodies linked to an enzyme|DNA probes|X-rays|Magnets|Colour change shows positive result.
+H|Why are myeloma cells used in hybridomas?|They divide indefinitely|They make antibodies|They kill bacteria|They carry oxygen|They give immortality.
+H|How are probes detected?|Radioactive or fluorescent labels|Colour of DNA|Size|Smell|Labels reveal hybridisation.
+H|How could a DNA probe help diagnose a genetic disease?|It binds the mutated sequence|It cuts DNA|It makes protein|It kills cells|Hybridisation shows presence of the mutation.
+@ 16.3
+E|Which organism is used to produce recombinant human insulin?|Escherichia coli|Yeast only|Virus|Mouse|The human gene is inserted into bacteria.
+E|Recombinant human growth hormone is used to treat|Growth deficiency|Diabetes|Anaemia|Fever|It replaces missing hormone.
+E|Interferons are used as|Antiviral agents|Antibiotics|Vitamins|Painkillers|They are cytokines.
+M|Which fungus produces penicillin?|Penicillium|Aspergillus|Saccharomyces|Rhizopus|It was discovered by Fleming.
+M|How is haemophilia A treated using biotechnology?|Recombinant factor VIII|Insulin|Vitamin K|Antibiotics|The missing clotting factor is supplied.
+M|What is monoclonal antibody therapy?|Targeted antibodies against specific cells|General antibiotics|Vaccines|Surgery|Trastuzumab targets HER2.
+M|What is gene therapy?|Inserting functional genes to treat disease|Removing organs|Taking antibiotics|Vaccination|It aims to correct defective genes.
+H|Why is recombinant insulin better than animal insulin?|It is identical to human insulin and less allergenic|It is cheaper only|It is from pigs|It is weaker|Fewer immune reactions.
+H|Which enzyme joins a DNA insert to a plasmid?|DNA ligase|Restriction enzyme|Polymerase|Helicase|Ligase seals the backbone.
+H|Recombinant erythropoietin is used to treat|Anaemia of kidney failure|Diabetes|Haemophilia|Hypertension|It stimulates red cell production.

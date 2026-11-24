@@ -1,0 +1,56 @@
+# Biology Unit 11 Circulation, Unit 12 Immunity
+@ 11.1
+E|How many chambers does the human heart have, and what are they?|Four: two atria and two ventricles|Two: one atrium and one ventricle|Three: two atria and one ventricle|Four: four ventricles|The upper atria receive blood and the lower ventricles pump it out.
+E|Which chamber of the heart has the thickest muscular wall?|Left ventricle|Right atrium|Left atrium|Right ventricle|The left ventricle pumps blood to the whole body against high resistance.
+E|Which valve lies between the right atrium and the right ventricle?|Tricuspid valve|Bicuspid valve|Aortic valve|Pulmonary valve|The tricuspid valve has three cusps and prevents backflow into the right atrium.
+M|Which valve guards the opening between the left atrium and the left ventricle?|Bicuspid (mitral) valve|Tricuspid valve|Aortic semilunar valve|Pulmonary semilunar valve|The mitral valve has two cusps.
+M|Which vessels bring oxygenated blood from the lungs into the left atrium?|Pulmonary veins|Pulmonary arteries|Vena cavae|Coronary arteries|Pulmonary veins are exceptions in that they carry oxygenated blood.
+M|What is the role of the chordae tendineae and papillary muscles?|Prevent the atrioventricular valves from turning inside out|Conduct electrical impulses|Supply blood to the myocardium|Produce hormones|They anchor valve cusps during ventricular contraction.
+M|What does the interventricular septum do?|Separates the right and left ventricles|Joins the atria|Supplies oxygen|Produces ATP|It keeps oxygenated and deoxygenated blood from mixing.
+H|Why is the wall of the left ventricle thicker than that of the right ventricle?|It must pump blood to the entire body at higher pressure|It receives more blood from the lungs|It has more valves|It contains more nerves|The systemic circuit is longer and has higher resistance than the pulmonary circuit.
+H|Which vessels supply the heart muscle itself, and what does blockage cause?|Coronary arteries; myocardial infarction|Pulmonary arteries; stroke|Carotid arteries; asthma|Renal arteries; angina only|Blockage deprives myocardium of oxygen and can cause a heart attack.
+H|Which valves prevent blood from flowing back into the ventricles when they relax?|Semilunar valves|Tricuspid valve|Bicuspid valve|Eustachian valve|They are at the aorta and pulmonary trunk.
+@ 11.2
+E|What are the terms for contraction and relaxation of the heart?|Systole and diastole|Diastole and systole|Inspiration and expiration|Depolarisation and secretion|Systole is contraction and diastole is relaxation.
+E|What is the normal resting heart rate of an adult?|60 to 100 beats per minute|10 to 20 beats per minute|150 to 200 beats per minute|300 beats per minute|About 72 beats per minute is commonly quoted.
+E|How long does one cardiac cycle last at 75 beats per minute?|0.8 seconds|8 seconds|0.08 seconds|2 seconds|Sixty seconds divided by 75 is 0.8 seconds.
+M|Which structure is called the natural pacemaker of the heart?|Sinoatrial node|Atrioventricular node|Bundle of His|Purkinje fibres|The SA node in the right atrium initiates each heartbeat.
+M|What is the importance of the delay at the AV node?|Allows the ventricles to fill before they contract|Speeds up the ventricles|Stops atrial contraction|Prevents blood flow|The delay is about 0.1 second.
+M|Which event causes the first heart sound lub?|Closure of the atrioventricular valves|Closure of the semilunar valves|Opening of the valves|Atrial filling|The first sound comes at the start of ventricular systole.
+M|Which sequence matches the phases of the cardiac cycle?|Atrial systole, ventricular systole, joint diastole|Ventricular systole, atrial systole, relaxation|Joint diastole, atrial diastole only|Atrial diastole, ventricular diastole only|Atria contract first, followed by ventricles and then both rest.
+H|What is the function of the Purkinje fibres?|Conduct impulses rapidly through the ventricular walls|Initiate impulses|Delay impulses|Supply blood|They carry impulses from the bundle branches to the myocardium.
+H|At the start of ventricular systole, what happens to valves?|AV valves close, then semilunar valves open as pressure rises|Both valve sets stay closed|Semilunar valves close first|AV valves open|The ventricular pressure exceeds atrial then aortic pressure.
+H|How does the autonomic nervous system regulate heart rate?|Sympathetic nerves increase and the vagus nerve decreases it|Sympathetic nerves decrease and the vagus increases it|Only hormones regulate it|The somatic nerves control it|Noradrenaline speeds up the SA node and acetylcholine slows it.
+@ 11.3
+E|Which blood vessels carry blood away from the heart?|Arteries|Veins|Capillaries only|Lymphatics|Arteries carry blood under pressure to the organs.
+E|Which vessels have valves to prevent backflow?|Veins|Arteries|Capillaries|Arterioles|Venous valves keep blood moving toward the heart.
+E|What is the wall of a capillary made of?|A single layer of endothelial cells|Thick muscle|Cartilage|Bone|The thin wall allows exchange of materials.
+M|Why do arteries have thick muscular and elastic walls?|To withstand high pressure|To exchange gases|To hold valves|To store blood|They absorb pressure surges from the heart.
+M|Which artery carries deoxygenated blood?|Pulmonary artery|Aorta|Carotid artery|Renal artery|It takes blood from the right ventricle to the lungs.
+M|What helps blood return through veins at low pressure?|Skeletal muscle contraction and valves|Strong arterial pressure|Heart suction only|Gravity only|The skeletal muscle pump squeezes veins.
+M|Which vessels regulate blood flow by vasoconstriction and vasodilation?|Arterioles|Capillaries|Veins|Lymph nodes|Arteriole smooth muscle changes diameter.
+H|How does elastic recoil of the aorta help circulation?|It maintains blood pressure and flow between heartbeats|It stops blood flow|It pumps blood|It filters blood|The aorta stretches in systole and recoils in diastole.
+H|Where does tissue fluid mostly leave a capillary?|At the arterial end by hydrostatic pressure|At the venous end only|Through valves|Through the heart|Hydrostatic pressure exceeds osmotic pressure at the arterial end.
+H|What is the cause of varicose veins?|Incompetent valves allow backflow and pooling|Hard arteries|Low blood volume|Thin capillaries|Veins become dilated and twisted.
+@ 11.4
+E|What is lymph?|Fluid in lymphatic vessels derived from tissue fluid|Blood plasma only|Red blood cells|Urine|Lymph contains lymphocytes and little protein.
+E|What is the function of lymph nodes?|Filter lymph and house lymphocytes|Pump lymph|Produce red cells|Digest food|Nodes trap pathogens.
+E|Which is the largest lymphatic organ?|Spleen|Thymus|Tonsil|Appendix|The spleen filters blood and stores lymphocytes.
+M|Where does lymph finally enter the blood?|Subclavian veins|Pulmonary artery|Right ventricle|Aorta|The thoracic duct empties into the left subclavian vein.
+M|What is the role of lacteals?|Absorb fats from the small intestine|Absorb glucose|Produce bile|Digest protein|Lacteals are lymph capillaries in villi.
+M|What is the function of the thymus?|Maturation of T lymphocytes|Production of bile|Filtering blood|Storing iron|T cells mature in the thymus.
+M|How does lymph move through lymphatic vessels?|By skeletal muscle contraction and valves|By the heart|By gravity only|By diffusion only|It has no pump of its own.
+H|Which area is drained by the right lymphatic duct?|Right upper side of the body|Left leg|Abdomen only|Whole body|The thoracic duct drains the rest.
+H|Blockage of lymph vessels by filarial worms causes|Lymphoedema|Anaemia|Jaundice|Hypertension|Fluid accumulates in tissues.
+H|How does lymph differ from blood plasma?|Lymph has fewer proteins and no red blood cells|Lymph has red cells|Lymph has more protein|They are identical|Lymph is derived from tissue fluid.
+@ 12.1
+E|Which cells are mainly responsible for specific immunity?|Lymphocytes|Red blood cells|Platelets|Neutrophils only|B and T cells recognise specific antigens.
+E|Which cells produce antibodies?|B lymphocytes (plasma cells)|T lymphocytes|Platelets|Macrophages|Plasma cells develop from B cells.
+E|Which cells provide long-term immunity after infection?|Memory cells|Platelets|Neutrophils|Mast cells|They enable a faster response to a repeat exposure.
+M|What is the role of helper T cells?|Activate B cells and cytotoxic T cells|Kill infected cells|Produce antibodies|Engulf bacteria|They release cytokines.
+M|What do cytotoxic T cells do?|Kill virus-infected and tumour cells|Produce antibodies|Secrete histamine|Carry oxygen|They destroy cells showing foreign antigens.
+M|What is the basic structure of an antibody?|Y-shaped with two heavy and two light chains|Spherical lipid|Single helix|Cubic crystal|Variable regions bind antigens.
+M|How does the secondary immune response differ from the primary?|Faster and stronger due to memory cells|Slower and weaker|Identical|Absent|Memory cells respond quickly.
+H|How do vaccines produce protection?|They stimulate memory cell formation without causing disease|They supply antibodies|They kill bacteria|They remove antigens|Exposure to harmless antigen primes the response.
+H|What is clonal selection?|An antigen selects specific lymphocytes that proliferate|Random selection of cells|Death of all cells|Mutation|The selected clone differentiates into plasma and memory cells.
+H|Antibodies passed from mother to baby through colostrum provide|Natural passive immunity|Active immunity|Acquired active immunity|No immunity|The baby receives ready-made antibodies.

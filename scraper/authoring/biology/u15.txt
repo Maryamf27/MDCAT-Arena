@@ -1,0 +1,89 @@
+# Biology Unit 15 Homeostasis
+@ 15.1
+E|Which organs make up the human urinary system?|Kidneys, ureters, urinary bladder and urethra|Kidneys, liver, bladder and rectum|Kidneys, ureters, stomach and urethra|Liver, ureters, bladder and anus|Urine is formed in the kidneys and carried out through the ureters, bladder and urethra.
+E|What is the structural and functional unit of the kidney?|Nephron|Neuron|Alveolus|Sarcomere|Each kidney contains about one million nephrons.
+E|Which region of the kidney lies immediately beneath the capsule?|Renal cortex|Renal pelvis|Renal medulla|Calyx|The cortex contains the renal corpuscles and convoluted tubules.
+M|The renal corpuscle consists of|Glomerulus and Bowman's capsule|Loop of Henle and collecting duct|Proximal and distal tubule|Renal pelvis and ureter|Filtration takes place in the corpuscle in the cortex.
+M|Which part of the nephron creates the concentration gradient in the medulla?|Loop of Henle|Bowman's capsule|Glomerulus|Proximal convoluted tubule|The loop acts as a countercurrent multiplier.
+M|How does urine move from the kidney to the bladder?|Peristalsis of the ureter|Gravity only|Diffusion|Ciliary beating|Smooth muscle waves push urine along.
+M|Into which structure do the collecting ducts drain urine?|Renal pelvis through the renal papillae|Bowman's capsule|Glomerulus|Urethra directly|Urine passes to calyces, the pelvis and the ureter.
+H|Why are juxtamedullary nephrons important for producing concentrated urine?|They have long loops of Henle that extend deep into the medulla|They have no tubules|They lack glomeruli|They are located in the pelvis|Long loops sustain a steep osmotic gradient.
+H|Why is the efferent arteriole narrower than the afferent arteriole?|It maintains high pressure in the glomerulus|It reduces blood flow|It carries lymph|It produces urine|The resistance keeps pressure high for filtration.
+H|What is the role of podocytes in the glomerular filtration barrier?|Their filtration slits restrict passage of large proteins|They secrete hormones|They absorb glucose|They contract the tubule|Podocytes form the inner layer of Bowman's capsule.
+@ 15.2
+E|Where does glomerular filtration take place?|Between the glomerulus and Bowman's capsule|Loop of Henle|Collecting duct|Bladder|Blood pressure forces fluid out of the glomerular capillaries.
+E|Where does most selective reabsorption occur?|Proximal convoluted tubule|Collecting duct|Bladder|Ureter|About 65 percent of filtrate is reabsorbed there.
+E|What is the normal glomerular filtration rate?|About 125 mL per minute|About 5 mL per minute|About 500 mL per minute|About 1 mL per minute|It is about 180 litres per day.
+M|How is glucose reabsorbed in the proximal tubule?|By active transport|By osmosis|By simple diffusion|It is not reabsorbed|All filtered glucose is normally reabsorbed.
+M|What is tubular secretion?|Movement of substances from blood into the tubule|Movement from the tubule to blood|Filtration at the glomerulus|Formation of urea|Hydrogen ions, potassium and drugs are secreted.
+M|Which substances are normally absent from the glomerular filtrate?|Blood cells and large proteins|Glucose|Urea|Water|Filtration is selective by size.
+M|Which part of the loop of Henle is permeable to water?|Descending limb|Ascending limb|Both are impermeable|Neither|Water leaves the descending limb.
+H|What happens when blood glucose exceeds the renal threshold of about 180 mg per dL?|Glucose appears in the urine|Glucose is stored|Urine volume decreases|Glucose is destroyed|Carriers are saturated.
+H|Why might protein in the urine indicate kidney damage?|The filtration barrier has become leaky|The tubules are secreting protein|Proteins are normal|The bladder makes protein|Large proteins should not be filtered.
+H|How does ADH reduce urine volume?|It inserts aquaporins in the collecting duct to increase water reabsorption|It increases filtration|It blocks the loop|It destroys urea|The urine becomes concentrated.
+@ 15.3
+E|What is excretion?|Removal of metabolic waste products|Removal of undigested food|Intake of nutrients|Secretion of hormones|Kidneys excrete urea and others.
+E|What is osmoregulation?|Regulation of water and salt balance|Regulation of temperature|Regulation of blood sugar|Regulation of pH only|Kidneys adjust urine concentration.
+E|Which hormone controls water reabsorption in the collecting ducts?|Antidiuretic hormone|Insulin|Glucagon|Thyroxine|ADH is released by the posterior pituitary.
+M|What happens to ADH and urine in dehydration?|ADH rises and urine is concentrated|ADH falls and urine dilute|No change|ADH rises and urine dilute|Water is conserved.
+M|What happens after drinking a large amount of water?|ADH falls and a large volume of dilute urine is produced|ADH rises|Urine stops|Urine concentrated|Less water is reabsorbed.
+M|Why does alcohol increase urine output?|It inhibits ADH release|It stimulates ADH|It increases filtration only|It blocks the ureter|The result is diuresis.
+M|What does aldosterone do?|Increases sodium reabsorption in the distal tubule|Decreases sodium reabsorption|Increases potassium retention|Reduces blood volume|It is secreted by the adrenal cortex.
+H|Diabetes insipidus is characterised by|Large volumes of dilute urine due to lack of ADH action|Glucose in urine|Small volumes of urine|Blood in urine|The collecting duct stays impermeable to water.
+H|Where are osmoreceptors that monitor blood osmolarity located?|Hypothalamus|Kidney cortex|Liver|Heart|They trigger ADH release and thirst.
+H|Which kidney function is an example of osmoregulation rather than excretion?|Varying urine concentration with hydration|Removal of urea|Removal of creatinine|Removal of drugs|Adjusting water output keeps blood osmolarity constant.
+@ 15.4
+E|Which vessel supplies blood to the glomerulus?|Afferent arteriole|Efferent arteriole|Renal vein|Vasa recta|It arises from the renal artery branches.
+E|What is the main function of the glomerular capillaries?|Filtration of blood|Reabsorption|Secretion only|Urine storage|They have fenestrated walls.
+E|What is the main function of peritubular capillaries?|Reabsorption and secretion|Filtration|Urine production|Hormone synthesis|They surround the tubules.
+M|Why is reabsorption favoured in peritubular capillaries?|Low hydrostatic and high oncotic pressure|High hydrostatic pressure|No pressure|Absence of proteins|Blood pressure is about 10 mmHg.
+M|What is special about the glomerular capillary bed?|It lies between two arterioles|It lies between two veins|It lies between artery and vein|It has no walls|The afferent and efferent vessels are both arterioles.
+M|From which vessel do peritubular capillaries arise?|Efferent arteriole|Afferent arteriole|Renal vein|Renal pelvis|They carry blood away from the glomerulus.
+M|What are the vasa recta?|Capillaries running alongside the loop of Henle|Glomerular capillaries|Ureter branches|Collecting ducts|They preserve the medullary gradient.
+H|Why is oncotic pressure high in peritubular capillaries?|Plasma proteins remain after filtration|They contain more water|They lack proteins|They hold urea|Concentrated proteins draw water back.
+H|What happens if the efferent arteriole constricts?|Glomerular pressure and filtration rate increase|Pressure decreases|Filtration stops|Reabsorption increases|Resistance raises upstream pressure.
+H|Why is peritubular capillary pressure low?|Blood has already passed through two arterioles|It has no vessel|It is near the heart|It has no cells|Resistance of afferent and efferent vessels reduces pressure.
+@ 15.5
+E|Which are the most common kidney stones?|Calcium oxalate|Urea|Glucose|Cholesterol|Many stones contain calcium.
+E|What is the typical symptom of a kidney stone in the ureter?|Severe pain in the flank radiating to the groin|Headache|Cough|Rash|Renal colic is acute.
+E|Which factor increases the risk of kidney stones?|Low water intake|High water intake|Low salt|Vitamin A|Concentrated urine favours crystals.
+M|What type of stone is related to high purine intake and gout?|Uric acid stones|Struvite stones|Cystine stones|Glucose stones|Uric acid is poorly soluble in acidic urine.
+M|How are small stones managed?|Hydration and pain relief so they pass naturally|Immediate surgery|Antibiotics only|Ignoring|Most small stones pass in the urine.
+M|What is ESWL?|Shock waves used to break stones|Surgical removal|Dialysis|Antibiotic therapy|Extracorporeal shock wave lithotripsy.
+M|Which stones are associated with urinary infection?|Struvite|Calcium oxalate|Uric acid|Cystine|Urease-producing bacteria raise pH.
+H|Which condition raises urinary calcium and stone risk?|Hyperparathyroidism|Hypothyroidism|Anaemia|Hypoglycaemia|It increases calcium release.
+H|How are large stones usually removed?|Percutaneous nephrolithotomy or ureteroscopy|Painkillers|Diet|Antacids|Endoscopic procedures fragment or remove stones.
+H|How can uric acid stones be prevented?|Alkalinising the urine|Acidifying the urine|Decreasing water|Eating more purines|Uric acid is more soluble at higher pH.
+@ 15.6
+E|Which disease is a leading cause of kidney failure?|Diabetes mellitus|Asthma|Cholera|Anaemia|Diabetic nephropathy damages glomeruli.
+E|Which condition damages kidney vessels and causes failure?|Hypertension|Hypotension|Cold|Fever|High pressure damages glomeruli.
+E|What treatment replaces kidney function by filtering blood artificially?|Dialysis|Chemotherapy|Vaccination|Surgery only|It removes wastes.
+M|Which is a pre-renal cause of acute kidney failure?|Severe blood loss reducing renal blood flow|Kidney stones|Glomerulonephritis|Prostate enlargement|Reduced perfusion lowers filtration.
+M|What is glomerulonephritis?|Inflammation of glomeruli|Kidney stone|Bladder infection|Urethra blockage|It is an intrinsic cause.
+M|Which is a post-renal cause?|Obstruction of the urinary tract|Low blood pressure|Drug toxicity|Glomerulonephritis|Stones or enlarged prostate block urine.
+M|How does chronic kidney failure differ from acute?|It develops gradually over months or years|It develops in hours|It is always reversible|It is caused by infection only|Chronic loss is progressive.
+H|Which drugs can be nephrotoxic?|NSAIDs and aminoglycosides|Vitamin C|Water|Paracetamol at normal dose only|They damage tubules.
+H|Polycystic kidney disease is|An inherited cause of kidney failure|An infection|A tumour|An autoimmune disease|Cysts replace functioning tissue.
+H|Which dialysis uses the patient's peritoneum as the membrane?|Peritoneal dialysis|Haemodialysis|Transplant|Lithotripsy|Dialysate is placed in the abdominal cavity.
+@ 15.7
+E|What is the normal human core body temperature?|About 37 degrees Celsius|About 25 degrees Celsius|About 45 degrees Celsius|About 30 degrees Celsius|It is kept constant by homeostasis.
+E|Which part of the brain acts as the thermoregulatory centre?|Hypothalamus|Cerebellum|Medulla|Thalamus|It receives input from thermoreceptors.
+E|How does sweating cool the body?|Evaporation removes heat|It adds heat|It dilates vessels|It adds water|Evaporation requires latent heat.
+M|Which response helps lose heat in a hot environment?|Vasodilation of skin arterioles|Vasoconstriction|Shivering|Piloerection|More blood flows to skin.
+M|Which response generates heat in cold?|Shivering|Sweating|Vasodilation|Panting|Muscle contraction releases heat.
+M|What does skin vasoconstriction do?|Reduces heat loss|Increases heat loss|Raises sweat|Lowers temperature|Blood is diverted from the surface.
+M|What is an endotherm?|An animal that generates its own body heat|An animal dependent on environmental heat|A plant|A virus|Mammals and birds are endotherms.
+H|Why must body temperature be controlled?|Enzymes work best at optimum temperature|DNA replicates|Cells absorb light|Bones need heat|Extreme temperatures denature enzymes.
+H|How does fever develop?|Pyrogens raise the hypothalamic set point|The hypothalamus fails|Sweating increases|Skin vessels dilate|The body acts to reach a higher temperature.
+H|What is non-shivering thermogenesis in infants?|Heat generated by brown adipose tissue|Heat by muscle|Heat by sweating|Heat by liver|Uncoupling proteins release heat.
+@ 15.8
+E|Which nitrogenous compound is the main waste in human urine?|Urea|Ammonia|Uric acid|Creatinine|Urea is made in the liver.
+E|Which nitrogenous waste is excreted mostly by fish?|Ammonia|Urea|Uric acid|Creatine|Water is abundant to dilute it.
+E|Which nitrogenous waste is excreted by birds and reptiles?|Uric acid|Urea|Ammonia|Creatinine|It is excreted as a paste.
+M|Where is urea synthesised?|Liver|Kidney|Heart|Brain|The ornithine cycle converts ammonia into urea.
+M|Which waste product arises from muscle creatine phosphate?|Creatinine|Urea|Uric acid|Ammonia|It is excreted by filtration.
+M|Uric acid is the end product of breakdown of|Purines|Pyrimidines only|Fats|Starch|Nucleic acids form uric acid.
+M|Which animals are ureotelic?|Mammals and amphibians|Fish|Birds|Insects|They excrete urea.
+H|Why is uric acid advantageous for birds and reptiles?|It is insoluble and wastes little water|It is very soluble|It is harmless|It needs more water|It helps in egg development.
+H|Why must ammonia be rapidly removed?|It is highly toxic|It is harmless|It is nutritious|It is insoluble|It needs large water.
+H|High blood urea and creatinine indicate|Impaired kidney function|Anaemia|Diabetes|Infection|The kidney fails to excrete wastes.

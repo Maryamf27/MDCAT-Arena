@@ -1,0 +1,78 @@
+# Biology Unit 10 Inheritance
+@ 10.1
+E|According to Mendel's law of segregation, what happens to the two alleles of a gene during gamete formation?|They separate so each gamete receives one|They fuse into one|They are lost|They are duplicated in every gamete|Each gamete carries only one allele of each gene.
+E|What phenotypic ratio is expected from a monohybrid cross Tt x Tt?|3 dominant to 1 recessive|1 to 1|9 to 3 to 3 to 1|2 to 1|The cross gives 1 TT, 2 Tt and 1 tt.
+E|What is a dominant allele?|One that is expressed in the heterozygote|One that is always rare|One that is always harmful|One that is not inherited|The dominant allele masks the recessive one.
+M|A test cross is done by crossing an unknown dominant phenotype with|A homozygous recessive|A homozygous dominant|A heterozygote|Any plant|Offspring ratios reveal the unknown genotype.
+M|What genotypic ratio is expected in the F2 of a monohybrid cross?|1:2:1|3:1|1:1|9:3:3:1|There is 25% TT, 50% Tt and 25% tt.
+M|Mendel's law of dominance states that|In a heterozygote only the dominant allele is expressed|Both alleles blend|Recessive always wins|Alleles are lost|The recessive trait is hidden in F1.
+M|Why was the garden pea a good choice for Mendel?|It has contrasting traits and can be self-pollinated|It has one trait|It is a tree|It has no flowers|Controlled crosses with clear traits made analysis possible.
+H|What ratio is expected from the cross Tt x tt?|1 dominant to 1 recessive|3 to 1|All dominant|All recessive|Half Tt and half tt.
+H|What is the probability that three children of two heterozygous parents all show the dominant trait?|27/64|9/16|3/4|1/64|Each child has 3/4 chance, so (3/4)^3 = 27/64.
+H|The reappearance of the recessive trait in F2 shows that|Alleles remain discrete and do not blend|The trait was lost|Mutation occurred|Dominance is incomplete|Hereditary factors are particulate.
+@ 10.2
+E|What phenotypic ratio is expected in the F2 of a dihybrid cross?|9:3:3:1|3:1|1:2:1|1:1:1:1|Two independently assorting genes give this ratio.
+E|What does the law of independent assortment state?|Alleles of different genes assort independently into gametes|Alleles of one gene blend|Alleles always travel together|Gametes carry both alleles|It applies to genes on different chromosomes.
+E|How many types of gametes does a RrYy plant produce?|4|2|8|16|The gametes are RY, Ry, rY and ry.
+M|What is the F1 of a cross between a round yellow and a wrinkled green pea?|All round yellow|All wrinkled green|Half round yellow|Mixed|Round and yellow are dominant.
+M|In a dihybrid F2 of 16 plants, how many are expected to be round yellow?|9|3|1|4|Nine have both dominant traits.
+M|Which F2 phenotypes are new combinations compared with the parents?|Round green and wrinkled yellow|Round yellow and wrinkled green|Only round yellow|Only wrinkled green|These are recombinants.
+M|What is the frequency of each gamete from an AaBb individual?|25 percent each|50 percent each|10 percent each|100 percent|Independent assortment gives equal frequencies.
+H|What ratio results from the test cross RrYy x rryy?|1:1:1:1|9:3:3:1|3:1|1:1|Four gamete types combine with ry gametes.
+H|How many different genotypes are produced in the F2 of a dihybrid cross?|9|4|16|2|Three genotypes per gene give nine combinations.
+H|What is the cellular basis of independent assortment?|Random orientation of homologous pairs at metaphase I|Crossing over only|DNA replication|Cytokinesis|Each pair aligns independently of others.
+@ 10.3
+E|What are linked genes?|Genes located on the same chromosome|Genes on different chromosomes|Identical alleles|Genes in mitochondria only|They tend to be inherited together.
+E|What is crossing over?|Exchange of segments between non-sister chromatids of homologous chromosomes|Duplication of DNA|Separation of sister chromatids|Joining of gametes|It occurs during meiosis.
+E|In which phase of meiosis does crossing over occur?|Prophase I|Metaphase II|Anaphase II|Telophase II|Homologues pair and exchange segments during prophase I.
+M|What is a chiasma?|The point where crossing over occurs between chromatids|A spindle fibre|A nucleolus|A centriole|Chiasmata are visible junctions.
+M|Which scientist studied linkage in Drosophila?|T. H. Morgan|Mendel|Watson|Pasteur|Morgan discovered linkage and sex-linkage.
+M|What does 1 percent recombination frequency equal?|1 map unit (centimorgan)|10 map units|0.1 map unit|100 map units|It is a measure of genetic distance.
+M|One pair of linked genes shows 2 percent recombination and another pair shows 30 percent. Which pair lies closer together on the chromosome?|The pair with 2 percent recombination|The pair with 30 percent recombination|Both lie at equal distance|They lie on different chromosomes|Recombination frequency increases with the distance between genes.
+H|Which chromatids exchange segments during crossing over?|Non-sister chromatids of homologous chromosomes|Sister chromatids|Chromatids of non-homologues|DNA of mitochondria|It produces recombinant chromatids.
+H|What is the relationship between gene distance and recombination frequency?|Greater distance gives higher recombination up to 50 percent|Greater distance gives lower recombination|No relationship|Always 100 percent|Distant genes cross over more often.
+H|How many linkage groups does an organism have?|Equal to its haploid chromosome number|Equal to its diploid number|One|Two|Drosophila has four.
+@ 10.4
+E|What is the effect of linkage on the frequency of parental combinations?|They occur more often than recombinants|They occur less often|They never occur|They are equal to recombinants|Linkage reduces independent assortment.
+E|What is the evolutionary importance of crossing over?|It increases genetic variation|It reduces variation|It stops mutation|It prevents meiosis|New combinations of alleles arise.
+E|What are recombinant progeny?|Offspring with new combinations of alleles|Offspring identical to parents|Sterile offspring|Mutants only|They result from crossing over.
+M|In a test cross of a doubly heterozygous individual with complete linkage, what offspring appear?|Only parental types|Only recombinants|Equal four types|None|Without crossing over parental types are 1:1.
+M|In a test cross 80 percent offspring are parental and 20 percent recombinant. What is the map distance?|20 map units|80 map units|50 map units|10 map units|Distance equals recombination frequency.
+M|Which recombinant frequency suggests independent assortment?|50 percent|5 percent|0 percent|100 percent|Unlinked genes give 50 percent.
+M|Crossing over can produce|New allele combinations without mutation|New alleles|Polyploidy|Chromosome loss|It reshuffles existing alleles.
+H|Why do male Drosophila show complete linkage?|No crossing over occurs in males|Genes are on different chromosomes|They are haploid|Males lack chromosomes|This is a feature of Drosophila males.
+H|Out of 1000 offspring from a test cross, 150 are recombinant. What is the map distance?|15 map units|85 map units|150 map units|1.5 map units|Recombinants divided by total times 100.
+H|Why does recombination frequency never exceed 50 percent?|Double crossovers restore parental combinations|Genes are always linked|Meiosis stops|Chromosomes fuse|Multiple crossovers cancel out.
+@ 10.5
+E|What are sex-linked genes?|Genes located on the sex chromosomes|Genes on autosomes|Genes in mitochondria|Genes that determine only sex|Most sex-linked genes lie on the X chromosome.
+E|What is the sex chromosome constitution of a human male?|XY|XX|XO|YY|Males have one X and one Y.
+E|From which parent does a son inherit his X chromosome?|Mother|Father|Both|Neither|A son receives Y from his father.
+M|Males are described as hemizygous for X-linked genes because|They have only one X chromosome|They have two X chromosomes|They have no genes|They carry Y genes only|One allele is enough to show the trait.
+M|Y-linked traits are passed|From father to sons only|From mother to daughters|To all children|Not at all|The Y chromosome passes only from father to son.
+M|Which of the following is X-linked recessive?|Red-green colour blindness|Sickle-cell anaemia|Cystic fibrosis|Albinism|Colour blindness is X-linked.
+M|Who discovered sex-linkage using white-eyed Drosophila?|T. H. Morgan|Mendel|Darwin|Lamarck|Morgan studied eye colour in fruit flies.
+H|Why are X-linked recessive disorders more common in males?|Males have only one X so a single recessive allele is expressed|Males have two Y|Females have more genes|They are caused by the Y|Females need two copies.
+H|A father with an X-linked disease cannot pass it to his sons because|Sons receive his Y chromosome|Sons receive his X|He has no X|The gene is on the Y|Sons get Y from fathers.
+H|Which gene on the Y chromosome triggers testis development?|SRY|BRCA1|CFTR|HBB|SRY is the sex-determining region gene.
+@ 10.6
+E|A colour-blind man marries a homozygous normal woman. What children are expected?|All sons normal and all daughters carriers|All sons colour-blind|Half colour-blind|All daughters colour-blind|Sons get Y from him and X from the mother.
+E|On which chromosome are the colour blindness genes located?|X chromosome|Y chromosome|Chromosome 1|Mitochondrion|They are X-linked.
+E|A woman heterozygous for an X-linked recessive allele who shows no symptoms is called a|Carrier|Hemizygote|Trisomic|Mutant|She carries the recessive allele on one X chromosome but the normal allele on the other masks its effect.
+M|A carrier mother marries a normal man. What is the probability that a son is colour-blind?|50 percent|25 percent|100 percent|0 percent|Half the sons receive the affected X.
+M|A carrier mother marries an affected father. What is the chance a daughter is affected?|50 percent|0 percent|100 percent|25 percent|The daughter receives the father's affected X and either X of the mother.
+M|What is criss-cross inheritance?|Trait passes from grandfather through carrier daughter to grandson|Trait passes father to son|Trait passes mother to daughter only|Trait skips all generations|It is typical of X-linked traits.
+M|A carrier mother marries a normal father. What proportion of daughters are carriers?|50 percent|100 percent|0 percent|25 percent|Half the daughters inherit the affected X.
+H|What is the outcome of the cross between an affected mother and a normal father?|All sons affected and all daughters carriers|All sons normal|Half sons affected|All daughters affected|Sons receive the mother's affected X.
+H|If the frequency of X-linked recessive allele is 0.08, what is expected frequency of affected females?|0.0064|0.08|0.16|0.04|It is q squared.
+H|A trait appears in males of alternate generations and passes through unaffected females. What is the mode of inheritance?|X-linked recessive|Autosomal dominant|Y-linked|Mitochondrial|Carrier females transmit the trait.
+@ 10.7
+E|What type of inheritance is haemophilia?|X-linked recessive|Autosomal dominant|Y-linked|Autosomal recessive|The gene is on the X chromosome.
+E|Haemophilia A is caused by deficiency of|Clotting factor VIII|Haemoglobin|Insulin|Vitamin C|Factor VIII is needed for blood clotting.
+E|Which famous royal was a carrier of haemophilia?|Queen Victoria|Queen Elizabeth I|Cleopatra|Henry VIII|She passed it into several royal families.
+M|A carrier woman marries a normal man. What proportion of sons are expected to be haemophilic?|50 percent|25 percent|100 percent|0 percent|Half the sons inherit the affected X.
+M|Why are haemophilic females rare?|They need two affected X chromosomes|They have no X|The Y protects|The gene is on the Y|Both parents must contribute the allele.
+M|Which symptom is typical of haemophilia?|Prolonged bleeding and joint bleeding|High fever|Cough|Diarrhoea|Clotting is impaired.
+M|What is the treatment for haemophilia A?|Factor VIII replacement|Insulin injection|Antibiotics|Vitamin D|Replacement of the missing factor.
+H|A haemophilic man marries a normal homozygous woman. What children are expected?|Normal sons and carrier daughters|Haemophilic sons|Haemophilic daughters|Half affected|Sons get the Y.
+H|Haemophilia B (Christmas disease) results from deficiency of|Factor IX|Factor VIII|Vitamin K|Fibrinogen|Factor IX is needed for clotting.
+H|A carrier mother and haemophilic father. What proportion of all children are expected to be affected?|50 percent|25 percent|75 percent|100 percent|Half the sons and half the daughters.

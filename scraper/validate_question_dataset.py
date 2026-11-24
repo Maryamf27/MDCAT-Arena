@@ -86,6 +86,36 @@ def normalize_question(question):
     return " ".join(re.findall(r"\w+", normalized, flags=re.UNICODE))
 
 
+ANSWER_POSITION_PHRASES = re.compile(
+    r"\b(all of the above|none of the above|both [a-d] and [a-d]|"
+    r"(options?|choices?) [a-d] (and|or|&) [a-d]|all of these|none of these|"
+    r"neither of the above|both of the above)\b",
+    re.IGNORECASE,
+)
+
+
+def _tokens(text):
+    return set(re.findall(r"\w+", unicodedata.normalize("NFKC", text).casefold()))
+
+
+def near_duplicate_pairs(questions, threshold=0.8):
+    """Return (i, j, score) for stems whose word sets overlap heavily."""
+    token_sets = [_tokens(q.get("question", "")) if isinstance(q, dict) else set() for q in questions]
+    pairs = []
+    for i in range(len(token_sets)):
+        a = token_sets[i]
+        if len(a) < 6:
+            continue
+        for j in range(i + 1, len(token_sets)):
+            b = token_sets[j]
+            if len(b) < 6:
+                continue
+            inter = len(a & b)
+            if inter / len(a | b) >= threshold:
+                pairs.append((i, j, round(inter / len(a | b), 2)))
+    return pairs
+
+
 def validate_dataset(dataset, syllabus):
     errors = []
     if not isinstance(dataset, dict):
@@ -131,6 +161,14 @@ def validate_dataset(dataset, syllabus):
             or any(not isinstance(option, str) or not option.strip() for option in options)
         ):
             errors.append(f"{location}.options must contain exactly four non-empty strings.")
+
+        elif len({" ".join(unicodedata.normalize("NFKC", option).casefold().split()) for option in options}) != 4:
+            errors.append(f"{location}.options must be four distinct options.")
+        elif any(ANSWER_POSITION_PHRASES.search(option) for option in options):
+            errors.append(
+                f"{location}.options must not use position-dependent phrases "
+                "such as 'all of the above' or 'both A and B'."
+            )
 
         answer_index = item.get("correct_answer_index")
         if type(answer_index) is not int or answer_index not in range(4):
@@ -187,6 +225,11 @@ def validate_dataset(dataset, syllabus):
         source_reference = item.get("source_reference")
         if isinstance(source_reference, str) and "gotest.com.pk" in source_reference.casefold():
             errors.append(f"{location}.source_reference cannot point to GoTest content.")
+
+    for i, j, score in near_duplicate_pairs(questions):
+        errors.append(
+            f"questions[{i}] and questions[{j}] are near-duplicates (word overlap {score})."
+        )
 
     return errors
 
