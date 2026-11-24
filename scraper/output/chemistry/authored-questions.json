@@ -1,0 +1,367 @@
+{
+  "schema_version": 1,
+  "reference_scheme": "subject/unit/{unit_number}/topic/{topic_slug}",
+  "answer_index_base": 0,
+  "questions": [
+    {
+      "question": "In the balanced equation N₂(g) + 3H₂(g) → 2NH₃(g), how many moles of NH₃ are formed when 4.5 mol of H₂ react completely with excess N₂?",
+      "options": [
+        "6.75 mol",
+        "2.25 mol",
+        "3.0 mol",
+        "9.0 mol"
+      ],
+      "correct_answer_index": 2,
+      "explanation": "The mole ratio H₂ : NH₃ is 3 : 2, so moles of NH₃ = 4.5 × (2/3) = 3.0 mol. Using 3/2 instead of 2/3 gives the common wrong value 6.75 mol.",
+      "subject": "chemistry",
+      "unit_id": "chemistry/unit/1",
+      "topic_id": "chemistry/unit/1/topic/moles-and-avogadro-s-numbers",
+      "slo_reference": "1.1",
+      "difficulty": "easy",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 1.1"
+    },
+    {
+      "question": "Calcium carbonate decomposes on heating: CaCO₃(s) → CaO(s) + CO₂(g). What volume of CO₂ is released at STP when 10.0 g of CaCO₃ (molar mass 100 g mol⁻¹) decomposes completely?",
+      "options": [
+        "2.24 dm³",
+        "22.4 dm³",
+        "4.48 dm³",
+        "0.224 dm³"
+      ],
+      "correct_answer_index": 0,
+      "explanation": "Moles of CaCO₃ = 10.0 / 100 = 0.100 mol. The equation gives 1 mol CO₂ per mol CaCO₃, so 0.100 mol CO₂ is formed. At STP 1 mol of gas occupies 22.4 dm³, so V = 0.100 × 22.4 = 2.24 dm³.",
+      "subject": "chemistry",
+      "unit_id": "chemistry/unit/1",
+      "topic_id": "chemistry/unit/1/topic/moles-and-avogadro-s-numbers",
+      "slo_reference": "1.2",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 1.2"
+    },
+    {
+      "question": "For the reaction 2H₂(g) + O₂(g) → 2H₂O(l), 3.0 mol of H₂ are mixed with 2.0 mol of O₂. How many moles of the excess reactant remain unreacted after the reaction is complete?",
+      "options": [
+        "1.0 mol of O₂",
+        "1.5 mol of O₂",
+        "0.5 mol of H₂",
+        "0.5 mol of O₂"
+      ],
+      "correct_answer_index": 3,
+      "explanation": "H₂ and O₂ react in a 2 : 1 ratio, so 3.0 mol H₂ needs only 1.5 mol O₂. H₂ is the limiting reagent and O₂ is in excess. Unreacted O₂ = 2.0 − 1.5 = 0.5 mol (1.5 mol is the amount of O₂ consumed, not left over).",
+      "subject": "chemistry",
+      "unit_id": "chemistry/unit/1",
+      "topic_id": "chemistry/unit/1/topic/limiting-and-excess-reactants",
+      "slo_reference": "1.4",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 1.4"
+    },
+    {
+      "question": "In the reaction 2Mg + O₂ → 2MgO, 4.8 g of magnesium (atomic mass 24) is burned in excess oxygen and 6.0 g of MgO (molar mass 40 g mol⁻¹) is collected. What is the percent yield of MgO?",
+      "options": [
+        "60%",
+        "75%",
+        "80%",
+        "25%"
+      ],
+      "correct_answer_index": 1,
+      "explanation": "Moles of Mg = 4.8 / 24 = 0.20 mol, which gives 0.20 mol MgO. Theoretical yield = 0.20 × 40 = 8.0 g. Percent yield = (actual / theoretical) × 100 = (6.0 / 8.0) × 100 = 75%.",
+      "subject": "chemistry",
+      "unit_id": "chemistry/unit/1",
+      "topic_id": "chemistry/unit/1/topic/yield",
+      "slo_reference": "1.6",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 1.6"
+    },
+    {
+      "question": "Planck's equation gives the energy of a photon as E = hν. What is the energy of one photon of radiation of frequency 5.0 × 10¹⁴ Hz? (h = 6.626 × 10⁻³⁴ J s)",
+      "options": [
+        "3.31 × 10⁻²⁰ J",
+        "3.31 × 10⁻¹⁹ J",
+        "1.33 × 10⁻⁴⁸ J",
+        "6.63 × 10⁻¹⁹ J"
+      ],
+      "correct_answer_index": 1,
+      "explanation": "A photon is a quantum (unit) of radiation energy: E = hν = (6.626 × 10⁻³⁴ J s)(5.0 × 10¹⁴ s⁻¹) = 3.313 × 10⁻¹⁹ J. Dividing h by ν instead of multiplying gives the wrong value 1.33 × 10⁻⁴⁸ J.",
+      "subject": "chemistry",
+      "unit_id": "chemistry/unit/2",
+      "topic_id": "chemistry/unit/2/topic/planck-s-quantum-theory",
+      "slo_reference": "2.2",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 2.2"
+    },
+    {
+      "question": "How many atomic orbitals are present in the principal energy level with n = 3?",
+      "options": [
+        "3",
+        "6",
+        "18",
+        "9"
+      ],
+      "correct_answer_index": 3,
+      "explanation": "The number of orbitals in a principal energy level is n². For n = 3 this is 9 orbitals (one 3s, three 3p and five 3d). The value 18 is the maximum number of electrons (2n²), not orbitals.",
+      "subject": "chemistry",
+      "unit_id": "chemistry/unit/2",
+      "topic_id": "chemistry/unit/2/topic/quantum-number",
+      "slo_reference": "2.4",
+      "difficulty": "easy",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 2.4"
+    },
+    {
+      "question": "According to Hund's rule, how many unpaired electrons are present in the ground-state nitrogen atom (atomic number 7)?",
+      "options": [
+        "3",
+        "1",
+        "2",
+        "0"
+      ],
+      "correct_answer_index": 0,
+      "explanation": "Nitrogen is 1s² 2s² 2p³. Hund's rule says degenerate orbitals are singly occupied with parallel spins before any pairing, so the three 2p electrons occupy 2pₓ, 2p_y and 2p_z separately, giving 3 unpaired electrons.",
+      "subject": "chemistry",
+      "unit_id": "chemistry/unit/2",
+      "topic_id": "chemistry/unit/2/topic/electronic-configuration",
+      "slo_reference": "2.7",
+      "difficulty": "easy",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 2.7"
+    },
+    {
+      "question": "At constant temperature, a gas occupies 2.0 dm³ at 1.0 atm. What will its pressure be if it is compressed to 0.50 dm³?",
+      "options": [
+        "0.25 atm",
+        "2.0 atm",
+        "4.0 atm",
+        "8.0 atm"
+      ],
+      "correct_answer_index": 2,
+      "explanation": "Boyle's law states P₁V₁ = P₂V₂ at constant temperature. P₂ = (1.0 × 2.0) / 0.50 = 4.0 atm. Pressure rises because volume decreases to one quarter.",
+      "subject": "chemistry",
+      "unit_id": "chemistry/unit/3",
+      "topic_id": "chemistry/unit/3/topic/boyle-s-law",
+      "slo_reference": "3.4",
+      "difficulty": "easy",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 3.4"
+    },
+    {
+      "question": "A sample of gas has a volume of 600 cm³ at 300 K. What is its volume at 450 K if the pressure is kept constant?",
+      "options": [
+        "400 cm³",
+        "750 cm³",
+        "1350 cm³",
+        "900 cm³"
+      ],
+      "correct_answer_index": 3,
+      "explanation": "Charles's law: V₁/T₁ = V₂/T₂ with temperature in kelvin. V₂ = 600 × (450 / 300) = 900 cm³. The answer 400 cm³ results from inverting the temperature ratio.",
+      "subject": "chemistry",
+      "unit_id": "chemistry/unit/3",
+      "topic_id": "chemistry/unit/3/topic/charles-s-law",
+      "slo_reference": "3.5",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 3.5"
+    },
+    {
+      "question": "When pressure is expressed in pascals and volume in cubic metres, which value and unit of the ideal gas constant R should be used in PV = nRT?",
+      "options": [
+        "0.0821 J K⁻¹ mol⁻¹",
+        "8.314 J K⁻¹ mol⁻¹",
+        "62.4 J K⁻¹ mol⁻¹",
+        "83.14 J K⁻¹ mol⁻¹"
+      ],
+      "correct_answer_index": 1,
+      "explanation": "In SI units R = 8.314 Pa m³ K⁻¹ mol⁻¹, which equals 8.314 J K⁻¹ mol⁻¹. The value 0.0821 belongs to dm³ atm K⁻¹ mol⁻¹ and 62.4 to dm³ torr K⁻¹ mol⁻¹, so they are wrong for these SI units.",
+      "subject": "chemistry",
+      "unit_id": "chemistry/unit/3",
+      "topic_id": "chemistry/unit/3/topic/unit-of-r",
+      "slo_reference": "3.8",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 3.8"
+    },
+    {
+      "question": "Which of the following molecules cannot form hydrogen bonds with other molecules of its own kind?",
+      "options": [
+        "H₂O",
+        "NH₃",
+        "CH₄",
+        "HF"
+      ],
+      "correct_answer_index": 2,
+      "explanation": "Hydrogen bonding needs H bonded to a small, highly electronegative atom (F, O or N). H₂O, NH₃ and HF all meet this condition. In CH₄ carbon is not electronegative enough, so only weak dispersion forces act between molecules.",
+      "subject": "chemistry",
+      "unit_id": "chemistry/unit/4",
+      "topic_id": "chemistry/unit/4/topic/hydrogen-bonding",
+      "slo_reference": "4.3",
+      "difficulty": "easy",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 4.3"
+    },
+    {
+      "question": "At which temperature does liquid water have its maximum density?",
+      "options": [
+        "4 °C",
+        "0 °C",
+        "25 °C",
+        "100 °C"
+      ],
+      "correct_answer_index": 0,
+      "explanation": "Water contracts on cooling until about 4 °C, then expands because hydrogen-bonded open structures begin to form. Density is therefore greatest at 4 °C, which is why ice (open hexagonal lattice) is less dense than water and floats.",
+      "subject": "chemistry",
+      "unit_id": "chemistry/unit/4",
+      "topic_id": "chemistry/unit/4/topic/anomalous-behavior-of-water",
+      "slo_reference": "4.4",
+      "difficulty": "easy",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 4.4"
+    },
+    {
+      "question": "The equilibrium N₂O₄(g) ⇌ 2NO₂(g) is established in a closed vessel at constant temperature. According to Le Chatelier's principle, what happens when the pressure is increased by reducing the volume of the vessel?",
+      "options": [
+        "The equilibrium shifts to the left, increasing the amount of N₂O₄",
+        "The equilibrium shifts to the right, increasing the amount of NO₂",
+        "The equilibrium position does not change",
+        "The value of the equilibrium constant Kc increases"
+      ],
+      "correct_answer_index": 0,
+      "explanation": "Increasing pressure favours the side with fewer gas moles to oppose the change. The left side has 1 mol of gas and the right side has 2 mol, so the equilibrium shifts left. Kc depends only on temperature, so it does not change.",
+      "subject": "chemistry",
+      "unit_id": "chemistry/unit/6",
+      "topic_id": "chemistry/unit/6/topic/le-chatelier-s-principle",
+      "slo_reference": "6.3",
+      "difficulty": "hard",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 6.3"
+    },
+    {
+      "question": "Which expression correctly represents the solubility product, Ksp, of calcium phosphate, Ca₃(PO₄)₂?",
+      "options": [
+        "Ksp = [Ca²⁺]²[PO₄³⁻]³",
+        "Ksp = [Ca²⁺][PO₄³⁻]",
+        "Ksp = [Ca²⁺]³[PO₄³⁻]²",
+        "Ksp = [Ca₃(PO₄)₂]/([Ca²⁺]³[PO₄³⁻]²)"
+      ],
+      "correct_answer_index": 2,
+      "explanation": "Ca₃(PO₄)₂(s) ⇌ 3Ca²⁺(aq) + 2PO₄³⁻(aq). Each ion concentration is raised to the power of its coefficient and the solid is omitted: Ksp = [Ca²⁺]³[PO₄³⁻]². Swapping the exponents or including the solid is incorrect.",
+      "subject": "chemistry",
+      "unit_id": "chemistry/unit/6",
+      "topic_id": "chemistry/unit/6/topic/solubility-products",
+      "slo_reference": "6.4",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 6.4"
+    },
+    {
+      "question": "The rate law for a reaction is rate = k[A]²[B]. By what factor does the rate change if [A] is doubled while [B] and temperature are kept constant?",
+      "options": [
+        "2 times",
+        "4 times",
+        "3 times",
+        "8 times"
+      ],
+      "correct_answer_index": 1,
+      "explanation": "The reaction is second order in A, so rate ∝ [A]². Doubling [A] gives 2² = 4 times the original rate. The concentration of B is unchanged and the rate constant k depends only on temperature.",
+      "subject": "chemistry",
+      "unit_id": "chemistry/unit/7",
+      "topic_id": "chemistry/unit/7/topic/order-of-reaction",
+      "slo_reference": "7.4",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 7.4"
+    },
+    {
+      "question": "Given: (i) C(s) + O₂(g) → CO₂(g), ΔH = −393.5 kJ mol⁻¹; (ii) CO(g) + ½O₂(g) → CO₂(g), ΔH = −283.0 kJ mol⁻¹. Use Hess's law to find ΔH for C(s) + ½O₂(g) → CO(g).",
+      "options": [
+        "−676.5 kJ mol⁻¹",
+        "+110.5 kJ mol⁻¹",
+        "+676.5 kJ mol⁻¹",
+        "−110.5 kJ mol⁻¹"
+      ],
+      "correct_answer_index": 3,
+      "explanation": "Reverse equation (ii) (ΔH = +283.0) and add it to equation (i): C + O₂ + CO₂ → CO₂ + CO + ½O₂, which simplifies to C + ½O₂ → CO. ΔH = −393.5 + 283.0 = −110.5 kJ mol⁻¹.",
+      "subject": "chemistry",
+      "unit_id": "chemistry/unit/8",
+      "topic_id": "chemistry/unit/8/topic/hess-s-law",
+      "slo_reference": "8.6",
+      "difficulty": "hard",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 8.6"
+    },
+    {
+      "question": "In the reaction Fe₂O₃ + 3CO → 2Fe + 3CO₂, which species is oxidised?",
+      "options": [
+        "Fe₂O₃, because the oxidation number of iron increases from 0 to +3",
+        "CO, because the oxidation number of carbon increases from +2 to +4",
+        "Oxygen, because its oxidation number changes from −2 to 0",
+        "Fe, because it is the final product of the reaction"
+      ],
+      "correct_answer_index": 1,
+      "explanation": "In CO carbon is +2 and in CO₂ it is +4, so carbon loses electrons and CO is oxidised. Iron goes from +3 in Fe₂O₃ to 0 in Fe (reduction), and oxygen stays at −2 throughout.",
+      "subject": "chemistry",
+      "unit_id": "chemistry/unit/9",
+      "topic_id": "chemistry/unit/9/topic/balancing-chemical-reaction",
+      "slo_reference": "9.3",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 9.3"
+    },
+    {
+      "question": "The C=O bonds in carbon dioxide are polar, yet the CO₂ molecule has zero net dipole moment. What is the reason?",
+      "options": [
+        "The molecule is linear, so the two equal bond dipoles cancel each other",
+        "The molecule is bent, so the bond dipoles cancel each other",
+        "Carbon and oxygen have equal electronegativities",
+        "The lone pair on carbon cancels the bond dipoles"
+      ],
+      "correct_answer_index": 0,
+      "explanation": "CO₂ has two bonding regions and no lone pairs on carbon, so VSEPR predicts a linear shape (180°). The two equal and opposite C→O bond dipoles cancel and the molecule is non-polar. Oxygen is more electronegative than carbon, and carbon has no lone pair.",
+      "subject": "chemistry",
+      "unit_id": "chemistry/unit/10",
+      "topic_id": "chemistry/unit/10/topic/dipole-movement",
+      "slo_reference": "10.5",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 10.5"
+    },
+    {
+      "question": "How is the carbon–carbon double bond in an ethene molecule formed?",
+      "options": [
+        "Two sigma bonds",
+        "Two pi bonds",
+        "One sigma bond and two pi bonds",
+        "One sigma bond and one pi bond"
+      ],
+      "correct_answer_index": 3,
+      "explanation": "Each carbon in ethene is sp² hybridised. The C=C double bond consists of one sigma bond from head-on overlap of sp² orbitals and one pi bond from sideways overlap of unhybridised p orbitals.",
+      "subject": "chemistry",
+      "unit_id": "chemistry/unit/14",
+      "topic_id": "chemistry/unit/14/topic/shapes-of-alkenes",
+      "slo_reference": "14.5",
+      "difficulty": "easy",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 14.5"
+    },
+    {
+      "question": "Which of the following compounds will give a silver mirror when warmed with Tollens' reagent?",
+      "options": [
+        "Propanone",
+        "Propan-2-ol",
+        "Propanal",
+        "Ethoxyethane"
+      ],
+      "correct_answer_index": 2,
+      "explanation": "Tollens' reagent is a mild oxidising agent that oxidises aldehydes to carboxylates while Ag⁺ is reduced to metallic silver. Propanal is an aldehyde and gives the mirror. Ketones such as propanone, secondary alcohols and ethers do not react.",
+      "subject": "chemistry",
+      "unit_id": "chemistry/unit/17",
+      "topic_id": "chemistry/unit/17/topic/reaction-of-aldehydes-and-ketones",
+      "slo_reference": "17.6",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 17.6"
+    }
+  ]
+}

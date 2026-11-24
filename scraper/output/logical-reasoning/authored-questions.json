@@ -1,0 +1,367 @@
+{
+  "schema_version": 1,
+  "reference_scheme": "subject/unit/{unit_number}/topic/{topic_slug}",
+  "answer_index_base": 0,
+  "questions": [
+    {
+      "question": "A student claims: “All birds can fly.” Which single observation would most directly show that this claim is false?",
+      "options": [
+        "Penguins are birds that cannot fly.",
+        "Eagles are strong fliers.",
+        "Many birds migrate every winter.",
+        "Bats can fly but are not birds."
+      ],
+      "correct_answer_index": 0,
+      "explanation": "A universal claim (“all birds”) is disproved by a single counter-example. A bird that cannot fly, such as a penguin, contradicts it directly. The other options are irrelevant or do not concern birds that cannot fly.",
+      "subject": "logical_reasoning",
+      "unit_id": "logical_reasoning/unit/5.1",
+      "topic_id": "logical_reasoning/unit/5.1/topic/critical-thinking",
+      "slo_reference": "5.1.1",
+      "difficulty": "easy",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 5.1.1"
+    },
+    {
+      "question": "Which of the following is the strongest reason for believing that washing hands with soap reduces the spread of infections?",
+      "options": [
+        "Our elders and grandparents have always strongly encouraged hand washing at home.",
+        "Soap advertisements regularly show hand washing on television and in newspapers.",
+        "Controlled studies show fewer infections among people who wash their hands regularly than among those who do not.",
+        "Washing hands is quick and takes only a few seconds before every meal."
+      ],
+      "correct_answer_index": 2,
+      "explanation": "A right belief should be supported by relevant evidence. Comparative studies directly link the practice to the outcome. Tradition, advertising and convenience do not show that hand washing reduces infection.",
+      "subject": "logical_reasoning",
+      "unit_id": "logical_reasoning/unit/5.1",
+      "topic_id": "logical_reasoning/unit/5.1/topic/critical-thinking",
+      "slo_reference": "5.1.2",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 5.1.2"
+    },
+    {
+      "question": "Belief: “The rooster's crow makes the sun rise, because the sun always rises just after the rooster crows.” Which reasoning best exposes the flaw in this belief?",
+      "options": [
+        "Roosters crow far too softly for their sound to have any effect on something as distant as the sun.",
+        "One event following another does not prove that the first causes the second; the sun also rises on mornings when no rooster crows.",
+        "Since the sun rises every single day, it follows that roosters must also crow every single day.",
+        "Many farmers in villages wake up and begin their daily work when the rooster crows."
+      ],
+      "correct_answer_index": 1,
+      "explanation": "The belief confuses sequence with cause. The strongest rebuttal is that the sun rises even without a crow, so the crow is not needed. The other options either miss the logical flaw or make an irrelevant or reversed claim.",
+      "subject": "logical_reasoning",
+      "unit_id": "logical_reasoning/unit/5.1",
+      "topic_id": "logical_reasoning/unit/5.1/topic/critical-thinking",
+      "slo_reference": "5.1.3",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 5.1.3"
+    },
+    {
+      "question": "Find the next number in the series: 3, 7, 15, 31, ?",
+      "options": [
+        "62",
+        "47",
+        "64",
+        "63"
+      ],
+      "correct_answer_index": 3,
+      "explanation": "Each term is twice the previous term plus 1: 3×2+1 = 7, 7×2+1 = 15, 15×2+1 = 31, so the next term is 31×2+1 = 63.",
+      "subject": "logical_reasoning",
+      "unit_id": "logical_reasoning/unit/5.2",
+      "topic_id": "logical_reasoning/unit/5.2/topic/letter-and-symbols-series",
+      "slo_reference": "5.2.1",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 5.2.1"
+    },
+    {
+      "question": "Find the next number in the series: 5, 8, 13, 20, 29, ?",
+      "options": [
+        "38",
+        "40",
+        "39",
+        "45"
+      ],
+      "correct_answer_index": 1,
+      "explanation": "The differences between successive terms are 3, 5, 7, 9, which increase by 2 each time. The next difference is 11, so the next term is 29 + 11 = 40.",
+      "subject": "logical_reasoning",
+      "unit_id": "logical_reasoning/unit/5.2",
+      "topic_id": "logical_reasoning/unit/5.2/topic/letter-and-symbols-series",
+      "slo_reference": "5.2.1",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 5.2.1"
+    },
+    {
+      "question": "Find the next number in the series: 2, 6, 18, 54, ?",
+      "options": [
+        "108",
+        "72",
+        "162",
+        "216"
+      ],
+      "correct_answer_index": 2,
+      "explanation": "Each term is 3 times the previous term (a geometric progression with common ratio 3), so the next term is 54 × 3 = 162.",
+      "subject": "logical_reasoning",
+      "unit_id": "logical_reasoning/unit/5.2",
+      "topic_id": "logical_reasoning/unit/5.2/topic/letter-and-symbols-series",
+      "slo_reference": "5.2.2",
+      "difficulty": "easy",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 5.2.2"
+    },
+    {
+      "question": "Find the next letter in the series: B, E, H, K, ?",
+      "options": [
+        "N",
+        "M",
+        "O",
+        "L"
+      ],
+      "correct_answer_index": 0,
+      "explanation": "In alphabet positions the letters are 2, 5, 8, 11, each 3 more than the last. The next position is 14, which is N.",
+      "subject": "logical_reasoning",
+      "unit_id": "logical_reasoning/unit/5.2",
+      "topic_id": "logical_reasoning/unit/5.2/topic/letter-and-symbols-series",
+      "slo_reference": "5.2.3",
+      "difficulty": "easy",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 5.2.3"
+    },
+    {
+      "question": "Find the next pair in the series: AZ, CX, EV, GT, ?",
+      "options": [
+        "IS",
+        "HR",
+        "JS",
+        "IR"
+      ],
+      "correct_answer_index": 3,
+      "explanation": "The first letters move forward by 2 (A, C, E, G → I). The second letters move backward by 2 (Z, X, V, T → R). The next pair is IR.",
+      "subject": "logical_reasoning",
+      "unit_id": "logical_reasoning/unit/5.2",
+      "topic_id": "logical_reasoning/unit/5.2/topic/letter-and-symbols-series",
+      "slo_reference": "5.2.3",
+      "difficulty": "hard",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 5.2.3"
+    },
+    {
+      "question": "A is the brother of B. B is the sister of C. C is the father of D. How is A related to D?",
+      "options": [
+        "Father",
+        "Maternal uncle",
+        "Paternal uncle",
+        "Brother"
+      ],
+      "correct_answer_index": 2,
+      "explanation": "A, B and C are siblings. C is D's father and A is C's brother, so A is the brother of D's father, i.e. D's paternal uncle.",
+      "subject": "logical_reasoning",
+      "unit_id": "logical_reasoning/unit/5.3",
+      "topic_id": "logical_reasoning/unit/5.3/topic/logical-deductions",
+      "slo_reference": "5.3.1",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 5.3.1"
+    },
+    {
+      "question": "Statements: No reptile is a mammal. All snakes are reptiles. Which conclusion follows logically?",
+      "options": [
+        "No snake is a mammal.",
+        "Some snakes are mammals.",
+        "All mammals are snakes.",
+        "All reptiles are snakes."
+      ],
+      "correct_answer_index": 0,
+      "explanation": "Snakes belong wholly to the class of reptiles, and no member of that class is a mammal. So no snake can be a mammal. The other conclusions contradict or go beyond the statements.",
+      "subject": "logical_reasoning",
+      "unit_id": "logical_reasoning/unit/5.3",
+      "topic_id": "logical_reasoning/unit/5.3/topic/logical-deductions",
+      "slo_reference": "5.3.1",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 5.3.1"
+    },
+    {
+      "question": "Among five friends: Adnan is taller than Basit. Basit is taller than Chand. Danish is taller than Adnan. Chand is taller than Essa. Who is the third tallest?",
+      "options": [
+        "Adnan",
+        "Chand",
+        "Danish",
+        "Basit"
+      ],
+      "correct_answer_index": 3,
+      "explanation": "Combining the statements gives the order Danish > Adnan > Basit > Chand > Essa. The third from the top is Basit.",
+      "subject": "logical_reasoning",
+      "unit_id": "logical_reasoning/unit/5.3",
+      "topic_id": "logical_reasoning/unit/5.3/topic/logical-deductions",
+      "slo_reference": "5.3.2",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 5.3.2"
+    },
+    {
+      "question": "Five girls sit in a row, listed from left to right. Hina sits at the left end and Maria at the right end. Zara sits immediately to the right of Hina. Noor sits immediately to the left of Maria. Sana is the remaining girl. Who sits in the middle?",
+      "options": [
+        "Zara",
+        "Sana",
+        "Noor",
+        "Hina"
+      ],
+      "correct_answer_index": 1,
+      "explanation": "Positions 1 to 5 from the left: Hina (1), Zara (2), Maria (5), and Noor (4) immediately left of Maria. The only free seat is position 3, which belongs to Sana, the middle seat.",
+      "subject": "logical_reasoning",
+      "unit_id": "logical_reasoning/unit/5.3",
+      "topic_id": "logical_reasoning/unit/5.3/topic/logical-deductions",
+      "slo_reference": "5.3.2",
+      "difficulty": "hard",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 5.3.2"
+    },
+    {
+      "question": "If 5 machines take 5 minutes to make 5 widgets, how long will 100 machines take to make 100 widgets?",
+      "options": [
+        "100 minutes",
+        "20 minutes",
+        "5 minutes",
+        "1 minute"
+      ],
+      "correct_answer_index": 2,
+      "explanation": "Each machine makes one widget in 5 minutes. With 100 machines working in parallel, each makes one widget in the same 5 minutes, giving 100 widgets in 5 minutes.",
+      "subject": "logical_reasoning",
+      "unit_id": "logical_reasoning/unit/5.4",
+      "topic_id": "logical_reasoning/unit/5.4/topic/logical-problems",
+      "slo_reference": "5.4.1",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 5.4.1"
+    },
+    {
+      "question": "Ali is twice as old as Sana. Five years ago Ali was three times as old as Sana. How old is Ali now?",
+      "options": [
+        "15 years",
+        "20 years",
+        "25 years",
+        "30 years"
+      ],
+      "correct_answer_index": 1,
+      "explanation": "Let Sana's age be x, so Ali's is 2x. Five years ago, 2x − 5 = 3(x − 5), so 2x − 5 = 3x − 15 and x = 10. Ali is 20. Check: five years ago Ali was 15 and Sana 5, and 15 = 3 × 5.",
+      "subject": "logical_reasoning",
+      "unit_id": "logical_reasoning/unit/5.4",
+      "topic_id": "logical_reasoning/unit/5.4/topic/logical-problems",
+      "slo_reference": "5.4.2",
+      "difficulty": "hard",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 5.4.2"
+    },
+    {
+      "question": "Bus A leaves at 8:00 a.m. and takes 2 hours. Bus B leaves at 8:30 a.m. and takes 1 hour 15 minutes. Bus C leaves at 8:15 a.m. and takes 1 hour 45 minutes. Which bus reaches the destination first?",
+      "options": [
+        "Bus B",
+        "Bus A",
+        "Bus C",
+        "It cannot be determined"
+      ],
+      "correct_answer_index": 0,
+      "explanation": "Combining departure time and duration: Bus A arrives at 10:00, Bus B at 9:45 and Bus C at 10:00. Bus B arrives first.",
+      "subject": "logical_reasoning",
+      "unit_id": "logical_reasoning/unit/5.5",
+      "topic_id": "logical_reasoning/unit/5.5/topic/course-of-action",
+      "slo_reference": "5.5.1",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 5.5.1"
+    },
+    {
+      "question": "A clinic's schedule: Dr Xavier works Monday to Wednesday, Dr Yasir works Wednesday to Friday, and Dr Zainab works on Monday and Friday only. A patient can attend only on Thursday. Which doctor can the patient see?",
+      "options": [
+        "Dr Xavier",
+        "Dr Zainab",
+        "Dr Xavier or Dr Zainab",
+        "Dr Yasir"
+      ],
+      "correct_answer_index": 3,
+      "explanation": "Thursday is not within Monday–Wednesday (Dr Xavier) and is not Monday or Friday (Dr Zainab). Only Dr Yasir, who works Wednesday to Friday, is available on Thursday.",
+      "subject": "logical_reasoning",
+      "unit_id": "logical_reasoning/unit/5.5",
+      "topic_id": "logical_reasoning/unit/5.5/topic/course-of-action",
+      "slo_reference": "5.5.2",
+      "difficulty": "easy",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 5.5.2"
+    },
+    {
+      "question": "Statement: Many students in a university hostel developed food-poisoning symptoms after dinner in the mess. Courses of action: I. The administration should provide immediate medical care and have the food and kitchen inspected. II. The administration should permanently close the hostel and send all students home. Which course(s) of action is appropriate?",
+      "options": [
+        "Only course II",
+        "Both I and II",
+        "Neither I nor II",
+        "Only course I"
+      ],
+      "correct_answer_index": 3,
+      "explanation": "Course I treats the affected students and investigates the cause, which is a proportionate and effective response. Course II is an extreme overreaction that does not address the cause and disrupts all students.",
+      "subject": "logical_reasoning",
+      "unit_id": "logical_reasoning/unit/5.5",
+      "topic_id": "logical_reasoning/unit/5.5/topic/course-of-action",
+      "slo_reference": "5.5.3",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 5.5.3"
+    },
+    {
+      "question": "Statement: Several vehicles collided on a motorway early this morning and a number of passengers were injured. The weather department had reported that visibility on the motorway was below 20 metres at that hour. What is the most probable cause of the collisions?",
+      "options": [
+        "A rise in the price of petrol",
+        "Very low visibility caused by dense fog",
+        "A newly announced public holiday",
+        "The opening of a new shopping mall in the city"
+      ],
+      "correct_answer_index": 1,
+      "explanation": "The only cause linked to the information given is the very low visibility reported by the weather department, which makes accidents likely. The other options are unrelated to the collisions.",
+      "subject": "logical_reasoning",
+      "unit_id": "logical_reasoning/unit/5.6",
+      "topic_id": "logical_reasoning/unit/5.6/topic/cause-and-effect",
+      "slo_reference": "5.6.1",
+      "difficulty": "easy",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 5.6.1"
+    },
+    {
+      "question": "Belief: “Breaking a mirror brings seven years of bad luck.” Which argument most validly rejects this belief?",
+      "options": [
+        "A broken mirror is an ordinary physical event with no known way of affecting the future, and no evidence links it to misfortune.",
+        "Many people have never broken a mirror in their whole lives, so the belief must therefore be false.",
+        "Mirrors are expensive and fragile objects, so they should always be handled with great care at home.",
+        "Older generations told this story mainly to frighten young children into behaving well at home."
+      ],
+      "correct_answer_index": 0,
+      "explanation": "A valid rejection explains why the claimed link is implausible and notes the lack of supporting evidence. The other options are irrelevant or are not logical arguments against the claim.",
+      "subject": "logical_reasoning",
+      "unit_id": "logical_reasoning/unit/5.6",
+      "topic_id": "logical_reasoning/unit/5.6/topic/cause-and-effect",
+      "slo_reference": "5.6.2",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 5.6.2"
+    },
+    {
+      "question": "Which is the strongest argument for encouraging medical students to volunteer at community health camps?",
+      "options": [
+        "Everyone else in the class has already volunteered, so the remaining students should simply do the same.",
+        "Volunteers are often given certificates and free refreshments at the end of each camp.",
+        "Volunteering lets students apply what they learn while giving communities access to basic health information.",
+        "It will get the college mentioned in the local newspaper and on its social media pages."
+      ],
+      "correct_answer_index": 2,
+      "explanation": "A strong argument gives a relevant reason based on real benefits to students and society. Popularity, rewards and publicity are weak reasons that do not show the activity is worthwhile.",
+      "subject": "logical_reasoning",
+      "unit_id": "logical_reasoning/unit/5.6",
+      "topic_id": "logical_reasoning/unit/5.6/topic/cause-and-effect",
+      "slo_reference": "5.6.3",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 5.6.3"
+    }
+  ]
+}

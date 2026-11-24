@@ -1,0 +1,367 @@
+{
+  "schema_version": 1,
+  "reference_scheme": "subject/unit/{unit_number}/topic/{topic_slug}",
+  "answer_index_base": 0,
+  "questions": [
+    {
+      "question": "The scientist's explanation was so lucid that even students with no background in physics understood it at once. As used in the sentence, the word “lucid” most nearly means:",
+      "options": [
+        "long and highly detailed",
+        "confusing and technical",
+        "humorous and entertaining",
+        "clear and easy to understand"
+      ],
+      "correct_answer_index": 3,
+      "explanation": "The clause “even students with no background in physics understood it at once” signals that the explanation was easy to follow, so “lucid” means clear. “Confusing” is the opposite of what the context implies.",
+      "subject": "english",
+      "unit_id": "english/unit/1",
+      "topic_id": "english/unit/1/topic/reading-and-thinking-skills",
+      "slo_reference": "1.2",
+      "difficulty": "easy",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 1.2"
+    },
+    {
+      "question": "Despite repeated warnings from his doctor, Kamran remained obstinate and refused to change his diet. The word “obstinate” most nearly means:",
+      "options": [
+        "cooperative",
+        "stubborn",
+        "forgetful",
+        "anxious"
+      ],
+      "correct_answer_index": 1,
+      "explanation": "“Despite repeated warnings” and “refused to change” are contextual clues that Kamran would not yield. “Obstinate” therefore means stubborn. “Cooperative” contradicts the clues.",
+      "subject": "english",
+      "unit_id": "english/unit/2",
+      "topic_id": "english/unit/2/topic/formal-and-lexical-aspect-of-language",
+      "slo_reference": "2.1",
+      "difficulty": "easy",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 2.1"
+    },
+    {
+      "question": "The words below all describe a person who spends very little money. Which word carries the most negative, critical shade of meaning?",
+      "options": [
+        "miserly",
+        "thrifty",
+        "frugal",
+        "economical"
+      ],
+      "correct_answer_index": 0,
+      "explanation": "Thrifty, frugal and economical are generally positive or neutral and suggest sensible saving. “Miserly” implies unwillingness to spend even when it is reasonable, and is a criticism.",
+      "subject": "english",
+      "unit_id": "english/unit/2",
+      "topic_id": "english/unit/2/topic/formal-and-lexical-aspect-of-language",
+      "slo_reference": "2.2",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 2.2"
+    },
+    {
+      "question": "Which of the following sentences uses a pronoun with a clear, unambiguous antecedent?",
+      "options": [
+        "Ali told Bilal that he had won the prize.",
+        "When the mechanic met the driver, he was upset.",
+        "Ali told Bilal, “You have won the prize.”",
+        "Hina called Zara after she reached home."
+      ],
+      "correct_answer_index": 2,
+      "explanation": "In the three incorrect options the pronoun (he/she) could refer to either of two people. Rewriting as direct speech with “you” removes the ambiguity because the antecedent is clearly Bilal.",
+      "subject": "english",
+      "unit_id": "english/unit/2",
+      "topic_id": "english/unit/2/topic/formal-and-lexical-aspect-of-language",
+      "slo_reference": "2.3",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 2.3"
+    },
+    {
+      "question": "Choose the correct option to complete the sentence: By the time the ambulance arrived, the injured man ______ consciousness.",
+      "options": [
+        "has lost",
+        "will lose",
+        "had lost",
+        "is losing"
+      ],
+      "correct_answer_index": 2,
+      "explanation": "The past perfect (“had lost”) is used for the earlier of two past actions. Losing consciousness happened before the ambulance arrived, so “had lost” is correct.",
+      "subject": "english",
+      "unit_id": "english/unit/2",
+      "topic_id": "english/unit/2/topic/formal-and-lexical-aspect-of-language",
+      "slo_reference": "2.4",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 2.4"
+    },
+    {
+      "question": "Which of the following sentences contains an infinitive phrase?",
+      "options": [
+        "She hopes to become a cardiologist.",
+        "Studying anatomy requires patience.",
+        "Walking to the market, Hina met her cousin.",
+        "The surgeon was operating all night."
+      ],
+      "correct_answer_index": 0,
+      "explanation": "An infinitive is “to” plus the base verb. “To become a cardiologist” is an infinitive phrase. In the third sentence “to the market” is a prepositional phrase, not an infinitive, because “market” is a noun, not a verb.",
+      "subject": "english",
+      "unit_id": "english/unit/2",
+      "topic_id": "english/unit/2/topic/formal-and-lexical-aspect-of-language",
+      "slo_reference": "2.5",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 2.5"
+    },
+    {
+      "question": "In the sentence “Swimming in the cold river is dangerous,” what is the function of the phrase “Swimming in the cold river”?",
+      "options": [
+        "A participial phrase modifying a noun",
+        "An infinitive phrase acting as an adverb",
+        "An adverbial clause of condition",
+        "A gerund phrase acting as the subject"
+      ],
+      "correct_answer_index": 3,
+      "explanation": "“Swimming” is the -ing form of a verb used as a noun, so the phrase is a gerund phrase. It is what the sentence is about, so it functions as the subject of “is dangerous.”",
+      "subject": "english",
+      "unit_id": "english/unit/2",
+      "topic_id": "english/unit/2/topic/formal-and-lexical-aspect-of-language",
+      "slo_reference": "2.6",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 2.6"
+    },
+    {
+      "question": "Which sentence places the adverb correctly?",
+      "options": [
+        "She speaks fluently English.",
+        "She speaks English fluently.",
+        "She English speaks fluently.",
+        "Fluently speaks she English."
+      ],
+      "correct_answer_index": 1,
+      "explanation": "An adverb of manner normally follows the verb and its object, so “speaks English fluently” is correct. Placing the adverb between a verb and its direct object, or scrambling the word order, produces faulty English.",
+      "subject": "english",
+      "unit_id": "english/unit/2",
+      "topic_id": "english/unit/2/topic/formal-and-lexical-aspect-of-language",
+      "slo_reference": "2.7",
+      "difficulty": "easy",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 2.7"
+    },
+    {
+      "question": "Choose the correct prepositions: The seminar will begin ______ 9:30 a.m. ______ Monday.",
+      "options": [
+        "on … at",
+        "at … on",
+        "in … on",
+        "at … in"
+      ],
+      "correct_answer_index": 1,
+      "explanation": "“At” is used with a clock time and “on” is used with days of the week, so the sentence reads “at 9:30 a.m. on Monday.”",
+      "subject": "english",
+      "unit_id": "english/unit/2",
+      "topic_id": "english/unit/2/topic/formal-and-lexical-aspect-of-language",
+      "slo_reference": "2.8",
+      "difficulty": "easy",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 2.8"
+    },
+    {
+      "question": "Choose the most appropriate transitional word: The roads were blocked by floodwater; ______, the examination was postponed.",
+      "options": [
+        "however",
+        "otherwise",
+        "nevertheless",
+        "therefore"
+      ],
+      "correct_answer_index": 3,
+      "explanation": "The postponement is a result of the blocked roads, so a transition showing consequence is needed. “Therefore” does this, whereas “however” and “nevertheless” show contrast.",
+      "subject": "english",
+      "unit_id": "english/unit/2",
+      "topic_id": "english/unit/2/topic/formal-and-lexical-aspect-of-language",
+      "slo_reference": "2.9",
+      "difficulty": "easy",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 2.9"
+    },
+    {
+      "question": "Which sentence is punctuated correctly?",
+      "options": [
+        "The patient, who was exhausted, slept immediately.",
+        "The patient, who was exhausted slept immediately.",
+        "The patient who was exhausted, slept immediately.",
+        "The patient, who was exhausted; slept immediately."
+      ],
+      "correct_answer_index": 0,
+      "explanation": "The clause “who was exhausted” gives extra information and is a non-restrictive clause, so it is set off by a pair of commas, one before and one after it. The other options omit one comma or wrongly use a semicolon.",
+      "subject": "english",
+      "unit_id": "english/unit/2",
+      "topic_id": "english/unit/2/topic/formal-and-lexical-aspect-of-language",
+      "slo_reference": "2.10",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 2.10"
+    },
+    {
+      "question": "Which of the following is the correct inverted form of “He had hardly entered the hall when the lights went out”?",
+      "options": [
+        "Hardly he had entered the hall when the lights went out.",
+        "Hardly did he entered the hall when the lights went out.",
+        "Hardly had he entered the hall when the lights went out.",
+        "Hardly he entered the hall when the lights went out."
+      ],
+      "correct_answer_index": 2,
+      "explanation": "When “hardly” begins a sentence, the auxiliary verb comes before the subject: “Hardly had he entered…”. The other options keep normal word order or wrongly add “did” with a past-tense verb.",
+      "subject": "english",
+      "unit_id": "english/unit/2",
+      "topic_id": "english/unit/2/topic/formal-and-lexical-aspect-of-language",
+      "slo_reference": "2.12",
+      "difficulty": "hard",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 2.12"
+    },
+    {
+      "question": "Choose the correct passive form of the sentence: “The committee will announce the results tomorrow.”",
+      "options": [
+        "The results will be announced by the committee tomorrow.",
+        "The results will be announce by the committee tomorrow.",
+        "The results are announced by the committee tomorrow.",
+        "The results had been announced by the committee tomorrow."
+      ],
+      "correct_answer_index": 0,
+      "explanation": "The future active “will announce” becomes “will be announced” in the passive, with the object (“the results”) as the new subject. The other options change the tense or use an incorrect verb form.",
+      "subject": "english",
+      "unit_id": "english/unit/2",
+      "topic_id": "english/unit/2/topic/formal-and-lexical-aspect-of-language",
+      "slo_reference": "2.13",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 2.13"
+    },
+    {
+      "question": "Choose the correct indirect speech: He said, “I am preparing for the test.”",
+      "options": [
+        "He said that I was preparing for the test.",
+        "He said that he has been preparing for the test.",
+        "He said that he was preparing for the test.",
+        "He said that he will be preparing for the test."
+      ],
+      "correct_answer_index": 2,
+      "explanation": "With a past reporting verb the present continuous “am preparing” changes to the past continuous “was preparing”, and the pronoun “I” changes to “he”. The other options keep the wrong pronoun or change the tense.",
+      "subject": "english",
+      "unit_id": "english/unit/2",
+      "topic_id": "english/unit/2/topic/formal-and-lexical-aspect-of-language",
+      "slo_reference": "2.14",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 2.14"
+    },
+    {
+      "question": "Proofread the sentence: “The doctor gave me an advice about my diet.” Which edit corrects the error?",
+      "options": [
+        "Replace “gave” with “given”",
+        "Replace “an advice” with “advice”",
+        "Replace “about” with “at”",
+        "Replace “my” with “me”"
+      ],
+      "correct_answer_index": 1,
+      "explanation": "“Advice” is an uncountable noun and cannot take the article “an” or be pluralised, so the correct sentence is “The doctor gave me advice about my diet.” The other edits would introduce new errors.",
+      "subject": "english",
+      "unit_id": "english/unit/3",
+      "topic_id": "english/unit/3/topic/writing-skills",
+      "slo_reference": "3.1",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 3.1"
+    },
+    {
+      "question": "Which revision corrects the faulty structure of the sentence: “Walking down the road, the rain began to fall.”?",
+      "options": [
+        "Walking down the road, the rain began to fall heavily.",
+        "Walking down the road, it began raining.",
+        "The rain began to fall, walking down the road.",
+        "While we were walking down the road, the rain began to fall."
+      ],
+      "correct_answer_index": 3,
+      "explanation": "The original has a dangling modifier because “walking down the road” appears to describe “the rain”. Supplying a subject in “While we were walking…” fixes this. The other options keep the same illogical modifier.",
+      "subject": "english",
+      "unit_id": "english/unit/3",
+      "topic_id": "english/unit/3/topic/writing-skills",
+      "slo_reference": "3.2",
+      "difficulty": "hard",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 3.2"
+    },
+    {
+      "question": "Choose the correct verb: The quality of the medicines supplied to rural clinics ______ often questioned by inspectors.",
+      "options": [
+        "are",
+        "were",
+        "is",
+        "have been"
+      ],
+      "correct_answer_index": 2,
+      "explanation": "The subject is the singular noun “quality”, not “medicines”, which sits inside the prepositional phrase “of the medicines”. A singular subject takes the singular verb “is”.",
+      "subject": "english",
+      "unit_id": "english/unit/3",
+      "topic_id": "english/unit/3/topic/writing-skills",
+      "slo_reference": "3.3",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 3.3"
+    },
+    {
+      "question": "Which of the following words is spelled correctly?",
+      "options": [
+        "Definitely",
+        "Definately",
+        "Seperate",
+        "Occurence"
+      ],
+      "correct_answer_index": 0,
+      "explanation": "“Definitely” is correct. The common misspellings are “definately”, “seperate” (correct: separate) and “occurence” (correct: occurrence, with double r).",
+      "subject": "english",
+      "unit_id": "english/unit/3",
+      "topic_id": "english/unit/3/topic/writing-skills",
+      "slo_reference": "3.4",
+      "difficulty": "easy",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 3.4"
+    },
+    {
+      "question": "Read the notice: “The school library opens at 8:00 a.m. and closes at 4:00 p.m. on weekdays. On Saturdays it closes at noon. Students may borrow up to three books for two weeks. A fine of five rupees per day is charged for each day a book is returned late. The library is closed on Sundays and public holidays.” According to the notice, how much is the fine for returning a book late?",
+      "options": [
+        "Five rupees for each week the book is late",
+        "Five rupees for each day it is late",
+        "Three rupees for each day the book is late",
+        "A single fine of five rupees however late it is"
+      ],
+      "correct_answer_index": 1,
+      "explanation": "Scanning for “fine” finds the sentence stating that five rupees is charged for each day a book is returned late. The other options change the rate or the period.",
+      "subject": "english",
+      "unit_id": "english/unit/1",
+      "topic_id": "english/unit/1/topic/reading-and-thinking-skills",
+      "slo_reference": "1.1",
+      "difficulty": "easy",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 1.1"
+    },
+    {
+      "question": "“The wind whispered through the empty corridors of the old hospital.” Which figure of speech is used in this sentence?",
+      "options": [
+        "Simile",
+        "Hyperbole",
+        "Oxymoron",
+        "Personification"
+      ],
+      "correct_answer_index": 3,
+      "explanation": "Whispering is a human action, and here it is given to the wind, a non-living thing. Giving human qualities to non-human things is personification. The sentence has no “like/as” comparison (simile), exaggeration (hyperbole) or contradictory pair of words (oxymoron).",
+      "subject": "english",
+      "unit_id": "english/unit/1",
+      "topic_id": "english/unit/1/topic/reading-and-thinking-skills",
+      "slo_reference": "1.3",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 1.3"
+    }
+  ]
+}

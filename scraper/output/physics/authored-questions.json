@@ -1,0 +1,367 @@
+{
+  "schema_version": 1,
+  "reference_scheme": "subject/unit/{unit_number}/topic/{topic_slug}",
+  "answer_index_base": 0,
+  "questions": [
+    {
+      "question": "Two perpendicular forces of 6 N (along +x) and 8 N (along +y) act on a body at the same point. What is the magnitude of their resultant?",
+      "options": [
+        "14 N",
+        "10 N",
+        "7 N",
+        "2 N"
+      ],
+      "correct_answer_index": 1,
+      "explanation": "For perpendicular components the resultant magnitude is R = √(Fₓ² + F_y²) = √(6² + 8²) = √100 = 10 N. Simply adding the magnitudes (14 N) is wrong because the forces are not in the same direction.",
+      "subject": "physics",
+      "unit_id": "physics/unit/1",
+      "topic_id": "physics/unit/1/topic/addition-of-vectors-rectangular-components",
+      "slo_reference": "1.1",
+      "difficulty": "easy",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 1.1"
+    },
+    {
+      "question": "Two vectors of magnitudes 4 units and 5 units make an angle of 60° with each other. What is their scalar (dot) product?",
+      "options": [
+        "20 units",
+        "17.3 units",
+        "5 units",
+        "10 units"
+      ],
+      "correct_answer_index": 3,
+      "explanation": "A·B = AB cos θ = 4 × 5 × cos 60° = 20 × 0.5 = 10. The value 17.3 comes from using sin 60°, which gives the magnitude of the vector product instead.",
+      "subject": "physics",
+      "unit_id": "physics/unit/1",
+      "topic_id": "physics/unit/1/topic/product-of-vectors-scalar-product",
+      "slo_reference": "1.2",
+      "difficulty": "easy",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 1.2"
+    },
+    {
+      "question": "A car increases its speed uniformly from 10 m s⁻¹ to 30 m s⁻¹ in 5.0 s. What is its acceleration?",
+      "options": [
+        "4 m s⁻²",
+        "8 m s⁻²",
+        "2 m s⁻²",
+        "6 m s⁻²"
+      ],
+      "correct_answer_index": 0,
+      "explanation": "Acceleration is the rate of change of velocity: a = (v − u)/t = (30 − 10)/5.0 = 4 m s⁻².",
+      "subject": "physics",
+      "unit_id": "physics/unit/2",
+      "topic_id": "physics/unit/2/topic/acceleration",
+      "slo_reference": "2.4",
+      "difficulty": "easy",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 2.4"
+    },
+    {
+      "question": "A frictionless projectile is launched with an initial speed of 20 m s⁻¹ at 45° above the horizontal on level ground. Taking g = 10 m s⁻², what is its horizontal range?",
+      "options": [
+        "20 m",
+        "80 m",
+        "40 m",
+        "34.6 m"
+      ],
+      "correct_answer_index": 2,
+      "explanation": "R = v² sin 2θ / g = (20)² × sin 90° / 10 = 400 × 1 / 10 = 40 m. The value 34.6 m would be the range for a 30° launch angle.",
+      "subject": "physics",
+      "unit_id": "physics/unit/2",
+      "topic_id": "physics/unit/2/topic/projectile-motion-maximum-height-range-time-of-flight-maximum-angle",
+      "slo_reference": "2.11",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 2.11"
+    },
+    {
+      "question": "A 0.20 kg ball moving at 15 m s⁻¹ is brought to rest by a player's hand in 0.10 s. What is the average force exerted on the ball?",
+      "options": [
+        "3 N",
+        "300 N",
+        "1.5 N",
+        "30 N"
+      ],
+      "correct_answer_index": 3,
+      "explanation": "Newton's second law in terms of momentum: F = Δp/Δt. Δp = 0.20 × 15 = 3.0 kg m s⁻¹, so F = 3.0 / 0.10 = 30 N (magnitude, opposite to the ball's motion).",
+      "subject": "physics",
+      "unit_id": "physics/unit/2",
+      "topic_id": "physics/unit/2/topic/newton-s-second-law-and-linear-momentum",
+      "slo_reference": "2.13",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 2.13"
+    },
+    {
+      "question": "A 2.0 kg trolley moving at 3.0 m s⁻¹ collides with a stationary 1.0 kg trolley, and the two stick together. What is their common speed after the collision?",
+      "options": [
+        "2.0 m s⁻¹",
+        "3.0 m s⁻¹",
+        "1.0 m s⁻¹",
+        "6.0 m s⁻¹"
+      ],
+      "correct_answer_index": 0,
+      "explanation": "Momentum is conserved in the perfectly inelastic collision: 2.0 × 3.0 = (2.0 + 1.0)v, so v = 6.0 / 3.0 = 2.0 m s⁻¹. Kinetic energy is not conserved.",
+      "subject": "physics",
+      "unit_id": "physics/unit/2",
+      "topic_id": "physics/unit/2/topic/collision",
+      "slo_reference": "2.15",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 2.15"
+    },
+    {
+      "question": "A constant force of 20 N acts at 60° to the horizontal on a box and moves it 5.0 m along a horizontal floor. How much work does the force do?",
+      "options": [
+        "100 J",
+        "86.6 J",
+        "50 J",
+        "25 J"
+      ],
+      "correct_answer_index": 2,
+      "explanation": "Work is force times displacement in the direction of the force: W = Fd cos θ = 20 × 5.0 × cos 60° = 100 × 0.5 = 50 J. Using sin 60° gives the wrong value 86.6 J.",
+      "subject": "physics",
+      "unit_id": "physics/unit/3",
+      "topic_id": "physics/unit/3/topic/work",
+      "slo_reference": "3.1",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 3.1"
+    },
+    {
+      "question": "By what factor does the kinetic energy of a moving body change if its speed is doubled while its mass stays the same?",
+      "options": [
+        "It becomes twice as great",
+        "It becomes four times as great",
+        "It becomes eight times as great",
+        "It remains unchanged"
+      ],
+      "correct_answer_index": 1,
+      "explanation": "Kinetic energy is ½mv², which is proportional to v². Doubling v multiplies the kinetic energy by 2² = 4.",
+      "subject": "physics",
+      "unit_id": "physics/unit/3",
+      "topic_id": "physics/unit/3/topic/kinetic-energy",
+      "slo_reference": "3.3",
+      "difficulty": "easy",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 3.3"
+    },
+    {
+      "question": "A motor exerts a constant force of 500 N on a vehicle moving at a steady 20 m s⁻¹ in the direction of the force. What is the power delivered?",
+      "options": [
+        "10 kW",
+        "25 W",
+        "520 W",
+        "100 kW"
+      ],
+      "correct_answer_index": 0,
+      "explanation": "Power equals the scalar product of force and velocity: P = F·v = 500 × 20 = 10 000 W = 10 kW. Dividing force by velocity (25) has the wrong dimensions for power.",
+      "subject": "physics",
+      "unit_id": "physics/unit/3",
+      "topic_id": "physics/unit/3/topic/power",
+      "slo_reference": "3.6",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 3.6"
+    },
+    {
+      "question": "A wheel rotates with a constant angular velocity of 10 rad s⁻¹. What is the linear speed of a point on its rim at a distance of 0.50 m from the axis?",
+      "options": [
+        "20 m s⁻¹",
+        "50 m s⁻¹",
+        "0.050 m s⁻¹",
+        "5.0 m s⁻¹"
+      ],
+      "correct_answer_index": 3,
+      "explanation": "Linear and angular speed are related by v = rω = 0.50 × 10 = 5.0 m s⁻¹.",
+      "subject": "physics",
+      "unit_id": "physics/unit/4",
+      "topic_id": "physics/unit/4/topic/relation-between-angular-and-linear-quantities",
+      "slo_reference": "4.4",
+      "difficulty": "easy",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 4.4"
+    },
+    {
+      "question": "An ideal incompressible fluid flows through a pipe at 2.0 m s⁻¹ where the cross-sectional area is 4.0 cm². What is the speed of the fluid where the pipe narrows to 1.0 cm²?",
+      "options": [
+        "0.50 m s⁻¹",
+        "8.0 m s⁻¹",
+        "2.0 m s⁻¹",
+        "4.0 m s⁻¹"
+      ],
+      "correct_answer_index": 1,
+      "explanation": "The equation of continuity, A₁v₁ = A₂v₂, expresses conservation of mass. v₂ = (4.0 × 2.0)/1.0 = 8.0 m s⁻¹. The fluid speeds up as the area decreases.",
+      "subject": "physics",
+      "unit_id": "physics/unit/5",
+      "topic_id": "physics/unit/5/topic/equation-of-continuity",
+      "slo_reference": "5.6",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 5.6"
+    },
+    {
+      "question": "According to Bernoulli's effect, for a fluid flowing steadily through a horizontal tube, what is true of a region where the fluid speed is higher?",
+      "options": [
+        "The pressure is higher",
+        "The pressure is unchanged",
+        "The pressure is lower",
+        "The density is higher"
+      ],
+      "correct_answer_index": 2,
+      "explanation": "Bernoulli's equation for horizontal flow, P + ½ρv² = constant, shows that when v increases, P must decrease. Faster-moving fluid therefore has lower pressure.",
+      "subject": "physics",
+      "unit_id": "physics/unit/5",
+      "topic_id": "physics/unit/5/topic/bernoulli-s-equation",
+      "slo_reference": "5.10",
+      "difficulty": "easy",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 5.10"
+    },
+    {
+      "question": "A sound wave has a frequency of 500 Hz and a wavelength of 0.68 m. What is the speed of the wave?",
+      "options": [
+        "735 m s⁻¹",
+        "170 m s⁻¹",
+        "340 m s⁻¹",
+        "0.0014 m s⁻¹"
+      ],
+      "correct_answer_index": 2,
+      "explanation": "Wave speed v = fλ = 500 × 0.68 = 340 m s⁻¹. The value 735 comes from dividing f by λ, which is incorrect.",
+      "subject": "physics",
+      "unit_id": "physics/unit/6",
+      "topic_id": "physics/unit/6/topic/wave-speed",
+      "slo_reference": "6.4",
+      "difficulty": "easy",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 6.4"
+    },
+    {
+      "question": "Which of the following is a longitudinal wave?",
+      "options": [
+        "Sound waves in air",
+        "Light waves",
+        "Radio waves",
+        "Waves on a stretched string"
+      ],
+      "correct_answer_index": 0,
+      "explanation": "In a longitudinal wave the particles of the medium vibrate parallel to the direction of energy travel, producing compressions and rarefactions, as in sound in air. Light and radio waves and waves on a string are transverse.",
+      "subject": "physics",
+      "unit_id": "physics/unit/6",
+      "topic_id": "physics/unit/6/topic/classification-of-progressive-waves",
+      "slo_reference": "6.6",
+      "difficulty": "easy",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 6.6"
+    },
+    {
+      "question": "A pipe 0.85 m long is closed at one end. If the speed of sound in air is 340 m s⁻¹, what is the frequency of its fundamental mode?",
+      "options": [
+        "200 Hz",
+        "400 Hz",
+        "50 Hz",
+        "100 Hz"
+      ],
+      "correct_answer_index": 3,
+      "explanation": "A closed pipe has a node at the closed end and an antinode at the open end, so the fundamental wavelength is 4L. f = v/4L = 340 / (4 × 0.85) = 100 Hz. The value 200 Hz would be correct for a pipe open at both ends (f = v/2L).",
+      "subject": "physics",
+      "unit_id": "physics/unit/6",
+      "topic_id": "physics/unit/6/topic/organ-pipes",
+      "slo_reference": "6.15",
+      "difficulty": "hard",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 6.15"
+    },
+    {
+      "question": "A gas absorbs 500 J of heat while doing 200 J of work on its surroundings. Using ΔU = Q − W, what is the change in its internal energy?",
+      "options": [
+        "+700 J",
+        "+300 J",
+        "−300 J",
+        "+100 J"
+      ],
+      "correct_answer_index": 1,
+      "explanation": "The first law of thermodynamics states ΔU = Q − W, where Q is heat added to the system and W is work done by the system. ΔU = 500 − 200 = +300 J.",
+      "subject": "physics",
+      "unit_id": "physics/unit/7",
+      "topic_id": "physics/unit/7/topic/first-law-of-thermodynamics",
+      "slo_reference": "7.4",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 7.4"
+    },
+    {
+      "question": "Two point charges placed in air exert a force of 8.0 N on each other. If the same charges are placed at the same separation in a medium of relative permittivity 4, what is the force between them?",
+      "options": [
+        "2.0 N",
+        "32 N",
+        "4.0 N",
+        "0.50 N"
+      ],
+      "correct_answer_index": 0,
+      "explanation": "Coulomb's force in a medium is reduced by the relative permittivity: F = F₀/εᵣ = 8.0 / 4 = 2.0 N. The separation and charges are unchanged, so no squared factor applies.",
+      "subject": "physics",
+      "unit_id": "physics/unit/8",
+      "topic_id": "physics/unit/8/topic/columb-s-law",
+      "slo_reference": "8.1",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 8.1"
+    },
+    {
+      "question": "A cell of emf 12 V and internal resistance 2.0 Ω is connected to a variable external resistor. For what value of the external resistance is the power delivered to the resistor maximum?",
+      "options": [
+        "1.0 Ω",
+        "4.0 Ω",
+        "2.0 Ω",
+        "6.0 Ω"
+      ],
+      "correct_answer_index": 2,
+      "explanation": "Power in the load is P = E²R/(R + r)². It is greatest when the external resistance equals the internal resistance, R = r = 2.0 Ω (maximum power transfer theorem). The maximum power is E²/4r = 18 W.",
+      "subject": "physics",
+      "unit_id": "physics/unit/9",
+      "topic_id": "physics/unit/9/topic/maximum-power-output",
+      "slo_reference": "9.5",
+      "difficulty": "hard",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 9.5"
+    },
+    {
+      "question": "An ideal transformer has 200 turns in its primary coil and 50 turns in its secondary coil. If the primary is connected to a 240 V a.c. supply, what is the secondary voltage?",
+      "options": [
+        "960 V",
+        "120 V",
+        "24 V",
+        "60 V"
+      ],
+      "correct_answer_index": 3,
+      "explanation": "For an ideal transformer Vₛ/Vₚ = Nₛ/Nₚ, so Vₛ = 240 × 50/200 = 60 V. Since the secondary has fewer turns, this is a step-down transformer.",
+      "subject": "physics",
+      "unit_id": "physics/unit/11",
+      "topic_id": "physics/unit/11/topic/transformer",
+      "slo_reference": "11.3",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 11.3"
+    },
+    {
+      "question": "A radioactive isotope has a half-life of 693 s. What is its decay constant, using λ = 0.693/T½?",
+      "options": [
+        "1.0 × 10³ s⁻¹",
+        "1.0 × 10⁻³ s⁻¹",
+        "4.8 × 10² s⁻¹",
+        "1.0 × 10⁻⁶ s⁻¹"
+      ],
+      "correct_answer_index": 1,
+      "explanation": "λ = 0.693 / T½ = 0.693 / 693 s = 1.0 × 10⁻³ s⁻¹. Inverting the ratio would give 10³ s⁻¹, which has the wrong magnitude for a decay constant of a 693 s half-life.",
+      "subject": "physics",
+      "unit_id": "physics/unit/16",
+      "topic_id": "physics/unit/16/topic/half-life-and-rate-of-decay",
+      "slo_reference": "16.3",
+      "difficulty": "medium",
+      "source_type": "original",
+      "source_reference": "MDCAT Arena original item; independently authored against PM&DC MDCAT 2025 syllabus SLO 16.3"
+    }
+  ]
+}
