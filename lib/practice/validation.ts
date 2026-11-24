@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { SUBJECT_KEYS } from "@/lib/subjects";
-import { DIFFICULTIES } from "./types";
+import { DIFFICULTY_INPUT_VALUES, normalizeDifficulty } from "./difficulty";
 
 const uuid = z.string().uuid();
 const subjectKey = z.enum(SUBJECT_KEYS);
@@ -17,7 +17,12 @@ export const questionsQuerySchema = z
     unit: z.union([uuid, unitNumber]).optional(),
     topic: z.union([uuid, topicSlug]).optional(),
     slo: z.union([uuid, sloReference]).optional(),
-    difficulty: z.enum(DIFFICULTIES).optional(),
+    // easy | medium | hard; the database words moderate | difficult are accepted
+    // as legacy aliases. Output is always the canonical API word.
+    difficulty: z
+      .enum(DIFFICULTY_INPUT_VALUES)
+      .transform((value) => normalizeDifficulty(value)!)
+      .optional(),
     limit: z.coerce.number().int().min(1).max(50).default(10),
   })
   .superRefine((q, ctx) => {

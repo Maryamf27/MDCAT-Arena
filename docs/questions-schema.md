@@ -59,7 +59,7 @@ Checked offline: the TypeScript slugger (importer) and the Python slugger (valid
 | `unit_id` | uuid FK `syllabus_nodes.id` | restrict; must be a `unit` node |
 | `topic_id` | uuid FK `syllabus_nodes.id` | restrict; must be a `topic` child of the unit |
 | `slo_reference` | text | e.g. `3.9` |
-| `difficulty` | text | `easy`, `medium`, `hard` |
+| `difficulty` | text | stored as `easy`, `moderate`, `difficult` (the API presents these as `easy`, `medium`, `hard`; see `lib/practice/difficulty.ts`) |
 | `source_type` | text | `original` for authored imports; `legacy` for migrated records whose source fields do not establish authorship |
 | `source_reference` | text | not blank |
 | `created_at` | timestamptz | default `now()` |

@@ -12,14 +12,18 @@ Query params (at least one of subject, unit, topic):
 | `subject` | `biology`, `chemistry`, `physics`, `english`, `logical_reasoning`, or a subject UUID |
 | `unit` | unit number (`3`, `5.1`; needs a subject key) or a unit UUID |
 | `topic` | topic slug (`structure-of-dna`; needs subject key + unit number) or a topic UUID |
-| `difficulty` | `easy`, `medium`, `hard` |
-| `limit` | 1-50, default 10 (random sample of active questions) |
+| `difficulty` | `easy`, `medium`, `hard` (the database words `moderate` / `difficult` are also accepted as aliases) |
+| `limit` | 1-50, default 10 (uniform random sample of all matching active questions) |
 
 ```bash
 curl "http://localhost:3000/api/practice/questions?subject=biology&limit=5"
 curl "http://localhost:3000/api/practice/questions?subject=biology&unit=3&difficulty=easy"
 curl "http://localhost:3000/api/practice/questions?subject=biology&unit=3&topic=structure-of-dna"
 ```
+**Difficulty vocabulary.** The API and UI use `easy` / `medium` / `hard`; the database column stores `easy` / `moderate` / `difficult`. The mapping (`easy→easy`, `medium→moderate`, `hard→difficult`) lives in `lib/practice/difficulty.ts` and is applied at the repository boundary: requests are mapped to database words for filtering, and every returned question's `difficulty` is presented as `easy`, `medium` or `hard`.
+
+**Sampling.** Questions are drawn inside Postgres by `public.sample_practice_questions` (migration `20261124000000_practice_question_sampling.sql`): active questions only, all filters applied first, then `ORDER BY random() LIMIT n`. Every matching question can be selected (no 500-row cap), a result never repeats a question, and only the `n` selected rows leave the database. That migration must be applied before this endpoint is deployed.
+
 Returns `{ "data": { "count": n, "questions": [ { id, question, options, difficulty, subject_id, unit_id, topic_id, slo_node_id, slo_reference, syllabus_node_id, created_at } ] } }`. No `correct_answer_index`, no `explanation`.
 
 ## Saving attempts (sign-in required)

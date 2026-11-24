@@ -1,27 +1,22 @@
 import { Check, X } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { DIFFICULTY_LABEL, DIFFICULTY_TONE, normalizeDifficulty } from "@/lib/practice/difficulty";
 import type { PracticeQuestion } from "./types";
 
 const LETTERS = ["A", "B", "C", "D"] as const;
 
-const DIFFICULTY_TONE = { easy: "success", medium: "warning", hard: "error" } as const;
-
 type Review = { correctIndex: number; explanation: string };
 
+
 export function DifficultyBadge({ difficulty }: { difficulty: string }) {
-  const tone =
-    difficulty in DIFFICULTY_TONE
-      ? DIFFICULTY_TONE[difficulty as keyof typeof DIFFICULTY_TONE]
-      : "neutral";
-  return <Badge tone={tone}>{difficulty.charAt(0).toUpperCase() + difficulty.slice(1)}</Badge>;
+  const level = normalizeDifficulty(difficulty);
+  if (!level) {
+    return <Badge tone="neutral">{difficulty.charAt(0).toUpperCase() + difficulty.slice(1)}</Badge>;
+  }
+  return <Badge tone={DIFFICULTY_TONE[level]}>{DIFFICULTY_LABEL[level]}</Badge>;
 }
 
-/**
- * Shows one question with its options.
- * - Answering mode: `review` is undefined; options are selectable.
- * - Review mode: `review` comes from the submit API response, so correct
- *   answers and explanations only ever appear after submission.
- */
+
 export function QuestionCard({
   question,
   number,
@@ -85,7 +80,7 @@ export function QuestionCard({
       </div>
 
       {review ? (
-        <div className="mt-6 rounded-[10px] border border-line bg-canvas p-4">
+        <div className="mt-6 rounded-control border border-line bg-canvas p-4">
           <p className="text-caption">Explanation</p>
           <p className="mt-1 text-base text-ink">{review.explanation}</p>
         </div>

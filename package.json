@@ -13,7 +13,10 @@
     "import:questions:check": "tsx scripts/import-questions.ts --dry-run",
     "test:practice": "node tests/practice-api.e2e.mjs",
     "import:questions:all": "tsx scripts/import-all-questions.ts",
-    "import:questions:all:check": "tsx scripts/import-all-questions.ts --dry-run"
+    "import:questions:all:check": "tsx scripts/import-all-questions.ts --dry-run",
+    "typecheck": "tsc --noEmit",
+    "test:unit": "node --import tsx --test tests/practice-retrieval.test.tsx",
+    "test:sampling-sql": "bash tests/sql/run-sampling-test.sh"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.7",
