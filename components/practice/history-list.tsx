@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import { ArrowLeft, ArrowRight, History, ListFilter } from "lucide-react";
 import { EmptyState, ErrorState, Skeleton } from "@/components/ui/states";
+import { Select } from "@/components/ui/select";
 import { SUBJECT_META } from "@/lib/subjects";
 
 type Attempt = {
@@ -51,13 +52,15 @@ export function HistoryList() {
 
   return <div className="flex flex-col gap-5">
     <div className="flex flex-wrap items-end justify-between gap-4">
-      <label className="flex min-w-52 flex-col gap-1 text-small font-bold text-ink" htmlFor="history-subject">
-        <span className="flex items-center gap-2"><ListFilter size={16} aria-hidden /> Filter by subject</span>
-        <select id="history-subject" className="select font-normal" value={subject} onChange={(event) => { setPage(1); setSubject(event.target.value); }}>
-          <option value="">All subjects</option>
-          {SUBJECT_META.map((item) => <option key={item.key} value={item.key}>{item.label}</option>)}
-        </select>
-      </label>
+      <Select
+        className="min-w-52"
+        label="Filter by subject"
+        labelIcon={<ListFilter size={16} aria-hidden />}
+        labelClassName="text-small font-bold text-ink"
+        value={subject}
+        onChange={(value) => { setPage(1); setSubject(value); }}
+        options={[{ value: "", label: "All subjects" }, ...SUBJECT_META.map((item) => ({ value: item.key, label: item.label }))]}
+      />
       <p className="text-small text-muted" aria-live="polite">{data.total} completed {data.total === 1 ? "attempt" : "attempts"}</p>
     </div>
     {data.attempts.length === 0 ? <EmptyState icon={History} title="No completed practice yet" description="Finish a practice session and your saved results will appear here." action={<Link className="btn btn-primary" href="/practice">Start practicing</Link>} /> : <>

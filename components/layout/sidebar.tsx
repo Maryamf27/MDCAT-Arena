@@ -3,11 +3,13 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { X } from "lucide-react";
+import { useSignedIn } from "@/components/auth/use-signed-in";
 import { Brand } from "./brand";
 import { NAV_ITEMS, isActive } from "./nav-items";
 
 export function SidebarContent({ onNavigate, onClose }: { onNavigate?: () => void; onClose?: () => void }) {
   const pathname = usePathname();
+  const signedIn = useSignedIn();
 
   return (
     <div className="flex h-full flex-col">
@@ -36,7 +38,7 @@ export function SidebarContent({ onNavigate, onClose }: { onNavigate?: () => voi
                   href={item.href}
                   onClick={onNavigate}
                   aria-current={active ? "page" : undefined}
-                  className={`flex items-center gap-3 rounded-[10px] px-4 py-2 font-heading text-sm font-semibold no-underline transition-colors ${
+                  className={`flex items-center gap-3 rounded-control px-4 py-2 font-heading text-sm font-semibold no-underline transition-colors ${
                     active
                       ? "bg-primary text-white"
                       : "text-ink hover:bg-mint-soft hover:text-primary"
@@ -51,11 +53,15 @@ export function SidebarContent({ onNavigate, onClose }: { onNavigate?: () => voi
         </ul>
       </nav>
 
-      <div className="border-t border-line p-4">
-        <p className="text-small text-muted">
-          Sign in to save your practice attempts to your account.
-        </p>
-      </div>
+      {signedIn === null ? null : (
+        <div className="border-t border-line p-4">
+          <p className="text-small text-muted">
+            {signedIn
+              ? "Your practice attempts are saved to your account."
+              : "Sign in to save your practice attempts to your account."}
+          </p>
+        </div>
+      )}
     </div>
   );
 }

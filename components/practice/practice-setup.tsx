@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { Select } from "@/components/ui/select";
 import { BookOpenCheck, Filter, LoaderCircle } from "lucide-react";
 
 type SyllabusTree = { units: { id: string; label: string; topics: { id: string; label: string; slos: { id: string; label: string }[] }[] }[] };
@@ -58,28 +59,31 @@ export function PracticeSetup({
           {questionCount === null ? "Availability unavailable" : `${questionCount} active questions`}
         </span>
       </div>
-      {emptyMessage ? <p role="status" className="rounded-[10px] border border-line bg-canvas p-3 text-small text-muted">{emptyMessage}</p> : null}
-      {noSubjectQuestions ? <div className="rounded-[10px] border border-[#ead9ad] bg-[#fff8e8] p-4 text-small text-ink"><strong>Questions coming soon.</strong> There are currently no active {subjectLabel} questions in the database.</div> : null}
-      {availabilityUnavailable ? <p role="status" className="rounded-[10px] border border-line bg-canvas p-3 text-small text-muted">Live question availability could not be verified. No questions are shown or generated while the database is unavailable.</p> : null}
+      {emptyMessage ? <p role="status" className="rounded-control border border-line bg-canvas p-3 text-small text-muted">{emptyMessage}</p> : null}
+      {noSubjectQuestions ? <div className="rounded-control border border-[#ead9ad] bg-[#fff8e8] p-4 text-small text-ink"><strong>Questions coming soon.</strong> There are currently no active {subjectLabel} questions in the database.</div> : null}
+      {availabilityUnavailable ? <p role="status" className="rounded-control border border-line bg-canvas p-3 text-small text-muted">Live question availability could not be verified. No questions are shown or generated while the database is unavailable.</p> : null}
       <div className="grid gap-4 md:grid-cols-3">
-        <label className="flex flex-col gap-1 text-small font-bold">Unit
-          <select className="select" value={unitId} disabled={!tree || busy} onChange={(event) => { setUnitId(event.target.value); setTopicId(""); setSloId(""); }}>
-            <option value="">All units</option>
-            {tree?.units.map((unit) => <option key={unit.id} value={unit.id}>{unit.label}</option>)}
-          </select>
-        </label>
-        <label className="flex flex-col gap-1 text-small font-bold">Topic
-          <select className="select" value={topicId} disabled={!selectedUnit || busy} onChange={(event) => { setTopicId(event.target.value); setSloId(""); }}>
-            <option value="">All topics</option>
-            {selectedUnit?.topics.map((topic) => <option key={topic.id} value={topic.id}>{topic.label}</option>)}
-          </select>
-        </label>
-        <label className="flex flex-col gap-1 text-small font-bold">Syllabus learning outcome (SLO)
-          <select className="select" value={sloId} disabled={!selectedTopic || busy} onChange={(event) => setSloId(event.target.value)}>
-            <option value="">All SLOs</option>
-            {selectedTopic?.slos.map((slo) => <option key={slo.id} value={slo.id}>{slo.label}</option>)}
-          </select>
-        </label>
+        <Select
+          label="Unit"
+          value={unitId}
+          disabled={!tree || busy}
+          onChange={(value) => { setUnitId(value); setTopicId(""); setSloId(""); }}
+          options={[{ value: "", label: "All units" }, ...(tree?.units.map((unit) => ({ value: unit.id, label: unit.label })) ?? [])]}
+        />
+        <Select
+          label="Topic"
+          value={topicId}
+          disabled={!selectedUnit || busy}
+          onChange={(value) => { setTopicId(value); setSloId(""); }}
+          options={[{ value: "", label: "All topics" }, ...(selectedUnit?.topics.map((topic) => ({ value: topic.id, label: topic.label })) ?? [])]}
+        />
+        <Select
+          label="Syllabus learning outcome (SLO)"
+          value={sloId}
+          disabled={!selectedTopic || busy}
+          onChange={setSloId}
+          options={[{ value: "", label: "All SLOs" }, ...(selectedTopic?.slos.map((slo) => ({ value: slo.id, label: slo.label })) ?? [])]}
+        />
       </div>
       {treeError ? <p role="status" className="text-small text-warning">{treeError} You can still practice with no syllabus filter.</p> : null}
       <button type="button" className="btn btn-primary self-start" disabled={busy || noSubjectQuestions || availabilityUnavailable} onClick={() => onStart({ unitId: unitId || undefined, topicId: topicId || undefined, sloId: sloId || undefined })}>
