@@ -49,6 +49,16 @@ const SUBJECT_CODES: Record<string, string> = {
   physics: "PHY",
   english: "ENG",
   logical_reasoning: "LR",
+  ecat_mathematics: "ECAT_MATH",
+  ecat_physics: "ECAT_PHY",
+  ecat_chemistry: "ECAT_CHEM",
+  ecat_english: "ECAT_ENG",
+  nat_ie_english: "NAT_IE_ENG",
+  nat_ie_analytical: "NAT_IE_ANALYTICAL",
+  nat_ie_quantitative: "NAT_IE_QUANTITATIVE",
+  nat_ie_physics: "NAT_IE_PHY",
+  nat_ie_chemistry: "NAT_IE_CHEM",
+  nat_ie_mathematics: "NAT_IE_MATH",
 };
 
 const BATCH_SIZE = 100;
@@ -69,11 +79,13 @@ const supabase = createClient(supabaseUrl, supabaseKey, {
   },
 });
 
-const filePath = path.join(
-  process.cwd(),
-  "data",
-  "mdcat-syllabus.json"
-);
+const argv = process.argv.slice(2);
+function flagValue(name: string): string | undefined {
+  const index = argv.indexOf(name);
+  return index >= 0 ? argv[index + 1] : undefined;
+}
+const syllabusPath = path.resolve(flagValue("--syllabus") ?? "data/mdcat-syllabus.json");
+const isDefaultMdcSyllabus = !flagValue("--syllabus");
 
 function slugify(value: string): string {
   return value
@@ -86,12 +98,12 @@ function slugify(value: string): string {
 }
 
 function loadSyllabus(): SyllabusFile {
-  if (!fs.existsSync(filePath)) {
-    throw new Error(`Syllabus file not found: ${filePath}`);
+  if (!fs.existsSync(syllabusPath)) {
+    throw new Error(`Syllabus file not found: ${syllabusPath}`);
   }
 
   return JSON.parse(
-    fs.readFileSync(filePath, "utf-8")
+    fs.readFileSync(syllabusPath, "utf-8")
   ) as SyllabusFile;
 }
 
@@ -100,7 +112,11 @@ function validateSyllabus(data: SyllabusFile): void {
     throw new Error("Invalid syllabus: subjects must be an array.");
   }
 
-  if (data.subjects.length !== 5) {
+  if (data.subjects.length === 0) {
+    throw new Error("Syllabus must contain at least one subject.");
+  }
+
+  if (isDefaultMdcSyllabus && data.subjects.length !== 5) {
     throw new Error(
       `Expected 5 subjects, received ${data.subjects.length}.`
     );

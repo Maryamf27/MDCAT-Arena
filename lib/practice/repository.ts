@@ -4,9 +4,6 @@ import type { PublicQuestion } from "@/lib/questions/public";
 import type { AnswerKey, QuestionFilters, QuestionScope } from "./types";
 import type { QuestionsQuery } from "./validation";
 import { toApiDifficulty, toDbDifficulty } from "./difficulty";
-import { SUBJECT_META } from "@/lib/subjects";
-
-const SUBJECT_CODES = Object.fromEntries(SUBJECT_META.map((subject) => [subject.key, subject.code]));
 
 const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 const isUuid = (v: string) => UUID_RE.test(v);
@@ -34,7 +31,7 @@ export async function resolveScope(
       const { data, error } = await db
         .from("subjects")
         .select("id")
-        .eq("code", SUBJECT_CODES[query.subject])
+        .eq("subject_key", query.subject)
         .limit(1);
       if (error) throw dbError("subject lookup", error);
       if (!data?.length) throw new ApiError(404, "subject_not_found", `Unknown subject "${query.subject}"`);

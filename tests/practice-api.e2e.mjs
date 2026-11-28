@@ -1,16 +1,18 @@
 // End-to-end test of the practice API against a MOCK Supabase (no real DB used).
 // The mock emulates Supabase Auth's /user endpoint and the two attempt RPCs; see tests/mock-supabase.mjs.
 // Run: npm run test:practice
-import { spawn } from "node:child_process";
+import { spawn, spawnSync } from "node:child_process";
+import { fileURLToPath } from "node:url";
 import assert from "node:assert/strict";
-import { startMock, requests, rpcCalls, questions, attempts, profileRows, INACTIVE_ID, STUDENT } from "./mock-supabase.mjs";
+import { startMock, requests, rpcCalls, questions, attempts, profileRows, INACTIVE_ID, STUDENT, SUBJECT_ID } from "./mock-supabase.mjs";
 
 const MOCK_PORT = 54399;
 const APP_PORT = 3199;
+const NEXT_CLI = fileURLToPath(new URL("../node_modules/next/dist/bin/next", import.meta.url));
 const BASE = `http://127.0.0.1:${APP_PORT}`;
 
 const mock = await startMock(MOCK_PORT);
-const app = spawn("npx", ["next", "dev", "-p", String(APP_PORT)], {
+const app = spawn(process.execPath, [NEXT_CLI, "dev", "-p", String(APP_PORT)], {
   env: {
     ...process.env, // explicit values below win over any local .env file
     NEXT_PUBLIC_SUPABASE_URL: `http://127.0.0.1:${MOCK_PORT}`,
@@ -26,7 +28,20 @@ app.stdout.on("data", (d) => (appLog += d));
 app.stderr.on("data", (d) => (appLog += d));
 
 const cleanup = () => {
-  try { process.kill(-app.pid, "SIGKILL"); } catch { /* already gone */ }
+  if (process.platform === "win32") {
+    const killTree = (pid) => {
+      try { spawnSync("taskkill.exe", ["/pid", String(pid), "/t", "/f"], { stdio: "ignore" }); } catch { /* already gone */ }
+    };
+    killTree(app.pid);
+    const listeners = spawnSync("netstat.exe", ["-ano"], { encoding: "utf-8" }).stdout ?? "";
+    for (const line of listeners.split(/\r?\n/)) {
+      if (!line.includes(`:${APP_PORT}`) || !line.includes("LISTENING")) continue;
+      const pid = line.trim().split(/\s+/).at(-1);
+      if (pid && /^\d+$/.test(pid)) killTree(pid);
+    }
+  } else {
+    try { process.kill(-app.pid, "SIGKILL"); } catch { /* already gone */ }
+  }
   mock.close();
 };
 process.on("exit", cleanup);
@@ -159,6 +174,15 @@ await check("unit number without subject is rejected (400)", async () => {
 await check("unknown subject in database returns 404", async () => {
   const r = await get("/api/practice/questions?subject=chemistry");
   assert.equal(r.status, 404); assert.equal(json(r).error.code, "subject_not_found");
+});
+await check("ECAT and NAT subject keys resolve to separate question scopes", async () => {
+  for (const subject of ["ecat_mathematics", "nat_ie_english"]) {
+    rpcCalls.length = 0;
+    const r = await get(`/api/practice/questions?subject=${subject}`);
+    assert.equal(r.status, 200, subject);
+    assert.equal(json(r).data.count, 0, `${subject} must not receive the MDCAT fixture bank`);
+    assert.notEqual(rpcCalls[0].body.p_subject_id, SUBJECT_ID, `${subject} reused the MDCAT subject id`);
+  }
 });
 await check("syllabus filters return units, topics and SLOs from database rows", async () => {
   const r = await get("/api/practice/structure?subject=biology");
@@ -331,6 +355,13 @@ await check("start returns an attempt id owned by the signed-in student, with no
   const { attemptId } = json(r).data;
   assert.equal(attempts.get(attemptId).user_id, STUDENT.id);
   for (const secret of SECRETS) assert.ok(!r.text.includes(secret), `leaked ${secret}`);
+});
+await check("start accepts the new track-specific practice subject keys", async () => {
+  for (const subject of ["ecat_mathematics", "nat_ie_english"]) {
+    const response = await send("/api/practice/attempts", { subject });
+    assert.equal(response.status, 201, subject);
+    assert.equal(attempts.get(json(response).data.attemptId).user_id, STUDENT.id);
+  }
 });
 await check("start rejects an unknown subject and any client-supplied user_id (400)", async () => {
   assert.equal((await send("/api/practice/attempts", { subject: "astrology" })).status, 400);

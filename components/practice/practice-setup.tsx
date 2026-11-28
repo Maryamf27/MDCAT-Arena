@@ -10,6 +10,7 @@ export type PracticeSelection = { unitId?: string; topicId?: string; sloId?: str
 export function PracticeSetup({
   subjectKey,
   subjectLabel,
+  examLabel,
   questionCount,
   busy,
   emptyMessage,
@@ -17,6 +18,7 @@ export function PracticeSetup({
 }: {
   subjectKey: string;
   subjectLabel: string;
+  examLabel: string;
   questionCount: number | null;
   busy: boolean;
   emptyMessage?: string;
@@ -51,7 +53,7 @@ export function PracticeSetup({
     <section className="card flex flex-col gap-5 p-5 md:p-7" aria-labelledby="practice-setup-title">
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div>
-          <p className="text-caption">MDCAT practice</p>
+          <p className="text-caption">{examLabel} practice</p>
           <h1 id="practice-setup-title" className="mt-1 text-title">{subjectLabel}</h1>
           <p className="mt-1 text-small text-muted">Questions are selected from active database rows only.</p>
         </div>

@@ -71,8 +71,38 @@ questions.push({ ...questions[0], id: INACTIVE_ID, question: "inactive question"
 // profiles table emulation (rows: { user_id, display_name, role, created_at }).
 export const profileRows = [];
 
+const newSubjectIds = {
+  ecat_mathematics: uuid("subject:ecat_mathematics"),
+  ecat_physics: uuid("subject:ecat_physics"),
+  ecat_chemistry: uuid("subject:ecat_chemistry"),
+  ecat_english: uuid("subject:ecat_english"),
+  nat_ie_english: uuid("subject:nat_ie_english"),
+  nat_ie_analytical: uuid("subject:nat_ie_analytical"),
+  nat_ie_quantitative: uuid("subject:nat_ie_quantitative"),
+  nat_ie_physics: uuid("subject:nat_ie_physics"),
+  nat_ie_chemistry: uuid("subject:nat_ie_chemistry"),
+  nat_ie_mathematics: uuid("subject:nat_ie_mathematics"),
+};
+const newSubjectRows = [
+  ["ecat_mathematics", "ECAT_MATH", "Mathematics", "ecat", "pre_engineering"],
+  ["ecat_physics", "ECAT_PHY", "Physics", "ecat", "pre_engineering"],
+  ["ecat_chemistry", "ECAT_CHEM", "Chemistry", "ecat", "pre_engineering"],
+  ["ecat_english", "ECAT_ENG", "English", "ecat", "pre_engineering"],
+  ["nat_ie_english", "NAT_IE_ENG", "English", "nts_nat", "nat_ie"],
+  ["nat_ie_analytical", "NAT_IE_ANALYTICAL", "Analytical", "nts_nat", "nat_ie"],
+  ["nat_ie_quantitative", "NAT_IE_QUANTITATIVE", "Quantitative", "nts_nat", "nat_ie"],
+  ["nat_ie_physics", "NAT_IE_PHY", "Physics", "nts_nat", "nat_ie"],
+  ["nat_ie_chemistry", "NAT_IE_CHEM", "Chemistry", "nts_nat", "nat_ie"],
+  ["nat_ie_mathematics", "NAT_IE_MATH", "Mathematics", "nts_nat", "nat_ie"],
+].map(([subject_key, code, name, exam_key, category_key]) => ({
+  id: newSubjectIds[subject_key], subject_key, code, name, exam_key, category_key,
+}));
+
 const tables = {
-  subjects: [{ id: SUBJECT_ID, code: "BIO", name: "Biology" }],
+  subjects: [
+    { id: SUBJECT_ID, code: "BIO", subject_key: "biology", exam_key: "mdcat", category_key: null, name: "Biology" },
+    ...newSubjectRows,
+  ],
   syllabus_nodes: nodes,
   questions,
   profiles: profileRows,
@@ -89,7 +119,7 @@ const PUBLIC_COLUMNS = ["id", "subject_id", "syllabus_node_id", "unit_id", "topi
 // covered against Postgres, not here; this only lets the API routes run offline.
 export const STUDENT = { id: uuid("user:student"), email: "student@test.dev", token: "test-student-token", name: "Ayesha Khan" };
 export const attempts = new Map(); // id -> { user_id, status, score, total, answers: [{questionId, selectedIndex}] }
-const SUBJECT_KEYS = ["biology", "chemistry", "physics", "english", "logical_reasoning"];
+const SUBJECT_KEYS = ["biology", "chemistry", "physics", "english", "logical_reasoning", ...Object.keys(newSubjectIds)];
 const rpcError = (res, message) => { res.writeHead(400, { "Content-Type": "application/json" }); res.end(JSON.stringify({ code: "P0001", message })); };
 
 function handleRpc(name, body, res) {

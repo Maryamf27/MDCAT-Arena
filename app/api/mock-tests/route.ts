@@ -1,6 +1,7 @@
 import { requireUser } from "@/lib/auth/user";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { errorResponse, ok } from "@/lib/practice/http";
+import { blueprintDbFields } from "@/lib/practice/mock-exams";
 
 export async function GET() {
   try {
@@ -11,7 +12,7 @@ export async function GET() {
     if (error) throw error;
     const ids = (tests ?? []).map((t) => t.id as string);
     const { data: configs, error: configError } = ids.length
-      ? await db.from("mock_test_configs").select("test_id,question_distribution,marks_per_correct,negative_marking,marks_deducted,is_provisional").in("test_id", ids)
+      ? await db.from("mock_test_configs").select("test_id,question_distribution,marks_per_correct,negative_marking,marks_deducted,is_provisional,exam_key,category_key,blueprint_key,blueprint_source_name,blueprint_source_url,blueprint_verification_status,blueprint_verified_at,blueprint_verification_note").in("test_id", ids)
       : { data: [], error: null };
     if (configError) throw configError;
     const configMap = new Map((configs ?? []).map((c) => [c.test_id, c]));
@@ -40,7 +41,8 @@ export async function POST(request: Request) {
     const { error: configError } = await db.from("mock_test_configs").insert({
       test_id: test.id, question_distribution: config.distribution,
       marks_per_correct: config.marksPerCorrect, negative_marking: config.negativeMarking,
-      marks_deducted: config.negativeMarking ? config.marksDeducted : 0, is_provisional: config.provisional,
+      marks_deducted: config.negativeMarking ? config.marksDeducted : 0,
+      ...blueprintDbFields(config),
     });
     if (configError) {
       await db.from("tests").delete().eq("id", test.id);

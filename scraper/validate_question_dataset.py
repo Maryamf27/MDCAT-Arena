@@ -245,11 +245,17 @@ def main(argv=None):
         default=DEFAULT_DATASET_PATH,
         help="Dataset JSON path (defaults to the Biology authored sample).",
     )
+    parser.add_argument(
+        "--syllabus",
+        type=Path,
+        default=SYLLABUS_PATH,
+        help="Syllabus JSON used to validate this dataset (defaults to MDCAT).",
+    )
     args = parser.parse_args(argv)
 
     try:
         dataset = json.loads(args.dataset.read_text(encoding="utf-8"))
-        syllabus = load_syllabus()
+        syllabus = load_syllabus(args.syllabus)
     except (OSError, json.JSONDecodeError, ValueError) as error:
         print(f"Validation could not run: {error}", file=sys.stderr)
         return 2

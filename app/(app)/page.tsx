@@ -23,8 +23,8 @@ export default function Home() {
 
       <section id="subjects" className="scroll-mt-24">
         <SectionHeading
-          title="Subjects"
-          description="The five MDCAT subjects. Pick one to start a practice session."
+          title="Exams and subjects"
+          description="Choose MDCAT, UET ECAT Pre-Engineering, or NTS NAT-IE, then practice one of its subjects."
         />
         <Suspense fallback={<SubjectsSkeleton />}>
           <SubjectsSection />

@@ -3,6 +3,11 @@ import { Skeleton } from "@/components/ui/states";
 import { SubjectCard } from "./subject-card";
 
 const GRID = "grid gap-4 sm:grid-cols-2 xl:grid-cols-3";
+const EXAM_GROUPS = [
+  { key: "mdcat", title: "MDCAT", description: "Medical and dental entry test practice." },
+  { key: "ecat", title: "UET ECAT · Pre-Engineering", description: "Mathematics, Physics, Chemistry, and English." },
+  { key: "nts_nat", title: "NTS NAT-IE", description: "English, Analytical, Quantitative, Physics, Chemistry, and Mathematics." },
+] as const;
 
 export function SubjectsSkeleton() {
   return (
@@ -30,11 +35,18 @@ export async function SubjectsSection() {
           {result.availabilityMessage}
         </p>
       ) : null}
-      <div className={GRID}>
-        {result.subjects.map((subject) => (
-          <SubjectCard key={subject.meta.key} subject={subject} />
-        ))}
-      </div>
+      {EXAM_GROUPS.map((exam) => {
+        const subjects = result.subjects.filter((subject) => subject.meta.examKey === exam.key);
+        return (
+          <section key={exam.key} aria-labelledby={`exam-${exam.key}`}>
+            <h2 id={`exam-${exam.key}`} className="text-title">{exam.title}</h2>
+            <p className="mt-1 text-small text-muted">{exam.description}</p>
+            <div className={`${GRID} mt-4`}>
+              {subjects.map((subject) => <SubjectCard key={subject.meta.key} subject={subject} />)}
+            </div>
+          </section>
+        );
+      })}
     </div>
   );
 }

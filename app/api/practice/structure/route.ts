@@ -13,7 +13,7 @@ export async function GET(request: Request) {
     const meta = SUBJECT_META.find((item) => item.key === subjectKey);
     if (!meta) throw new ApiError(400, "validation_error", "Unknown subject");
     const db = createAdminClient();
-    const { data: subject, error: subjectError } = await db.from("subjects").select("id,name").eq("code", meta.code).maybeSingle();
+    const { data: subject, error: subjectError } = await db.from("subjects").select("id,name").eq("subject_key", subjectKey).maybeSingle();
     if (subjectError) throw new ApiError(502, "database_error", "Syllabus filters could not be loaded");
     if (!subject) throw new ApiError(404, "subject_not_found", `The ${meta.label} syllabus has not been imported yet`);
     const { data, error } = await db.from("syllabus_nodes")

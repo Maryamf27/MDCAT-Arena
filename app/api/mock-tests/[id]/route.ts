@@ -15,7 +15,7 @@ export async function GET(_request: Request, context: { params: Promise<{ id: st
     if (error) throw new ApiError(502, "database_error", "Examination details could not be loaded");
     if (!test) throw new ApiError(404, "mock_not_available", "This examination is not available");
     const { data: config, error: configError } = await db.from("mock_test_configs")
-      .select("question_distribution,marks_per_correct,negative_marking,marks_deducted,is_provisional").eq("test_id", id).maybeSingle();
+      .select("question_distribution,marks_per_correct,negative_marking,marks_deducted,is_provisional,exam_key,category_key,blueprint_key,blueprint_source_name,blueprint_source_url,blueprint_verification_status,blueprint_verified_at,blueprint_verification_note").eq("test_id", id).maybeSingle();
     if (configError || !config) throw new ApiError(404, "mock_not_configured", "This examination is not configured");
     return ok({ ...test, ...config, questionCount: Object.values(config.question_distribution as Record<string, number>).reduce((sum, count) => sum + Number(count), 0) });
   } catch (error) { return errorResponse(error); }

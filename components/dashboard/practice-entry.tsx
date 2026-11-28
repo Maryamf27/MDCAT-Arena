@@ -10,7 +10,7 @@ export function PracticeEntry() {
       <div className="flex-1">
         <h3 className="text-heading">Practice by subject</h3>
         <p className="mt-1 text-small text-muted">
-          Choose Biology, Chemistry, Physics, English, or Logical Reasoning. Only active database questions are served, and empty subjects are clearly marked.
+          Choose MDCAT, UET ECAT Pre-Engineering, or NTS NAT-IE. Only active questions from the selected exam and subject are served.
         </p>
       </div>
       <Link href="/practice" className="btn btn-primary btn-lg">

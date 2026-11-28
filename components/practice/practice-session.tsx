@@ -37,10 +37,12 @@ function isSubmissionResult(value: unknown): value is SubmissionResult {
 export function PracticeSession({
   subjectKey,
   subjectLabel,
+  examLabel,
   questionCount,
 }: {
   subjectKey: string;
   subjectLabel: string;
+  examLabel: string;
   questionCount: number | null;
 }) {
   const [phase, setPhase] = useState<Phase>({ name: "ready" });
@@ -177,6 +179,7 @@ export function PracticeSession({
         <PracticeSetup
           subjectKey={subjectKey}
           subjectLabel={subjectLabel}
+          examLabel={examLabel}
           questionCount={questionCount}
           busy={false}
           emptyMessage={phase.name === "empty" ? "No active questions match this subject and syllabus selection. Adjust the filters and try again." : undefined}

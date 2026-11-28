@@ -4,7 +4,7 @@ import { PerformanceSkeleton } from "@/components/dashboard/performance-skeleton
 import { PerformanceSection } from "@/components/dashboard/performance-section";
 import { SectionHeading } from "@/components/ui/section";
 
-export const metadata: Metadata = { title: "Performance", description: "Track your real MDCAT practice accuracy, subject performance and progress." };
+export const metadata: Metadata = { title: "Performance", description: "Track your exam practice accuracy, subject performance and progress." };
 
 export default function Page() {
   return <div className="mx-auto flex max-w-6xl flex-col gap-6">

@@ -5,6 +5,7 @@ import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
+import { SUBJECT_KEYS as APP_SUBJECT_KEYS } from "@/lib/subjects";
 
 dotenv.config({ path: ".env" });
 
@@ -40,13 +41,7 @@ type Outcome = {
 };
 
 // ---------- config ----------
-const SUBJECT_KEYS = new Set([
-  "biology",
-  "chemistry",
-  "physics",
-  "english",
-  "logical_reasoning",
-]);
+const SUBJECT_KEYS = new Set<string>(APP_SUBJECT_KEYS);
 
 const DIFFICULTIES = new Set(["easy", "medium", "hard"]);
 const SOURCE_TYPES = new Set(["original"]);
@@ -102,6 +97,7 @@ const datasetPath = path.resolve(
   flagValue("--dataset") ??
     "scraper/output/biology/authored-sample.json"
 );
+const syllabusPath = path.resolve(flagValue("--syllabus") ?? "data/mdcat-syllabus.json");
 
 const statusOverride = flagValue("--status");
 
@@ -147,7 +143,7 @@ function runPythonValidator(): void {
   for (const python of ["python3", "python"]) {
     const result = spawnSync(
       python,
-      [validator, datasetPath],
+      [validator, datasetPath, "--syllabus", syllabusPath],
       { encoding: "utf-8" }
     );
 

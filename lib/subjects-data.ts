@@ -33,7 +33,7 @@ function unavailableSubjects(message: string): SubjectsResult {
   };
 }
 
-/** Always renders all official MDCAT subjects; availability comes only from Supabase. */
+/** Renders supported examination subjects; availability comes only from Supabase. */
 export async function getSubjects(): Promise<SubjectsResult> {
   try {
     const supabase = await createClient();

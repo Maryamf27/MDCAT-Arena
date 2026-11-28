@@ -39,5 +39,5 @@ async function SubjectPractice({ subjectKey }: { subjectKey: SubjectKey }) {
   const meta = getSubjectMetaByKey(subjectKey);
   const availability = await getSubjects();
   const questionCount = availability.subjects.find((item) => item.meta.key === subjectKey)?.questionCount ?? null;
-  return <PracticeSession subjectKey={meta.key} subjectLabel={meta.label} questionCount={questionCount} />;
+  return <PracticeSession subjectKey={meta.key} subjectLabel={meta.label} examLabel={meta.examLabel} questionCount={questionCount} />;
 }

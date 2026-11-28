@@ -5,7 +5,9 @@ import { SUBJECT_META, type SubjectKey } from "@/lib/subjects";
 
 const PAGE_SIZE_DEFAULT = 10;
 const PAGE_SIZE_MAX = 50;
-const titleBySubject = new Map(SUBJECT_META.map((subject) => [`${subject.label} Practice`, subject]));
+const titleBySubject = new Map<string, (typeof SUBJECT_META)[number]>(
+  SUBJECT_META.map((subject) => [subject.practiceTitle, subject])
+);
 const keyByTitle = (title: unknown) => typeof title === "string" ? titleBySubject.get(title) : undefined;
 
 type AttemptRow = {
